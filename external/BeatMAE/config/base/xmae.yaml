@@ -1,0 +1,46 @@
+# XMAE 对比模型预训练基座（模型不变量）
+# ══ 用法 ══
+#   python train/pretrain_baseline.py config/base/xmae.yaml \
+#       data.sources=[aurora] out_dir=results/pretrain/xmae/v2c_aurora/mr065_sqrt
+#   必传 override：out_dir；单源/3src 差量传 data.sources 列表
+#   out_dir 直接指向四层权重树 results/pretrain/<family>/<corpus>/<variant>
+#   17 机运行需覆盖：corpus_root=/data1/corpus_v2c
+
+corpus_root: /data2/corpus_v2c
+out_dir: null                # 必传 override
+test_folds: [1, 2]
+
+data:
+  # 无 beat_len：baseline 链把拍拉平成定长波形（WAVE_LEN = max_beats × BEAT_LEN，
+  # 其中 BEAT_LEN=128 是 data/corpus_dataset.py 的模块常量，pretrain_baseline.py
+  # 只读 max_beats），写了也没人读——是假旋钮。
+  max_beats: 32
+  sources: null              # null = 全库
+
+baseline:
+  model: xmae
+  patch_len: 64
+  mask_ratio: 0.65           # 统一 65% 公平对比；比例消融时 override
+
+train:
+  batch_size: 64
+  steps_per_epoch: 10000
+  epochs: 30
+  lr: 3.0e-4
+  weight_decay: 0.05
+  # 无 warmup_steps：本入口无 warmup 逻辑（该键只被 train/pretrain.py 的 BeatMAE
+  # 一支读），余弦退火自第 0 步直接起——写了是假旋钮
+  grad_accum: 1
+  clip_grad: 1.0
+  sampler_mode: sqrt
+  num_workers: 8
+  fp16: true
+  seed: 0
+  # 无 deterministic：只被 train/pretrain.py 读，本入口不读——写了是假旋钮
+  val_every: 1000
+  early_stop_patience: 10
+
+val:
+  max_segments: 20000
+
+log_every: 50

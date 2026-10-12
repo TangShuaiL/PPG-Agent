@@ -1,0 +1,54 @@
+# PaPaGei P/S 对比模型预训练基座（形态学伪标签引导的对比学习）
+# ══ 用法 ══
+#   python train/pretrain_papagei.py config/base/papagei.yaml \
+#       papagei.model=papagei_s data.sources=[iwshi_bp,vital,aurora] \
+#       out_dir=results/pretrain/papagei_s/v2c_3src_avi/full
+#   槽位名自证源集（2026-09-12 起）：v2c_3src_avi=iwshi_bp+vital+aurora（与 v2.5c 主表同源），
+#   v2c_3src_mva=mimic+vital+aurora，v2c_4src_mvaiwb=全四源——三者两两不同，别看错
+#   必传 override：out_dir；单源/3src 差量传 data.sources 列表
+#   out_dir 直接指向四层权重树 results/pretrain/<family>/<corpus>/<variant>
+#   （family 用 papagei_p / papagei_s，一族一目录与另三族同）
+#   17 机运行需覆盖：corpus_root=/data1/corpus_v2c
+#   形态学表是相对路径（本机 results/cache/），17 机需一并覆盖 morphology=
+
+corpus_root: /data2/corpus_v2c
+out_dir: null                # 必传 override
+test_folds: [1, 2]
+morphology: results/cache/morphology/morphology_v2c.parquet
+
+data:
+  sources: null              # null = 全库
+  # 无 beat_len/max_beats：PaPaGei 只有 raw_waveform 一种口径（固定 1250 点），
+  # 拍操作不参与，写了也是假旋钮
+
+papagei:
+  model: papagei_p           # papagei_p（ResNet1D）| papagei_s（ResNet1DMoE）
+  bins_svri: 8               # 官方 bins_svri（P/S 两份脚本都是 8）
+  temperature: 0.07          # 官方 PML NTXentLoss 默认温度
+  alpha: 0.6                 # 仅 S：对比项权重（官方 training_mt.py 的 main）
+  ipa_valid_only: false      # 仅 S：True = 屏蔽 ipa_fail 段的哨兵标签（官方默认 False）
+  aug:                       # 官方 prob_dictionary 里两个非零项（其余四个恒 0）
+    papagei_p: {g_p: 0.25, c_p: 0.25}
+    papagei_s: {g_p: 0.00, c_p: 0.25}
+
+train:
+  batch_size: 64
+  steps_per_epoch: 10000
+  epochs: 30
+  lr: 1.0e-4                 # 官方 lr（P/S 都是 1e-4）
+  weight_decay: 0.0          # 官方 Adam 不带 weight_decay（与另三族 AdamW 不同）
+  scheduler: none            # none = 官方常数 LR；cosine = 换成另三族的退火口径
+  clip_grad: 0.0             # 0 = 不裁剪（官方无裁剪）；>0 时按值裁剪
+  grad_accum: 1
+  sampler_mode: sqrt
+  num_workers: 8
+  fp16: true
+  seed: 0
+  # 无 deterministic：只被 train/pretrain.py 读，本入口不读——写了是假旋钮
+  val_every: 1000
+  early_stop_patience: 10
+
+val:
+  max_segments: 20000
+
+log_every: 50

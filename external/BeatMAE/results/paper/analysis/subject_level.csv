@@ -1,0 +1,13 @@
+domain,target,pooling,n_subject,MAE,r
+vital,sbp,mean,555,6.6,0.758
+vital,sbp,median,555,7.129,0.742
+vital,dbp,mean,555,4.367,0.764
+vital,dbp,median,555,4.552,0.758
+vital,age,mean,555,4.91,0.891
+vital,age,median,555,4.862,0.889
+aurora,sbp,mean,238,8.78,0.685
+aurora,sbp,median,238,8.555,0.702
+aurora,dbp,mean,238,6.123,0.73
+aurora,dbp,median,238,6.587,0.726
+aurora,age,mean,238,6.085,0.776
+aurora,age,median,238,6.007,0.779

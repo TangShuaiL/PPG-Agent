@@ -1,0 +1,101 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# pytest tmp_path 残留（误入过一次版本库，见 git rm --cached）
+# 注意：.gitignore 没有行内注释语法——本行必须独占，尾巴上跟 `#...` 会把注释
+# 并进模式本身，规则静默失效（2026-09-10 修）。
+pytest-of-*/
+*.egg-info/
+
+# ---- 训练产物（runs/ 由目录结构 + run_meta.json 归档管理，不进版本库）----
+/runs/
+
+
+# ---- results（结果与归档全部不进版本库；例外见下）----
+# 例外 = README「结果在哪里」列出的结论表（发布范围含「结果表」）。
+# ⚠ 2026-10-01：原先随仓的三份台账派生表（EXPERIMENT_LEDGER / EXPERIMENTS /
+# final_* ×2 / probe_wide_all）**已撤出发布范围** —— 它们是模型选型与内部运行
+# 的记录，含未报告的变体与已退役口径，读者用不上且易与论文数字混淆。
+# 论文的表与图在 results/paper/（下方单独放行），其余 results/ 一律不进版本库。
+results/*
+!results/probe/
+results/probe/*
+
+# ---- 论文产物（2026-09-21 起随仓）----
+# results/paper/ = 论文的实验结果表与图，按实验分子目录。**这是产物的规范位置**：
+#   tools/ 里的生成脚本直接写到这里，`paper/` 只留稿件本体（sections/claims/…）。
+#   此前产物先在 paper/ 生成再手工拷贝，是两份真相、必然漂移，故改为单点。
+#   注意各子目录的 README.md 是手写索引，不是生成物，别被脚本覆盖。
+# 只需放行父目录：gitignore 排除的是 results/*，放行 results/paper/ 后其子树即可下探。
+!results/paper/
+# 但图只随 PDF（矢量交付格式）；PNG 是脚本为快速查看另存的位图，6.8 MB 且可随时重生成。
+results/paper/figs/*.png
+
+
+# ---- 一次性产物 ----
+/folds/
+/logs/
+nohup.out
+*.pid
+*.log
+
+# ⚠ gitignore 坑（2026-09-21 踩到）：不锚定的 `name/` 在**任意层级**匹配。
+#   `paper/` 原先把 `results/paper/` 一并吃掉，导致论文产物放行规则失效。
+#   故所有「顶层目录」规则一律写成 `/name/`。
+# ---- 未发表稿件（2026-09-13）----
+# paper/ = 论文初稿 + 证据台账（claims.md）。**故意不进版本库**：本仓库在做开源准备，
+# 跟踪它就会随代码一起公开，而未发表稿件的提前公开不可逆。
+# 代价：稿件没有 git 历史。日后若要跟踪，删掉下面这行并单独确认发布范围。
+/paper/
+
+# ---- 论文 PDF 与投稿材料（2026-09-20）----
+# 稿件的 PDF 放在仓库根（如 BeatMAE_v5.pdf），此前**未被任何规则覆盖** ——
+# 一次 `git add -A` 就会把它 stage 进去，push 即不可逆。这里按扩展名堵死。
+# 若将来要随仓发正式版 PDF（如 camera-ready），单独 `git add -f` 并确认发布范围。
+*.pdf
+*.tex
+# ⚠ 但上面为保护未发表稿件加的 `*.pdf` / `*.tex` 会把论文图一起挡掉 —— 必须显式放行。
+#   （gitignore 后匹配者优先，故例外写在 `*.pdf` 之后）
+!results/paper/figs/*.pdf
+!results/paper/code/*.tex
+*.docx
+
+# ---- 第三方参考工作（只读，含 .git 与权重，不进版本库）----
+/references/
+
+# ---- 过程性材料，不随开源发布（2026-09-21）----
+# docs/  = 内部整理台账、规划、历史审计档（含会话交接档）。属工作过程，非交付物。
+# figs/  = 过程可视化（掩码示意、中间散点/曲线）。**不是论文最终图**；
+#          正式配图由作者整理后另行放入（届时按需 `git add -f figs/` 或删掉本规则）。
+# 两者在工作区保留，只是不进版本库。tools/plot_*.py 仍默认输出到 figs/ —— 输出目录
+# 本就该不进版本库，无需改脚本。
+/docs/
+/figs/
+
+# ---- 大型二进制 ----
+*.npz
+*.h5
+*.pth
+
+# ---- IDE / 工具 ----
+.qoder*
+.idea/
+.vscode/
+.DS_Store
+*.out
+
+# ---- 本机 agent/编辑器状态（settings.local.json 含本机权限记录、个人偏好）----
+# 团队共享的设置走 .claude/settings.json（不进本规则，需显式 add）
+.claude/
+
+# ---- 统计量（随仓；2026-09-10 由已取消的 cfg/ 移入 config/）----
+# config/feat_stats_v2c.npz 是**现役统计量**（config/base/beatmae.yaml 的 `feat_stats:`
+# 直接引用，train/pretrain.py 的辅助任务 z 参数化要用），4 KB、可由
+# preprocess/corpus_build/compute_feat_stats.py 复现生成。
+# 例外必须写在上面 `*.npz` 之后——gitignore 后匹配者优先，顺序反了会被重新忽略。
+# （legacy 的 feat_stats.npz 已于 2026-10-01 撤出发布范围：现役零引用。）
+!config/feat_stats_v2c.npz
+
+# ---- 发布脱敏快照（tools/deidentify_release.py 的默认输出）----
+/dist/

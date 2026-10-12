@@ -1,0 +1,27 @@
+# PPG 基础模型 — 运行依赖
+#
+# 开发环境实测版本（2026-09-11，Python 3.10.20 / torch 2.5.1+cu121）：
+#   torch 2.5.1+cu121   numpy 1.23.2   pandas 1.4.4
+#   matplotlib 3.6.1    PyYAML 6.0.3   h5py 3.16.0    pytest 9.1.1
+# 下列为可安装下限，非严格锁定。torch 的 CUDA 变体请按本机驱动
+# 从官方 wheel 源选择（如 --index-url https://download.pytorch.org/whl/cu121）。
+
+torch>=2.5.1
+numpy>=1.23.2
+pandas>=1.4.4
+matplotlib>=3.6.1
+PyYAML>=6.0.3
+h5py>=3.16.0
+# 仅 PaPaGei 形态学伪标签需要（scripts/compute_morphology.py）；
+# 1.6 起提供 trapezoid（官方写法 trapz 在 1.14 已删除，本库用新名）
+scipy>=1.6
+
+# 仅 40 维拍级特征提取需要（preprocess/features/ + third_party/vitalpy/）：
+#   third_party/vitalpy/features/spectral_features.py 的 fsqi 用 biosppy.signals.ecg
+# 注意 scipy 版本：third_party/vitalpy 用的是旧的 integrate.simps / stats.stats.zscore
+# 命名空间，在 scipy ≥1.14 已被移除。preprocess/features/segment.py 顶部有兼容补丁，
+# 但**必须**从那里进入才会生效（它给 scipy 打别名）。
+biosppy>=1.1.0
+
+# 仅运行 tests/ 时需要
+pytest>=9.1.1

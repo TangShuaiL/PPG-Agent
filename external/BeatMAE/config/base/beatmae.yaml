@@ -1,0 +1,62 @@
+# BeatMAE v2 预训练基座（模型不变量）
+# ══ 用法（config/ 规范，2026-09-05 定稿）══
+#   实验差量一律命令行 override，本文件不含任何实验特定字段：
+#   python train/pretrain.py config/base/beatmae.yaml \
+#       out_dir=results/pretrain/beatmae_v2/v2c_4src_mvaiwb/unified_mr065_traverse data.sources=null
+#   必传 override：out_dir（基座不给默认值，防两次实验写同一目录）
+#   out_dir 直接指向四层权重树 results/pretrain/<family>/<corpus>/<variant>
+#   17 机运行需覆盖：corpus_root=/data1/corpus_v2c
+
+corpus_root: /data2/corpus_v2c   # 18 机主根；17 机覆盖
+reliability_json: /data/feature_reliability.json
+feat_stats: config/feat_stats_v2c.npz
+out_dir: null                # 必传 override
+test_folds: [1, 2]
+
+data:
+  beat_len: 128
+  max_beats: 32
+  sources: null              # null = 全库（corpus_v2c 四库）；单源/3src 传列表
+
+mask:
+  mode: unified
+  target_ratio: 0.65
+  region_share: 0.6
+  patch_len: 8
+
+model:
+  d_model: 256
+  depth: 6
+  nhead: 8
+  dec_kind: transformer
+  d_dec: 128
+  dec_depth: 2
+  n_aux_feats: 40
+
+train:
+  batch_size: 64
+  steps_per_epoch: 10000     # traverse 模式下忽略（每 epoch = 全池步数）
+  epochs: 5
+  lr: 3.0e-4
+  weight_decay: 0.05
+  warmup_steps: 1000
+  grad_accum: 1
+  clip_grad: 1.0
+  aux_weight: 0.1
+  icc_gate: 0.7
+  sampler_mode: traverse
+  num_workers: 8
+  fp16: true
+  seed: 0
+  deterministic: false
+  val_every: 1000
+  early_stop_patience: 40
+
+val:
+  n_batches: 50
+  max_segments: 20000
+
+ckpt:
+  every: 5000
+
+log_every: 50

@@ -1,0 +1,43 @@
+# 下游线性探针基座（协议不变量）
+# ══ 用法 ══
+#   python train/probe.py config/base/probe.yaml \
+#       probe.out_dir=results/probe/<战役名> corpus_root=... experiments=<...>
+#   必传 override：probe.out_dir；experiments（评估哪些 ckpt，见 train/probe.py 格式）
+#   实验清单长时不适合命令行时：写临时战役 yaml `config/<战役>.yaml` 仅含
+#   experiments 列表差量 + 基座路径，用完可删；正式参数以 run_meta 快照为准
+#   17 机运行需覆盖：corpus_root=/data1/corpus_v2c
+#   （2026-09-11 修：原默认指旧库 corpus_v2 且该路径在本机已不存在——
+#     历史 subject 口径遗留的死值。现与 config/base/{beatmae,himae,mmr,xmae}.yaml 同规。）
+
+corpus_root: /data2/corpus_v2c   # 18 机主根；17 机覆盖
+test_folds: [1, 2]          # 折 1/2 为测试（受试者级），与预训练严格一致
+
+data:
+  sources: null              # null = 全部受试者；单源专属评估时 override
+
+probe:
+  out_dir: null              # 必传 override
+  pool: [subject, segment]   # subject=受试者级(BP 中位数); segment=段级
+  head: [linear, mlp]        # linear=岭回归; mlp=2 层 MLP; attn=窗口注意力
+                             # （启用 attn 须自行补 attn: 子块，5 键 hidden/lr/
+                             #  weight_decay/epochs/patience 缺一即 KeyError——
+                             #  train/probe.py::_train_attn_head 按硬下标读，
+                             #  无内建默认。本基座默认不启用，故此处无该块。）
+  max_seg_per_subject: 60    # 每受试者抽样段上限（0=全部）
+  batch_size: 256
+  num_workers: 8
+  fp16: true
+  seed: 0
+  # 权威在 train/probe.py 的 RIDGE_ALPHAS；
+  # 此处留作显式 override 位，改动须同步那一处，否则探针头与主表分叉
+  ridge_alphas: [0.3, 1, 3, 10, 30, 100, 300, 1000]
+  force: false
+  experiments: null          # 必传 override（null=全部，仅当配置里已有实验表时）
+
+  mlp:
+    hidden1: 256
+    hidden2: 128
+    lr: 1.0e-3
+    weight_decay: 1.0e-4
+    epochs: 200
+    patience: 20

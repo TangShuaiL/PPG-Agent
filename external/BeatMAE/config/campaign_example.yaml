@@ -1,0 +1,36 @@
+# config/campaign_example.yaml — 战役编排模板（每战役一份，不是每实验一份）
+#
+# 一份 yaml = 一场完整战役：实验清单 × 要跑的阶段。
+# 差量传参走 CLI（优先级高于 yaml）:
+#   python eval/run_campaign.py config/campaign_example.yaml --dry-run
+#   python eval/run_campaign.py config/campaign_example.yaml --only myexp
+#   python eval/run_campaign.py config/campaign_example.yaml --tasks extract,stream
+#   python eval/run_campaign.py config/campaign_example.yaml --corpus /path/to/corpus
+#
+# 产物归档: 结果 → results/probe/<家族>/<语料>/<变体>/，头与预测在其下 heads/ 与 preds/
+
+# null = 用启动 run_campaign.py 的那个解释器（推荐；编排器自身只需 PyYAML）。
+# 也可写绝对路径钉死解释器——但那样会把本机路径带进配置。
+python: null
+corpus_root: null          # null → 走 PPG_CORPUS_ROOT 环境变量 / data.paths 探测
+cache_dir: results/cache/embeddings  # 嵌入缓存目录（大体积中间件，走 results/ 不进权重树）
+
+# 阶段与顺序: extract(嵌入) → stream(段级流式，主口径)
+# （window 阶段 2026-09-10 退役：26 号归档，yaml 里再写 window 会被 run_campaign 显式报错）
+tasks: [extract]
+# stream 阶段跑哪些变体（透传给 probe_full_stream.py 的位置参数）。
+# 缺省 = train/stream_probe.py 的 VARIANTS（主表三变体）；留一个子集可只补某几个。
+stream_variants: [w1_ridge, seg_mlp, causal_attn]
+
+experiments:
+  beatmae_v2__v2c_4src_mvaiwb__full:
+    ckpt: results/pretrain/beatmae_v2/v2c_4src_mvaiwb/unified_mr065_traverse/ckpt/best.pt
+    sources: null          # null = 全库
+  beatmae_v2__v2c_4src_mvaiwb__iwshi_bp:
+    ckpt: results/pretrain/beatmae_v2/v2c_4src_mvaiwb/unified_mr065_traverse/ckpt/best.pt
+    sources: [iwshi_bp]       # 单源过滤
+  # 已有缓存的实验可跳过提取：给 cache 字段即可（tasks 里去掉 extract 或该实验会重复提取）
+  beatmae_v2__v2c_3src_mva__full:
+    ckpt: results/pretrain/beatmae_v2/v2c_3src_mva/unified_mr065_traverse/ckpt/best.pt
+    sources: null
+    cache: results/cache/embeddings/beatmae_v2__v2c_3src_mva__full_lab.npz

@@ -6,7 +6,7 @@
 
 ---
 
-## ✨ 亮点
+## 亮点
 
 - **多智能体编排**：Supervisor（意图解析 / 路由 / 综合）+ 3 个领域子 Agent，基于 LangGraph 状态机协作。
 - **确定性引擎 + LLM 分离**：所有数值计算（滤波、beat 分割、特征提取、纵向统计）走纯 Python 引擎；LLM 只做调度与表达，**原始波形永不进 LLM**，只传结构化摘要。
@@ -18,50 +18,49 @@
 
 ---
 
-## 🏗️ 架构总览
+## 架构总览
 
 ```mermaid
 flowchart TB
-    classDef ui    fill:#E8F0FE,stroke:#4285F4,stroke-width:2px,color:#174EA6;
-    classDef sup   fill:#FFF4E5,stroke:#F9AB00,stroke-width:2px,color:#B06000;
-    classDef agent fill:#E6F4EA,stroke:#34A853,stroke-width:2px,color:#137333;
-    classDef engine fill:#F3E8FD,stroke:#A142F4,stroke-width:2px,color:#7627BB;
-    classDef data  fill:#FCE8E6,stroke:#EA4335,stroke-width:2px,color:#C5221F;
-    classDef know  fill:#E0F7FA,stroke:#00ACC1,stroke-width:2px,color:#00838F;
+    classDef io     fill:#E8F0FE,stroke:#4285F4,stroke-width:1.5px,color:#174EA6;
+    classDef sup    fill:#FFF4E5,stroke:#F9AB00,stroke-width:1.5px,color:#B06000;
+    classDef agent  fill:#E6F4EA,stroke:#34A853,stroke-width:1.5px,color:#137333;
+    classDef engine fill:#F3E8FD,stroke:#A142F4,stroke-width:1.5px,color:#7627BB;
+    classDef store  fill:#ECEFF1,stroke:#607D8B,stroke-width:1.5px,color:#37474F;
 
-    USER["🧑‍💻 用户 / Web 对话前端<br/>自然语言 Query + SignalRef"]:::ui
+    USER["用户 / Web 对话前端"]:::io
 
-    subgraph L1["🧠 编排层"]
-        SUP["Supervisor<br/>意图解析 → 路由分发 → 综合可解释报告"]:::sup
+    subgraph L1["编排层"]
+        SUP["Supervisor<br/>意图解析 · 路由分发 · 综合报告"]:::sup
     end
 
-    subgraph L2["⚙️ 执行层 · 领域子 Agent"]
-        A1["Agent 1 · 信号处理<br/>滤波 → beat 分割 → 特征 → 质量<br/>+ 数据集自适应会话"]:::agent
+    subgraph L2["执行层 · 领域子 Agent"]
+        A1["Agent 1 · 信号处理<br/>滤波 · beat 分割 · 特征 · 质量<br/>数据集自适应"]:::agent
         A2["Agent 2 · 心血管纵向比较<br/>双参照变化判定 · 生理可解释"]:::agent
-        A3["Agent 3 · 模型归因<br/>BeatMAE 编码器 + IG 归因"]:::agent
+        A3["Agent 3 · 模型归因<br/>BeatMAE 编码器 · IG 归因"]:::agent
     end
 
-    subgraph L3["🔩 确定性引擎层 · LLM 不参与数值计算"]
+    subgraph L3["确定性引擎层 · LLM 不参与数值计算"]
         ENG["signal_engine · personal_engine<br/>percentile_engine · beatmae_encoder"]:::engine
     end
 
-    subgraph L4["🗄️ 知识与数据层"]
-        KNOW["knowledge/ 先验库<br/>统计参考 · 生理规则"]:::know
-        DB[("SQLite 表型库 + beat 级 Parquet 宽表")]:::data
+    subgraph L4["知识与数据层"]
+        KNOW["knowledge 先验库<br/>统计参考 · 生理规则"]:::store
+        DB[("SQLite 表型库 · beat 级 Parquet 宽表")]:::store
     end
 
-    USER -->|自然语言 Query| SUP
-    SUP -->|SubTask 路由| A1
-    SUP -->|SubTask 路由| A2
-    SUP -->|SubTask 路由| A3
-    A1 -->|特征/beat 摘要| A2
+    USER -->|Query| SUP
+    SUP --> A1
+    SUP --> A2
+    SUP --> A3
+    A1 -->|特征交接| A2
     A2 -->|比较结论| A3
     A1 --> ENG
     A2 --> ENG
     A3 --> ENG
     ENG --> DB
-    KNOW -.生理规则注入.-> SUP
-    SUP -->|可解释综合报告| USER
+    KNOW -.规则注入.-> SUP
+    SUP -->|可解释报告| USER
 ```
 
 三条贯穿性设计原则：
@@ -71,7 +70,7 @@ flowchart TB
 
 ---
 
-## 🤖 Agent 分工
+## Agent 分工
 
 | Agent | 模块 | 职责 | 关键工具 / 能力 |
 |---|---|---|---|
@@ -83,7 +82,7 @@ flowchart TB
 
 ---
 
-## 📂 代码结构
+## 代码结构
 
 ```
 ppg_agent/            # 主包
@@ -103,17 +102,18 @@ models/               # 模型注册表 + prompts（真实密钥走环境变量�
 deploy/               # 公网部署：nginx + frp + Caddy + systemd
 tests/                # 单元 / 集成测试
 docs/                 # 架构文档
+external/BeatMAE/     # Agent 3 依赖的 BeatMAE 编码器快照（第三方，GPL-3.0）
 ```
 
 ---
 
-## 🚀 快速开始
+## 快速开始
 
 > ⚠️ **数据说明**：本项目分析基于 **MIMIC-III / VitalDB / Anker ABPM** 等受**数据使用协议（DUA）**约束的临床数据集，**不随仓库分发**。需自行获取授权数据并通过 `PPG_DATA_ROOT` 指定路径。
 
 **依赖**：Python 3.10+、Node 18+（后端见 `requirements.txt`、前端见 `web/frontend/package.json`）；LLM 后端可选本地 vLLM 或 DeepSeek API。
 
-> 🔗 **外部模型依赖**：Agent 3 的 **BeatMAE** 编码器是**独立研究仓、不随本仓库分发**——将 BeatMAE clone 到 `external/BeatMAE`（或设 `BEATMAE_ROOT`）即可接入；权重由 `engine/weights.py` 从 Zenodo 版本化 DOI 自动下载并校验缓存。仓库内含 Agent 侧装配壳（`engine/beatmae_encoder.py`），BeatMAE 源码零改动。
+> 📦 **外部模型依赖**：Agent 3 的 **BeatMAE** 编码器为已完结的独立研究项目，其源码快照已随本仓库内置于 `external/BeatMAE/`（第三方组件，**GPL-3.0**，已剔除受试者级实验数据）；模型权重不入库，由 `engine/weights.py` 从 Zenodo 版本化 DOI 自动下载并校验缓存。Agent 侧装配壳见 `engine/beatmae_encoder.py`。
 
 > 🔗 **信号库依赖**：Agent 1 的 beat 分割/特征提取依赖同级本地包 **VitalPy**（`pip install -e /path/to/VitalPy`）。
 
@@ -123,7 +123,7 @@ cp models/model_registry.example.yaml models/model_registry.yaml
 export DEEPSEEK_API_KEY=sk-xxxx            # 或本地 vLLM 端点
 
 # 2) 后端
-pip install -r requirements.txt            # 若未提供，按 import 自行安装
+pip install -r requirements.txt
 export PPG_DATA_ROOT=/path/to/data_v2
 python -m uvicorn web.api.main:app --host 127.0.0.1 --port 8000
 
@@ -133,7 +133,7 @@ cd web/frontend && npm install && npm run dev
 
 ---
 
-## 🌐 部署方案
+## 部署方案
 
 采用 **"全栈留本地、云机做薄壳"** 的反向隧道架构，兼顾演示可达性与数据/密钥安全：
 
@@ -147,6 +147,6 @@ cd web/frontend && npm install && npm run dev
 
 ---
 
-## 📜 许可
+## 许可
 
-本项目代码**保留所有权利（All Rights Reserved）**，未经许可不得用于商业用途。底层数据集受各自 DUA 约束，不在本仓库分发范围内。
+本项目自研代码**保留所有权利（All Rights Reserved）**，未经许可不得用于商业用途。例外：`external/BeatMAE/` 为第三方组件，遵循其自带 `LICENSE`（**GPL-3.0**）。底层数据集受各自 DUA 约束，不在本仓库分发范围内。

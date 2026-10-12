@@ -1,0 +1,127 @@
+# config/campaign_full.yaml — v2c 全量下游补齐战役（2026-09-06 拍板范围）
+#
+# 范围（用户拍板）:
+#   window  : beatmae 系 3 个（4src 已有，不重跑）——**已退役**（2026-09-10，26 号归档），
+#             此处的 window: true 已删除；见本文件末「历史」注
+#   stream  : 4 模型的 4src 全局权重各一（物化 + 三变体 × 5 seeds）
+#   zeroshot: 只补 mmr/xmae 3src×iwshi_bp 提取（beatmae 3src 缓存已有；
+#             25 号评估走特殊五折协议，不入 campaign，提取后单独跑）
+# 旧库 legacy 36 实验冻结不重跑（数字已在 _tables 宽表）。
+#
+# 缓存说明: 8 个实验已有缓存（零提取成本）；其余 10 个需 extract
+#   （5 个 full 大缓存 + himae aurora_raw + beatmae iwshi_bp/aurora + 2 个 zeroshot 小缓存）
+#
+# 用法:
+#   python eval/run_campaign.py config/campaign_full.yaml --dry-run
+#   python eval/run_campaign.py config/campaign_full.yaml --only <exp[,exp2]>   # 子集
+#   python eval/run_campaign.py config/campaign_full.yaml --tasks extract       # 只跑某阶段
+
+# 本机实配：钉死解释器路径。写成 null 则回退到启动 run_campaign.py 的那个解释器
+# （见 eval/run_campaign.py 的 `cfg.get('python') or sys.executable`）。
+python: python3
+corpus_root: null        # null → data.paths 探测
+cache_dir: results/cache/embeddings
+stream_cache: results/cache/stream
+
+# 全局阶段：extract（stream 由 per-experiment 的 stream: true 声明）
+tasks: [extract]
+# stream 阶段跑的变体（透传给 probe_full_stream.py 的位置参数）
+stream_variants: [w1_ridge, seg_mlp, causal_attn]
+
+experiments:
+  # ── beatmae_v2（4src 全家桶已跑过不重跑；v2c_3src_mva 的 window 补跑 2026-09-10 随 26 号退役）──
+  beatmae_v2__v2c_4src_mvaiwb__full:
+    ckpt: results/pretrain/beatmae_v2/v2c_4src_mvaiwb/unified_mr065_traverse/ckpt/best.pt
+    cache: results/cache/embeddings/beatmae_v2__v2c_4src_mvaiwb__full_lab.npz
+  beatmae_v2__v2c_3src_mva__full:
+    ckpt: results/pretrain/beatmae_v2/v2c_3src_mva/unified_mr065_traverse/ckpt/best.pt
+    cache: results/cache/embeddings/beatmae_v2__v2c_3src_mva__full_lab.npz
+    # window: true 已删（2026-09-10）——窗口注意力口径退役，数字仍在
+    # results/probe/beatmae_v2/v2c_3src_mva/full/window/ 原位可溯
+  beatmae_v2__v2c_iwb__iwshi_bp:
+    ckpt: results/pretrain/beatmae_v2/v2c_iwb/unified_mr065_traverse/ckpt/best.pt
+    sources: [iwshi_bp]       # 单源专属评估协议：单源权重只评对应源
+    cache: results/cache/embeddings/beatmae_v2__v2c_iwb__iwshi_bp_lab.npz
+  beatmae_v2__v2c_aurora__aurora:
+    ckpt: results/pretrain/beatmae_v2/v2c_aurora/unified_mr065_traverse/ckpt/best.pt
+    sources: [aurora]
+    cache: results/cache/embeddings/beatmae_v2__v2c_aurora__aurora_lab.npz
+
+  # ── himae（kind=himae patch_len=16；raw 口径拍长 5）──
+  himae__v2c_4src_mvaiwb__full:
+    ckpt: results/pretrain/himae/v2c_4src_mvaiwb/mr065_sqrt/ckpt/best.pt
+    kind: himae
+    patch_len: 16
+    stream: true           # 物化 + 流式三变体
+  himae__v2c_iwb__iwshi_bp:
+    ckpt: results/pretrain/himae/v2c_iwb/mr065_sqrt/ckpt/best.pt
+    kind: himae
+    patch_len: 16
+    cache: results/cache/embeddings/himae__v2c_iwb__iwshi_bp_lab.npz
+  himae__v2c_aurora__aurora:
+    ckpt: results/pretrain/himae/v2c_aurora/mr065_sqrt/ckpt/best.pt
+    kind: himae
+    patch_len: 16
+    cache: results/cache/embeddings/himae__v2c_aurora__aurora_lab.npz
+  himae__v2c_aurora_raw__aurora_raw:
+    ckpt: results/pretrain/himae/v2c_aurora/mr065_sqrt_raw/ckpt/best.pt
+    kind: himae
+    patch_len: 5           # raw 口径拍长与 sqrt 不同（见 scripts/extract_embeddings.py 顶部说明）
+    input_mode: raw_waveform
+    sources: [aurora]
+
+  # ── mmr（kind=mmr patch_len=32）──
+  mmr__v2c_4src_mvaiwb__full:
+    ckpt: results/pretrain/mmr/v2c_4src_mvaiwb/mr065_sqrt/ckpt/best.pt
+    kind: mmr
+    patch_len: 32
+    stream: true
+  mmr__v2c_3src_mva__full:
+    ckpt: results/pretrain/mmr/v2c_3src_mva/mr065_sqrt/ckpt/best.pt
+    kind: mmr
+    patch_len: 32
+  mmr__v2c_iwb__iwshi_bp:
+    ckpt: results/pretrain/mmr/v2c_iwb/mr065_sqrt/ckpt/best.pt
+    kind: mmr
+    patch_len: 32
+    cache: results/cache/embeddings/mmr__v2c_iwb__iwshi_bp_lab.npz
+  mmr__v2c_aurora__aurora:
+    ckpt: results/pretrain/mmr/v2c_aurora/mr065_sqrt/ckpt/best.pt
+    kind: mmr
+    patch_len: 32
+    cache: results/cache/embeddings/mmr__v2c_aurora__aurora_lab.npz
+
+  # ── xmae（kind=xmae patch_len=64）──
+  xmae__v2c_4src_mvaiwb__full:
+    ckpt: results/pretrain/xmae/v2c_4src_mvaiwb/mr065_sqrt/ckpt/best.pt
+    kind: xmae
+    patch_len: 64
+    stream: true
+  xmae__v2c_3src_mva__full:
+    ckpt: results/pretrain/xmae/v2c_3src_mva/mr065_sqrt/ckpt/best.pt
+    kind: xmae
+    patch_len: 64
+  xmae__v2c_iwb__iwshi_bp:
+    ckpt: results/pretrain/xmae/v2c_iwb/mr065_sqrt/ckpt/best.pt
+    kind: xmae
+    patch_len: 64
+    cache: results/cache/embeddings/xmae__v2c_iwb__iwshi_bp_lab.npz
+  xmae__v2c_aurora__aurora:
+    ckpt: results/pretrain/xmae/v2c_aurora/mr065_sqrt/ckpt/best.pt
+    kind: xmae
+    patch_len: 64
+    cache: results/cache/embeddings/xmae__v2c_aurora__aurora_lab.npz
+
+  # ── zeroshot 提取（3src 权重 × iwshi_bp 纯测试；只提取不评估，25 号单独跑）──
+  mmr__v2c_3src_mva__iwshi_bp:
+    ckpt: results/pretrain/mmr/v2c_3src_mva/mr065_sqrt/ckpt/best.pt
+    kind: mmr
+    patch_len: 32
+    sources: [iwshi_bp]
+    tasks: [extract]
+  xmae__v2c_3src_mva__iwshi_bp:
+    ckpt: results/pretrain/xmae/v2c_3src_mva/mr065_sqrt/ckpt/best.pt
+    kind: xmae
+    patch_len: 64
+    sources: [iwshi_bp]
+    tasks: [extract]
