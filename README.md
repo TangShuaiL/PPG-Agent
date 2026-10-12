@@ -18,33 +18,50 @@
 
 ---
 
-##  架构总览
+## 🏗️ 架构总览
 
 ```mermaid
 flowchart TB
-    USER["用户 / Web 前端<br/>自然语言 query + SignalRef"]
+    classDef ui    fill:#E8F0FE,stroke:#4285F4,stroke-width:2px,color:#174EA6;
+    classDef sup   fill:#FFF4E5,stroke:#F9AB00,stroke-width:2px,color:#B06000;
+    classDef agent fill:#E6F4EA,stroke:#34A853,stroke-width:2px,color:#137333;
+    classDef engine fill:#F3E8FD,stroke:#A142F4,stroke-width:2px,color:#7627BB;
+    classDef data  fill:#FCE8E6,stroke:#EA4335,stroke-width:2px,color:#C5221F;
+    classDef know  fill:#E0F7FA,stroke:#00ACC1,stroke-width:2px,color:#00838F;
 
-    SUP["Supervisor（LLM 编排）<br/>意图解析 → 路由分发 → 综合报告"]
+    USER["🧑‍💻 用户 / Web 对话前端<br/>自然语言 Query + SignalRef"]:::ui
 
-    A1["Agent 1 · signal_processor<br/>加载→归一化→滤波→beat 分割→特征提取→质量评估<br/>+ 数据集适配会话（参数调优/验收门禁）"]
-    A2["Agent 2 · cardiovascular<br/>纵向比较引擎：双参照三分类 / beat 层离群 / 漂移<br/>LLM 只决策分析路径，产出结构化 Findings"]
-    A3["Agent 3 · ml_prediction<br/>beat 级 MAE 预训练编码器 + 梯度归因<br/>未就绪时如实告知，不编造预测"]
+    subgraph L1["🧠 编排层"]
+        SUP["Supervisor<br/>意图解析 → 路由分发 → 综合可解释报告"]:::sup
+    end
 
-    CTX["PPGContext · 请求级共享状态（contextvars 隔离）<br/>原始波形只在此，跨 Agent 只传摘要"]
-    ENG["确定性引擎：signal_engine / personal_engine / percentile_engine"]
-    KNOW["knowledge/ 先验知识库（聚合统计 + 生理规则）"]
-    DB[("SQLite 表型库 + *_beats.parquet 宽表")]
+    subgraph L2["⚙️ 执行层 · 领域子 Agent"]
+        A1["Agent 1 · 信号处理<br/>滤波 → beat 分割 → 特征 → 质量<br/>+ 数据集自适应会话"]:::agent
+        A2["Agent 2 · 心血管纵向比较<br/>双参照变化判定 · 生理可解释"]:::agent
+        A3["Agent 3 · 模型归因<br/>BeatMAE 编码器 + IG 归因"]:::agent
+    end
 
-    USER --> SUP
-    SUP --> A1 --> A2 -.-> A3
-    A1 <--> CTX
-    A2 <--> CTX
+    subgraph L3["🔩 确定性引擎层 · LLM 不参与数值计算"]
+        ENG["signal_engine · personal_engine<br/>percentile_engine · beatmae_encoder"]:::engine
+    end
+
+    subgraph L4["🗄️ 知识与数据层"]
+        KNOW["knowledge/ 先验库<br/>统计参考 · 生理规则"]:::know
+        DB[("SQLite 表型库 + beat 级 Parquet 宽表")]:::data
+    end
+
+    USER -->|自然语言 Query| SUP
+    SUP -->|SubTask 路由| A1
+    SUP -->|SubTask 路由| A2
+    SUP -->|SubTask 路由| A3
+    A1 -->|特征/beat 摘要| A2
+    A2 -->|比较结论| A3
     A1 --> ENG
     A2 --> ENG
+    A3 --> ENG
     ENG --> DB
-    KNOW --> SUP
-    A2 --> SUP
-    SUP --> USER
+    KNOW -.生理规则注入.-> SUP
+    SUP -->|可解释综合报告| USER
 ```
 
 三条贯穿性设计原则：
@@ -94,7 +111,11 @@ docs/                 # 架构文档
 
 > ⚠️ **数据说明**：本项目分析基于 **MIMIC-III / VitalDB / Anker ABPM** 等受**数据使用协议（DUA）**约束的临床数据集，**不随仓库分发**。需自行获取授权数据并通过 `PPG_DATA_ROOT` 指定路径。
 
-**依赖**：Python 3.10+、Node 18+；LLM 后端可选本地 vLLM 或 DeepSeek API。
+**依赖**：Python 3.10+、Node 18+（后端见 `requirements.txt`、前端见 `web/frontend/package.json`）；LLM 后端可选本地 vLLM 或 DeepSeek API。
+
+> 🔗 **外部模型依赖**：Agent 3 的 **BeatMAE** 编码器是**独立研究仓、不随本仓库分发**——将 BeatMAE clone 到 `external/BeatMAE`（或设 `BEATMAE_ROOT`）即可接入；权重由 `engine/weights.py` 从 Zenodo 版本化 DOI 自动下载并校验缓存。仓库内含 Agent 侧装配壳（`engine/beatmae_encoder.py`），BeatMAE 源码零改动。
+
+> 🔗 **信号库依赖**：Agent 1 的 beat 分割/特征提取依赖同级本地包 **VitalPy**（`pip install -e /path/to/VitalPy`）。
 
 ```bash
 # 1) 配置模型注册表（复制模板后填 key）
