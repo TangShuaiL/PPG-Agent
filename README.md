@@ -21,38 +21,32 @@
 ## 架构总览
 
 ```mermaid
-flowchart TB
+flowchart LR
     classDef io     fill:#E8F0FE,stroke:#4285F4,stroke-width:1.5px,color:#174EA6;
     classDef sup    fill:#FFF4E5,stroke:#F9AB00,stroke-width:1.5px,color:#B06000;
     classDef agent  fill:#E6F4EA,stroke:#34A853,stroke-width:1.5px,color:#137333;
     classDef engine fill:#F3E8FD,stroke:#A142F4,stroke-width:1.5px,color:#7627BB;
     classDef store  fill:#ECEFF1,stroke:#607D8B,stroke-width:1.5px,color:#37474F;
 
-    USER["用户 / Web 对话前端"]:::io
-    SUP["Supervisor · 意图解析 / 路由分发 / 综合可解释报告"]:::sup
+    USER["用户 / Web<br/>对话前端"]:::io
+    SUP["Supervisor<br/>意图解析 · 路由 · 综合报告"]:::sup
 
     subgraph L2["执行层 · 领域子 Agent"]
-        direction LR
         A1["Agent 1<br/>信号处理<br/>数据集自适应"]:::agent
         A2["Agent 2<br/>心血管<br/>纵向比较"]:::agent
         A3["Agent 3<br/>模型归因<br/>BeatMAE + IG"]:::agent
         A1 -->|特征交接| A2 -->|比较结论| A3
     end
 
-    subgraph L3["确定性引擎层 · LLM 不参与数值计算"]
-        direction LR
-        ENG["signal_engine · personal_engine · percentile_engine · beatmae_encoder"]:::engine
-    end
+    ENG["确定性引擎层<br/>signal · personal<br/>percentile · beatmae"]:::engine
+    KNOW["knowledge 先验库<br/>统计参考 · 生理规则"]:::store
+    DB[("SQLite 表型库<br/>beat 级 Parquet 宽表")]:::store
 
-    subgraph L4["知识与数据层"]
-        direction LR
-        KNOW["knowledge 先验库<br/>统计参考 · 生理规则"]:::store
-        DB[("SQLite 表型库<br/>beat 级 Parquet 宽表")]:::store
-    end
-
-    USER -->|Query / 报告| SUP
-    SUP -->|分发子任务| L2
-    L2 --> ENG
+    USER <-->|Query / 报告| SUP
+    SUP -->|分发子任务| A1
+    A1 --> ENG
+    A2 --> ENG
+    A3 -->|结果| SUP
     ENG --> DB
     KNOW -.规则注入.-> SUP
 ```
