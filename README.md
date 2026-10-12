@@ -29,38 +29,32 @@ flowchart TB
     classDef store  fill:#ECEFF1,stroke:#607D8B,stroke-width:1.5px,color:#37474F;
 
     USER["用户 / Web 对话前端"]:::io
-
-    subgraph L1["编排层"]
-        SUP["Supervisor<br/>意图解析 · 路由分发 · 综合报告"]:::sup
-    end
+    SUP["Supervisor · 意图解析 / 路由分发 / 综合可解释报告"]:::sup
 
     subgraph L2["执行层 · 领域子 Agent"]
-        A1["Agent 1 · 信号处理<br/>滤波 · beat 分割 · 特征 · 质量<br/>数据集自适应"]:::agent
-        A2["Agent 2 · 心血管纵向比较<br/>双参照变化判定 · 生理可解释"]:::agent
-        A3["Agent 3 · 模型归因<br/>BeatMAE 编码器 · IG 归因"]:::agent
+        direction LR
+        A1["Agent 1<br/>信号处理<br/>数据集自适应"]:::agent
+        A2["Agent 2<br/>心血管<br/>纵向比较"]:::agent
+        A3["Agent 3<br/>模型归因<br/>BeatMAE + IG"]:::agent
+        A1 -->|特征交接| A2 -->|比较结论| A3
     end
 
     subgraph L3["确定性引擎层 · LLM 不参与数值计算"]
-        ENG["signal_engine · personal_engine<br/>percentile_engine · beatmae_encoder"]:::engine
+        direction LR
+        ENG["signal_engine · personal_engine · percentile_engine · beatmae_encoder"]:::engine
     end
 
     subgraph L4["知识与数据层"]
+        direction LR
         KNOW["knowledge 先验库<br/>统计参考 · 生理规则"]:::store
-        DB[("SQLite 表型库 · beat 级 Parquet 宽表")]:::store
+        DB[("SQLite 表型库<br/>beat 级 Parquet 宽表")]:::store
     end
 
-    USER -->|Query| SUP
-    SUP --> A1
-    SUP --> A2
-    SUP --> A3
-    A1 -->|特征交接| A2
-    A2 -->|比较结论| A3
-    A1 --> ENG
-    A2 --> ENG
-    A3 --> ENG
+    USER -->|Query / 报告| SUP
+    SUP -->|分发子任务| L2
+    L2 --> ENG
     ENG --> DB
     KNOW -.规则注入.-> SUP
-    SUP -->|可解释报告| USER
 ```
 
 三条贯穿性设计原则：
