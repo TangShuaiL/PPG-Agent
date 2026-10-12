@@ -1,0 +1,12 @@
+# frps 服务端配置模板 —— 复制到云机 /etc/frp/frps.toml 后填入真实 token
+# 真实 toml 含共享 token，已 gitignore，不入库；此文件仅示意结构。
+bindAddr = "0.0.0.0"
+bindPort = 7000
+
+# 认证：token + 强制 TLS（frpc 必须带同一 token 且启用 TLS 才能连）
+auth.method = "token"
+auth.token = "<REPLACE_WITH_SHARED_TOKEN>"
+transport.tls.force = true
+
+# 不启用 dashboard（7500 端口对外一律不开）
+# 隧道落地端口(remotePort)由 frpc 侧指定，云机防火墙/安全组不对公网放行 8088

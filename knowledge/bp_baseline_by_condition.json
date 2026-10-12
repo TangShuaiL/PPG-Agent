@@ -1,0 +1,253 @@
+{
+ "meta": {
+  "split": "train only",
+  "bp_source": "beat-window segment means (fixed)",
+  "usage": "forward description only: known label -> group BP distribution"
+ },
+ "vital": {
+  "preop_htn": {
+   "sbp": {
+    "median": 114.6,
+    "iqr": [
+     101.4,
+     129.3
+    ],
+    "n_segments": 414757
+   },
+   "dbp": {
+    "median": 60.6,
+    "iqr": [
+     52.6,
+     69.6
+    ],
+    "n_segments": 414752
+   },
+   "n_subjects": 760
+  },
+  "preop_htn_n_subjects_total": 962,
+  "preop_dm": {
+   "sbp": {
+    "median": 115.3,
+    "iqr": [
+     101.9,
+     130.1
+    ],
+    "n_segments": 142699
+   },
+   "dbp": {
+    "median": 59.4,
+    "iqr": [
+     52.0,
+     67.7
+    ],
+    "n_segments": 142699
+   },
+   "n_subjects": 257
+  },
+  "preop_dm_n_subjects_total": 337,
+  "emop": {
+   "sbp": {
+    "median": 115.3,
+    "iqr": [
+     101.9,
+     129.7
+    ],
+    "n_segments": 119092
+   },
+   "dbp": {
+    "median": 61.0,
+    "iqr": [
+     53.2,
+     70.3
+    ],
+    "n_segments": 119090
+   },
+   "n_subjects": 270
+  },
+  "emop_n_subjects_total": 338,
+  "none_of_above": {
+   "sbp": {
+    "median": 113.5,
+    "iqr": [
+     101.4,
+     127.1
+    ],
+    "n_segments": 609480
+   },
+   "dbp": {
+    "median": 64.0,
+    "iqr": [
+     56.3,
+     72.3
+    ],
+    "n_segments": 609450
+   },
+   "n_subjects": 1210
+  }
+ },
+ "mimic": {
+  "hypertension_essential": {
+   "sbp": {
+    "median": 126.0,
+    "iqr": [
+     108.9,
+     144.0
+    ],
+    "n_segments": 1393528
+   },
+   "dbp": {
+    "median": 59.4,
+    "iqr": [
+     51.7,
+     68.7
+    ],
+    "n_segments": 1393987
+   },
+   "n_subjects": 823
+  },
+  "heart_failure": {
+   "sbp": {
+    "median": 118.7,
+    "iqr": [
+     104.2,
+     136.6
+    ],
+    "n_segments": 589668
+   },
+   "dbp": {
+    "median": 56.9,
+    "iqr": [
+     50.1,
+     65.2
+    ],
+    "n_segments": 589690
+   },
+   "n_subjects": 464
+  },
+  "diabetes_type2": {
+   "sbp": {
+    "median": 122.3,
+    "iqr": [
+     107.1,
+     140.1
+    ],
+    "n_segments": 654544
+   },
+   "dbp": {
+    "median": 58.1,
+    "iqr": [
+     50.8,
+     67.5
+    ],
+    "n_segments": 654450
+   },
+   "n_subjects": 420
+  },
+  "coronary_artery_disease": {
+   "sbp": {
+    "median": 118.9,
+    "iqr": [
+     105.0,
+     136.3
+    ],
+    "n_segments": 507228
+   },
+   "dbp": {
+    "median": 56.7,
+    "iqr": [
+     49.4,
+     65.2
+    ],
+    "n_segments": 507120
+   },
+   "n_subjects": 454
+  },
+  "atrial_fibrillation": {
+   "sbp": {
+    "median": 121.6,
+    "iqr": [
+     106.6,
+     141.1
+    ],
+    "n_segments": 676582
+   },
+   "dbp": {
+    "median": 57.0,
+    "iqr": [
+     50.0,
+     66.6
+    ],
+    "n_segments": 676483
+   },
+   "n_subjects": 474
+  },
+  "hyperlipidemia": {
+   "sbp": {
+    "median": 124.2,
+    "iqr": [
+     108.5,
+     142.0
+    ],
+    "n_segments": 993269
+   },
+   "dbp": {
+    "median": 58.1,
+    "iqr": [
+     51.1,
+     67.1
+    ],
+    "n_segments": 993165
+   },
+   "n_subjects": 621
+  },
+  "sepsis": {
+   "sbp": {
+    "median": 116.3,
+    "iqr": [
+     102.6,
+     135.8
+    ],
+    "n_segments": 765056
+   },
+   "dbp": {
+    "median": 57.4,
+    "iqr": [
+     50.4,
+     67.0
+    ],
+    "n_segments": 765094
+   },
+   "n_subjects": 370
+  },
+  "none_of_above": {
+   "sbp": {
+    "median": 122.8,
+    "iqr": [
+     107.7,
+     138.8
+    ],
+    "n_segments": 459793
+   },
+   "dbp": {
+    "median": 63.4,
+    "iqr": [
+     54.9,
+     74.2
+    ],
+    "n_segments": 459926
+   },
+   "n_subjects": 288
+  }
+ },
+ "aurora": {
+  "high_blood_pressure": {
+   "n_subjects": 335
+  },
+  "diabetes": {
+   "n_subjects": 93
+  },
+  "none_of_above": {
+   "n_subjects": 610
+  }
+ }
+}

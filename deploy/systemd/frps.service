@@ -1,0 +1,13 @@
+[Unit]
+Description=frp server (PPG public entry)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/frps -c /etc/frp/frps.toml
+Restart=always
+RestartSec=3
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target

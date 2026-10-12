@@ -1,0 +1,156 @@
+{
+  "created_at": "2026-09-08T18:33:42.515161+00:00",
+  "source": "segments.parquet",
+  "stats": [
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "pattern": "ri_high",
+      "condition": "reflection_index_mean > dataset P85",
+      "thresholds": {
+        "ri_p85": 0.4955337166666667,
+        "lasi_p85": 5.89176023076923
+      },
+      "n": 488808,
+      "sbp_median": 124.82776902777589,
+      "sbp_iqr": [
+        109.68964792318474,
+        140.85091689773097
+      ],
+      "sbp_mean": 126.01723515323653,
+      "dbp_median": 62.5292803608533,
+      "dbp_iqr": [
+        54.61119744112717,
+        71.79639290730323
+      ],
+      "sbp_gt_140_ratio": 0.26167738662215023,
+      "sbp_gt_130_ratio": 0.4124502872293416,
+      "dbp_gt_90_ratio": 0.04597919837645865
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "pattern": "lasi_high",
+      "condition": "lasi_mean > dataset P85",
+      "thresholds": {
+        "ri_p85": 0.4955337166666667,
+        "lasi_p85": 5.89176023076923
+      },
+      "n": 488808,
+      "sbp_median": 119.52152315454762,
+      "sbp_iqr": [
+        105.20671173814537,
+        135.76846345999388
+      ],
+      "sbp_mean": 121.67944101366689,
+      "dbp_median": 60.50563416742783,
+      "dbp_iqr": [
+        53.09018802555743,
+        69.69709897113736
+      ],
+      "sbp_gt_140_ratio": 0.20080072339241584,
+      "sbp_gt_130_ratio": 0.3278015089769398,
+      "dbp_gt_90_ratio": 0.038125398929641084
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "pattern": "ri_high_but_quality_low",
+      "condition": "RI high but quality_score < 0.70",
+      "thresholds": {
+        "ri_p85": 0.4955337166666667,
+        "lasi_p85": 5.89176023076923
+      },
+      "n": 185492,
+      "sbp_median": 122.6551259258126,
+      "sbp_iqr": [
+        107.41461914384038,
+        139.03292681262036
+      ],
+      "sbp_mean": 123.93218912801436,
+      "dbp_median": 61.78779190457818,
+      "dbp_iqr": [
+        53.93459238001658,
+        71.77377786266362
+      ],
+      "sbp_gt_140_ratio": 0.23790244323205315,
+      "sbp_gt_130_ratio": 0.3798277014642141,
+      "dbp_gt_90_ratio": 0.04187242576499256
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "pattern": "ri_high",
+      "condition": "reflection_index_mean > dataset P85",
+      "thresholds": {
+        "ri_p85": 0.5358717000000001,
+        "lasi_p85": 6.958742443438913
+      },
+      "n": 208222,
+      "sbp_median": 117.96776915600842,
+      "sbp_iqr": [
+        105.83234693994847,
+        130.95210585959003
+      ],
+      "sbp_mean": 119.00115761416583,
+      "dbp_median": 63.640364932382006,
+      "dbp_iqr": [
+        56.18080349623379,
+        72.32474783010314
+      ],
+      "sbp_gt_140_ratio": 0.12480909798196156,
+      "sbp_gt_130_ratio": 0.2660381707984747,
+      "dbp_gt_90_ratio": 0.02211581869350981
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "pattern": "lasi_high",
+      "condition": "lasi_mean > dataset P85",
+      "thresholds": {
+        "ri_p85": 0.5358717000000001,
+        "lasi_p85": 6.958742443438913
+      },
+      "n": 208222,
+      "sbp_median": 116.35466733544826,
+      "sbp_iqr": [
+        104.60391069612646,
+        129.32129860235764
+      ],
+      "sbp_mean": 117.58060936191676,
+      "dbp_median": 62.27386155239785,
+      "dbp_iqr": [
+        55.242006883614124,
+        70.32617035428866
+      ],
+      "sbp_gt_140_ratio": 0.10895582599341087,
+      "sbp_gt_130_ratio": 0.23875959312656683,
+      "dbp_gt_90_ratio": 0.012870878197308642
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "pattern": "ri_high_but_quality_low",
+      "condition": "RI high but quality_score < 0.70",
+      "thresholds": {
+        "ri_p85": 0.5358717000000001,
+        "lasi_p85": 6.958742443438913
+      },
+      "n": 76358,
+      "sbp_median": 118.81987963009561,
+      "sbp_iqr": [
+        106.4858925497719,
+        132.12140839832765
+      ],
+      "sbp_mean": 119.78206610914269,
+      "dbp_median": 64.43752686496887,
+      "dbp_iqr": [
+        56.757822721054794,
+        73.35218959705668
+      ],
+      "sbp_gt_140_ratio": 0.13604337463003222,
+      "sbp_gt_130_ratio": 0.28596872626312897,
+      "dbp_gt_90_ratio": 0.026755546242698866
+    }
+  ]
+}

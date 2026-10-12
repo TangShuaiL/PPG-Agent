@@ -1,0 +1,289 @@
+{
+ "meta": {
+  "source": "analysis/09_multidimensional_association/16_test_retest.py + 22_reliability_gradient.py",
+  "formula": "MDC = 1.96 × sd_diff (two-day retest Bland-Altman)",
+  "protocol_choice": "per feature, the protocol with the largest n",
+  "scope": "aurora-wide (no scenario column in the retest tables); the engine maps aurora_a and aurora_o to this key"
+ },
+ "features": {
+  "systolic_width_50": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": -0.009,
+   "sd_diff": 0.023,
+   "mdc": 0.045,
+   "icc": 0.499,
+   "reliable": false
+  },
+  "t_sys_ms": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": -11.578,
+   "sd_diff": 31.056,
+   "mdc": 60.87,
+   "icc": 0.507,
+   "reliable": false
+  },
+  "skewness": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": 0.079,
+   "sd_diff": 0.181,
+   "mdc": 0.355,
+   "icc": 0.375,
+   "reliable": false
+  },
+  "slope_md": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": 0.479,
+   "sd_diff": 2.644,
+   "mdc": 5.182,
+   "icc": 0.388,
+   "reliable": false
+  },
+  "beat_len_ms": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": -29.154,
+   "sd_diff": 82.681,
+   "mdc": 162.055,
+   "icc": 0.735,
+   "reliable": true
+  },
+  "perfusion_index": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": 0.086,
+   "sd_diff": 0.203,
+   "mdc": 0.398,
+   "icc": 0.365,
+   "reliable": false
+  },
+  "bwr_50": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": 0.013,
+   "sd_diff": 0.127,
+   "mdc": 0.249,
+   "icc": 0.346,
+   "reliable": false
+  },
+  "crest_factor": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": 0.048,
+   "sd_diff": 0.1,
+   "mdc": 0.196,
+   "icc": 0.352,
+   "reliable": false
+  },
+  "diastolic_width_50": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": -0.023,
+   "sd_diff": 0.036,
+   "mdc": 0.071,
+   "icc": 0.513,
+   "reliable": false
+  },
+  "intensity_ratio_s_d": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": 0.292,
+   "sd_diff": 1.659,
+   "mdc": 3.252,
+   "icc": 0.094,
+   "reliable": false
+  },
+  "diastolic_width_75": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": -0.022,
+   "sd_diff": 0.036,
+   "mdc": 0.071,
+   "icc": 0.426,
+   "reliable": false
+  },
+  "iqr": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": -0.006,
+   "sd_diff": 0.071,
+   "mdc": 0.139,
+   "icc": 0.44,
+   "reliable": false
+  },
+  "kurtosis": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": 0.035,
+   "sd_diff": 0.103,
+   "mdc": 0.202,
+   "icc": 0.439,
+   "reliable": false
+  },
+  "systolic_width_75": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": -0.006,
+   "sd_diff": 0.018,
+   "mdc": 0.035,
+   "icc": 0.482,
+   "reliable": false
+  },
+  "slope_systolic": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": 0.758,
+   "sd_diff": 2.003,
+   "mdc": 3.926,
+   "icc": 0.575,
+   "reliable": false
+  },
+  "slope_systolic_n": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": 0.162,
+   "sd_diff": 0.86,
+   "mdc": 1.686,
+   "icc": 0.591,
+   "reliable": false
+  },
+  "rms": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": -0.011,
+   "sd_diff": 0.053,
+   "mdc": 0.104,
+   "icc": 0.267,
+   "reliable": false
+  },
+  "pulse_width_90": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": -0.016,
+   "sd_diff": 0.029,
+   "mdc": 0.057,
+   "icc": 0.507,
+   "reliable": false
+  },
+  "pulse_width_50": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": -0.032,
+   "sd_diff": 0.049,
+   "mdc": 0.096,
+   "icc": 0.537,
+   "reliable": false
+  },
+  "pulse_amp": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": 0.007,
+   "sd_diff": 0.089,
+   "mdc": 0.174,
+   "icc": 0.33,
+   "reliable": false
+  },
+  "slope_md_n": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": -0.052,
+   "sd_diff": 1.518,
+   "mdc": 2.975,
+   "icc": 0.303,
+   "reliable": false
+  },
+  "t_dia_ms": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": -17.552,
+   "sd_diff": 65.133,
+   "mdc": 127.661,
+   "icc": 0.753,
+   "reliable": true
+  },
+  "mean_intensity": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": -0.014,
+   "sd_diff": 0.049,
+   "mdc": 0.096,
+   "icc": 0.279,
+   "reliable": false
+  },
+  "normalized_pulse_vol": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": 0.288,
+   "sd_diff": 1.691,
+   "mdc": 3.314,
+   "icc": 0.235,
+   "reliable": false
+  },
+  "ppg_characteristic": {
+   "protocol": "Sitting arm up",
+   "n": 502,
+   "bias": -0.024,
+   "sd_diff": 0.053,
+   "mdc": 0.104,
+   "icc": 0.374,
+   "reliable": false
+  },
+  "t_dn": {
+   "protocol": "Sitting arm up",
+   "n": 495,
+   "bias": -0.014,
+   "sd_diff": 0.033,
+   "mdc": 0.065,
+   "icc": 0.289,
+   "reliable": false
+  },
+  "nt_dn": {
+   "protocol": "Sitting arm up",
+   "n": 495,
+   "bias": -0.021,
+   "sd_diff": 0.061,
+   "mdc": 0.12,
+   "icc": 0.325,
+   "reliable": false
+  },
+  "ni_ip": {
+   "protocol": "Sitting arm up",
+   "n": 495,
+   "bias": -0.046,
+   "sd_diff": 0.123,
+   "mdc": 0.241,
+   "icc": 0.21,
+   "reliable": false
+  },
+  "ni_dn": {
+   "protocol": "Sitting arm up",
+   "n": 495,
+   "bias": -0.004,
+   "sd_diff": 0.047,
+   "mdc": 0.092,
+   "icc": 0.172,
+   "reliable": false
+  },
+  "reflection_index": {
+   "protocol": "Sitting arm up",
+   "n": 495,
+   "bias": -0.046,
+   "sd_diff": 0.123,
+   "mdc": 0.241,
+   "icc": 0.21,
+   "reliable": false
+  },
+  "lasi": {
+   "protocol": "Sitting arm up",
+   "n": 495,
+   "bias": 0.163,
+   "sd_diff": 1.344,
+   "mdc": 2.634,
+   "icc": 0.214,
+   "reliable": false
+  }
+ }
+}

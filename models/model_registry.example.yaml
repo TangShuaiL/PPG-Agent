@@ -1,0 +1,15 @@
+default_llm: qwen_agent
+
+models:
+  qwen_agent:
+    provider: openai_compatible
+    base_url: http://localhost:8000/v1
+    model: Qwen2.5-7B-Instruct
+    api_key_env: PPG_LLM_API_KEY
+
+  qwen_local_path:
+    provider: transformers
+    model_path: <DATA_ROOT>/models/huggingface/hub/models--Qwen--Qwen2.5-14B-Instruct/snapshots/<snapshot-id>
+    device: cuda
+    dtype: bfloat16
+

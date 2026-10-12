@@ -1,0 +1,101 @@
+flowchart TB
+    %% ══════════ ① 原始数据层 ══════════
+    subgraph RAW["① 原始数据层"]
+        WAV["PPG 波形段<br/>vital / mimic / aurora"]
+        LAB["labels.csv<br/>疾病标注<br/>vital 2913 · mimic 2087 · aurora 1213<br/>（233+47 人无标注）"]
+        PHASE["phase 重建表<br/>aurora 段 + 时间戳<br/>（16a 只读重建）"]
+        BEAT["beat 统计 parquet<br/>每段 beat 内 mean/std/CV"]
+        DB[("sqlite ppg_phenotype.db<br/>vai_age_stratified<br/>source×age_group 百分位")]
+    end
+
+    WAV -->|"Agent 1 特征提取<br/>31 形态特征"| SEG
+
+    subgraph DATA["② 数据格式层"]
+        SEG["segment 级表（330 万段）<br/>每段: 31特征×{mean/std/median}<br/>+ sbp/dbp_label + age/gender<br/>+ seg_idx 测量顺序"]
+        PAT["per-patient 表（5213 人）<br/>每人一行: 31特征中位数<br/>+ age/gender + sbp/dbp<br/>+ 全部疾病标签"]
+    end
+    SEG -->|"按患者 median 聚合"| PAT
+    LAB --> PAT
+    SEG --> PHASE
+    SEG --> BEAT
+
+    %% ══════════ ② 实验层 ══════════
+    subgraph EXP_A["③A 横断面实验（per-patient）"]
+        A1["01 BMI / 02 性别 / 03 连续血压"]
+        A2["04 疾病单变量 651 检验<br/>05 疾病多变量 AUC<br/>07 VAI 区分度"]
+        A3["09 全样本 / 10 置换负对照<br/>11 特征冗余 31→9 簇 / 12 交互<br/>13 聚合敏感性 median↔mean"]
+        A4["15 分布形状 p10/p90/IQR<br/>18 Δ-Δ 共变 / 20 年龄轨迹<br/>22 可靠性梯度 / 23 血管年龄差"]
+        A5["24 相关知识层 ρ/偏相关/半偏<br/>25 患者聚类 KMeans 亚型"]
+    end
+
+    subgraph EXP_B["③B segment 级实验"]
+        B1["06 beat 变异 vs 疾病"]
+        B2["14 segment 级疾病<br/>rank-OLS + 患者聚类 CRSE"]
+        B3["26 segment 级血压<br/>+ 患者内耦合"]
+        B4["27 窗口聚合<br/>N=5/10/20/50 效度/偏差/稳定"]
+    end
+
+    subgraph EXP_C["③C 纵向实验（aurora ambulatory）"]
+        C1["16 test-retest ICC<br/>同人两天重测"]
+        C2["17 日内漂移趋势<br/>19 BP 昼夜节律"]
+        C3["21 心率拆解<br/>（趋势是心率现象）"]
+    end
+
+    PAT --> EXP_A
+    SEG --> EXP_B
+    PHASE --> EXP_C
+
+    %% ══════════ ③ 知识输出层 ══════════
+    subgraph KNOW["④ 知识输出层（knowledge/ + tables/）"]
+        K1["feature_disease_knowledge.json<br/>24: 特征×疾病 ρ·方向·FDR<br/>+ age/sex 关联块"]
+        K2["feature_rules.json<br/>规则库 40 条（directional）<br/>feature_reliability / feature_icc"]
+        K3["scale_direction_warnings.json<br/>26b: 两尺度方向不一致 69 对"]
+        K4["patient_cluster_centers_*.json<br/>25: 亚型 z 中心 + 富集表"]
+        K5["vai_age_stratified（引擎 sqlite）<br/>VAI 同龄百分位参考"]
+        K6["window_aggregation.csv<br/>27: N≈20 窗口参数规格<br/>segment_bp_within.csv 患者内 ρ"]
+    end
+
+    EXP_A --> K1
+    EXP_A --> K2
+    EXP_A --> K4
+    EXP_B --> K3
+    EXP_B --> K6
+    EXP_C --> K2
+    DB --> K5
+
+    %% ══════════ ④ Agent 2 消费层 ══════════
+    subgraph AGENT2["⑤ Agent 2 表型解读"]
+        A0["assess（确定性）<br/>generate_report 全量报告<br/>→ 证据块注入"]
+        DEC["interpret（LLM 决策）<br/>deep_dive / disease_conditioned<br/>similar_patients / assess_change<br/>+ submit_findings（结构化）"]
+        CAP["capture_findings（确定性）<br/>引擎事实校验 → findings"]
+        P1["解读单个特征偏离<br/>→ K1 ρ/方向 + K2 规则<br/>+ K2 可靠性分层"]
+        P2["解读当前状态（短窗）<br/>→ K6 窗口参数 N=20<br/>+ K3 尺度警告（患者内/间分流）"]
+        P3["群体画像 / 亚型<br/>→ K4 亚型指派 + 疾病富集"]
+        P4["血管年龄评估<br/>→ K5 同龄百分位"]
+        P5["变化判定<br/>MDC: 1.96×sd_diff<br/>knowledge/mdc_reference.json（16/22）"]
+        A0 --> DEC --> CAP
+    end
+    SUP["Supervisor synthesize（唯一措辞层）<br/>report + findings + 证据块 → ≤4 句回复<br/>纪律：绝不诊断 · consistent with · 短窗描述性 · 变化声明仅 available"]
+
+    K1 --> P1
+    K2 --> P1
+    K2 --> P2
+    K3 --> P2
+    K6 --> P2
+    K4 --> P3
+    K5 --> P4
+    MDC["mdc_reference.json<br/>M7: 1.96×sd_diff（16/22）"] --> P5
+    A0 -.读引擎报告.-> P1
+    A0 -.读引擎报告.-> P2
+    A0 -.读引擎报告.-> P3
+    A0 -.读引擎报告.-> P4
+    A0 -.读引擎报告.-> P5
+    CAP --> SUP
+    P4 --> SUP
+
+    %% ══════════ 验证链 ══════════
+    VAL["08_validate 验证链<br/>33/33: FDR 单调 · a/o 隔离<br/>方向互证 · bootstrap · 表存在性<br/>+ pytest 64"]
+    EXP_A -.->|复验| VAL
+    EXP_B -.->|复验| VAL
+    EXP_C -.->|复验| VAL
+    KNOW -.->|检查| VAL

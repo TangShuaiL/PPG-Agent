@@ -1,0 +1,61 @@
+{
+ "meta": {
+  "split": "train only",
+  "method": "time-ordered split-half per-subject ρ(feature, abp_sbp_mean); sign agreement across halves vs min-segment-count N",
+  "usage": "choose min_segments gate for personal rho_bp reporting"
+ },
+ "vital": {
+  "5": {
+   "n_subjects": 763,
+   "sign_agreement": 0.544,
+   "strong_sign_agreement": 0.544
+  },
+  "10": {
+   "n_subjects": 743,
+   "sign_agreement": 0.558,
+   "strong_sign_agreement": 0.569
+  },
+  "20": {
+   "n_subjects": 712,
+   "sign_agreement": 0.65,
+   "strong_sign_agreement": 0.663
+  },
+  "30": {
+   "n_subjects": 695,
+   "sign_agreement": 0.686,
+   "strong_sign_agreement": 0.704
+  },
+  "50": {
+   "n_subjects": 668,
+   "sign_agreement": 0.69,
+   "strong_sign_agreement": 0.713
+  }
+ },
+ "mimic": {
+  "5": {
+   "n_subjects": 773,
+   "sign_agreement": 0.525,
+   "strong_sign_agreement": 0.525
+  },
+  "10": {
+   "n_subjects": 771,
+   "sign_agreement": 0.52,
+   "strong_sign_agreement": 0.529
+  },
+  "20": {
+   "n_subjects": 752,
+   "sign_agreement": 0.597,
+   "strong_sign_agreement": 0.608
+  },
+  "30": {
+   "n_subjects": 739,
+   "sign_agreement": 0.613,
+   "strong_sign_agreement": 0.625
+  },
+  "50": {
+   "n_subjects": 724,
+   "sign_agreement": 0.631,
+   "strong_sign_agreement": 0.648
+  }
+ }
+}

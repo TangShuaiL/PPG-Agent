@@ -1,0 +1,177 @@
+{
+ "meta": {
+  "split": "train only",
+  "method": "within-segment spearman ρ(beat feature, beat abp_sbp), segments with >=15 valid beats; aggregated across segments",
+  "usage": "reference for which features show beat-level BP coupling; L5 validation baseline"
+ },
+ "vital": {
+  "n_segments": 2587,
+  "features": {
+   "lasi": {
+    "n_segments": 2587,
+    "median_rho": -0.163,
+    "iqr": [
+     -0.408,
+     0.09
+    ],
+    "frac_pos": 0.333,
+    "frac_abs_ge_02": 0.624
+   },
+   "pulse_amp": {
+    "n_segments": 2587,
+    "median_rho": 0.246,
+    "iqr": [
+     -0.193,
+     0.556
+    ],
+    "frac_pos": 0.655,
+    "frac_abs_ge_02": 0.781
+   },
+   "pulse_width_50": {
+    "n_segments": 2587,
+    "median_rho": 0.334,
+    "iqr": [
+     0.066,
+     0.562
+    ],
+    "frac_pos": 0.808,
+    "frac_abs_ge_02": 0.716
+   },
+   "beat_len_ms": {
+    "n_segments": 2587,
+    "median_rho": -0.103,
+    "iqr": [
+     -0.316,
+     0.166
+    ],
+    "frac_pos": 0.394,
+    "frac_abs_ge_02": 0.612
+   },
+   "hr_bpm": {
+    "n_segments": 2587,
+    "median_rho": 0.103,
+    "iqr": [
+     -0.166,
+     0.316
+    ],
+    "frac_pos": 0.605,
+    "frac_abs_ge_02": 0.612
+   },
+   "t_sys_ms": {
+    "n_segments": 2587,
+    "median_rho": 0.016,
+    "iqr": [
+     -0.249,
+     0.248
+    ],
+    "frac_pos": 0.513,
+    "frac_abs_ge_02": 0.589
+   },
+   "reflection_index": {
+    "n_segments": 2587,
+    "median_rho": -0.17,
+    "iqr": [
+     -0.48,
+     0.147
+    ],
+    "frac_pos": 0.356,
+    "frac_abs_ge_02": 0.699
+   },
+   "crest_factor": {
+    "n_segments": 2587,
+    "median_rho": -0.075,
+    "iqr": [
+     -0.353,
+     0.266
+    ],
+    "frac_pos": 0.44,
+    "frac_abs_ge_02": 0.675
+   }
+  }
+ },
+ "mimic": {
+  "n_segments": 3263,
+  "features": {
+   "lasi": {
+    "n_segments": 3263,
+    "median_rho": -0.029,
+    "iqr": [
+     -0.268,
+     0.188
+    ],
+    "frac_pos": 0.468,
+    "frac_abs_ge_02": 0.552
+   },
+   "pulse_amp": {
+    "n_segments": 3263,
+    "median_rho": 0.071,
+    "iqr": [
+     -0.2,
+     0.34
+    ],
+    "frac_pos": 0.572,
+    "frac_abs_ge_02": 0.625
+   },
+   "pulse_width_50": {
+    "n_segments": 3263,
+    "median_rho": -0.013,
+    "iqr": [
+     -0.247,
+     0.267
+    ],
+    "frac_pos": 0.485,
+    "frac_abs_ge_02": 0.599
+   },
+   "beat_len_ms": {
+    "n_segments": 3263,
+    "median_rho": -0.293,
+    "iqr": [
+     -0.487,
+     -0.049
+    ],
+    "frac_pos": 0.215,
+    "frac_abs_ge_02": 0.713
+   },
+   "hr_bpm": {
+    "n_segments": 3263,
+    "median_rho": 0.293,
+    "iqr": [
+     0.049,
+     0.487
+    ],
+    "frac_pos": 0.783,
+    "frac_abs_ge_02": 0.713
+   },
+   "t_sys_ms": {
+    "n_segments": 3263,
+    "median_rho": 0.003,
+    "iqr": [
+     -0.23,
+     0.236
+    ],
+    "frac_pos": 0.502,
+    "frac_abs_ge_02": 0.562
+   },
+   "reflection_index": {
+    "n_segments": 3263,
+    "median_rho": -0.136,
+    "iqr": [
+     -0.364,
+     0.102
+    ],
+    "frac_pos": 0.348,
+    "frac_abs_ge_02": 0.596
+   },
+   "crest_factor": {
+    "n_segments": 3263,
+    "median_rho": 0.057,
+    "iqr": [
+     -0.217,
+     0.307
+    ],
+    "frac_pos": 0.554,
+    "frac_abs_ge_02": 0.614
+   }
+  }
+ }
+}

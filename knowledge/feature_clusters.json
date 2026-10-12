@@ -1,0 +1,661 @@
+{
+  "version": 2,
+  "source": {
+    "scripts": [
+      "analysis/09_multidimensional_association/28_within_person_redundancy.py",
+      "analysis/09_multidimensional_association/29_joint_redundancy.py"
+    ],
+    "tables": [
+      "joint_feature_pairs.csv",
+      "joint_feature_clusters.csv"
+    ],
+    "subjects": {
+      "vital": 300,
+      "mimic": 299,
+      "aurora_a": 239,
+      "aurora_o": 239
+    }
+  },
+  "gates": {
+    "between_abs_rho_min": 0.7,
+    "within_median_abs_rho_min": 0.7,
+    "within_consistency_min": 0.8,
+    "consistency_at_abs_rho": 0.5,
+    "min_segments_per_subject": 50
+  },
+  "semantics": {
+    "joint": "collapse-safe in both layers: longitudinal change narrative (compare_segment) and population narrative (population_position)",
+    "between_only": "collapse-safe ONLY for the population narrative",
+    "within_only": "collapse-safe ONLY for the longitudinal narrative",
+    "direction": "same/inverse from the sign of rho_between; the within-person sign agrees on all redundant pairs"
+  },
+  "joint_clusters": [
+    {
+      "id": 1,
+      "representative": "diastolic_width_75",
+      "members": [
+        "diastolic_width_50",
+        "diastolic_width_75",
+        "pulse_width_50"
+      ],
+      "members_info": {
+        "diastolic_width_50": {
+          "is_representative": false,
+          "direction_vs_rep": "same",
+          "rho_between": 0.9427,
+          "rho_within_median": 0.9187
+        },
+        "diastolic_width_75": {
+          "is_representative": true
+        },
+        "pulse_width_50": {
+          "is_representative": false,
+          "direction_vs_rep": "same",
+          "rho_between": 0.962,
+          "rho_within_median": 0.9182
+        }
+      }
+    },
+    {
+      "id": 2,
+      "representative": "t_sys_ms",
+      "members": [
+        "pulse_width_90",
+        "slope_systolic",
+        "systolic_width_50",
+        "systolic_width_75",
+        "t_sys_ms"
+      ],
+      "members_info": {
+        "pulse_width_90": {
+          "is_representative": false,
+          "direction_vs_rep": "same",
+          "rho_between": 0.8432,
+          "rho_within_median": 0.8142
+        },
+        "slope_systolic": {
+          "is_representative": false,
+          "direction_vs_rep": "inverse",
+          "rho_between": -0.9636,
+          "rho_within_median": -0.9393
+        },
+        "systolic_width_50": {
+          "is_representative": false,
+          "direction_vs_rep": "same",
+          "rho_between": 0.9127,
+          "rho_within_median": 0.9513
+        },
+        "systolic_width_75": {
+          "is_representative": false,
+          "direction_vs_rep": "same",
+          "rho_between": 0.8894,
+          "rho_within_median": 0.9135
+        },
+        "t_sys_ms": {
+          "is_representative": true
+        }
+      }
+    },
+    {
+      "id": 4,
+      "representative": "nt_dn",
+      "members": [
+        "nt_dn",
+        "t_dn"
+      ],
+      "members_info": {
+        "nt_dn": {
+          "is_representative": true
+        },
+        "t_dn": {
+          "is_representative": false,
+          "direction_vs_rep": "same",
+          "rho_between": 0.7022,
+          "rho_within_median": 0.7363
+        }
+      }
+    },
+    {
+      "id": 5,
+      "representative": "t_dia_ms",
+      "members": [
+        "beat_len_ms",
+        "t_dia_ms"
+      ],
+      "members_info": {
+        "beat_len_ms": {
+          "is_representative": false,
+          "direction_vs_rep": "same",
+          "rho_between": 0.9817,
+          "rho_within_median": 0.9618
+        },
+        "t_dia_ms": {
+          "is_representative": true
+        }
+      }
+    },
+    {
+      "id": 6,
+      "representative": "slope_md_n",
+      "members": [
+        "slope_md_n",
+        "slope_systolic_n"
+      ],
+      "members_info": {
+        "slope_md_n": {
+          "is_representative": true
+        },
+        "slope_systolic_n": {
+          "is_representative": false,
+          "direction_vs_rep": "same",
+          "rho_between": 0.8506,
+          "rho_within_median": 0.8089
+        }
+      }
+    },
+    {
+      "id": 7,
+      "representative": "mean_intensity",
+      "members": [
+        "mean_intensity",
+        "normalized_pulse_vol",
+        "rms"
+      ],
+      "members_info": {
+        "mean_intensity": {
+          "is_representative": true
+        },
+        "normalized_pulse_vol": {
+          "is_representative": false,
+          "direction_vs_rep": "inverse",
+          "rho_between": -0.9157,
+          "rho_within_median": -0.9356
+        },
+        "rms": {
+          "is_representative": false,
+          "direction_vs_rep": "same",
+          "rho_between": 0.9234,
+          "rho_within_median": 0.9288
+        }
+      }
+    },
+    {
+      "id": 8,
+      "representative": "perfusion_index",
+      "members": [
+        "crest_factor",
+        "perfusion_index",
+        "ppg_characteristic",
+        "skewness"
+      ],
+      "members_info": {
+        "crest_factor": {
+          "is_representative": false,
+          "direction_vs_rep": "same",
+          "rho_between": 0.9302,
+          "rho_within_median": 0.9424
+        },
+        "perfusion_index": {
+          "is_representative": true
+        },
+        "ppg_characteristic": {
+          "is_representative": false,
+          "direction_vs_rep": "inverse",
+          "rho_between": -0.8719,
+          "rho_within_median": -0.7431
+        },
+        "skewness": {
+          "is_representative": false,
+          "direction_vs_rep": "same",
+          "rho_between": 0.8376,
+          "rho_within_median": 0.84
+        }
+      }
+    },
+    {
+      "id": 9,
+      "representative": "intensity_ratio_s_d",
+      "members": [
+        "intensity_ratio_s_d",
+        "ni_ip",
+        "reflection_index"
+      ],
+      "members_info": {
+        "intensity_ratio_s_d": {
+          "is_representative": true
+        },
+        "ni_ip": {
+          "is_representative": false,
+          "direction_vs_rep": "inverse",
+          "rho_between": -0.8356,
+          "rho_within_median": -0.8083
+        },
+        "reflection_index": {
+          "is_representative": false,
+          "direction_vs_rep": "inverse",
+          "rho_between": -0.8356,
+          "rho_within_median": -0.8083
+        }
+      }
+    }
+  ],
+  "between_only_pairs": [
+    {
+      "a": "bwr_50",
+      "b": "diastolic_width_50",
+      "direction": "inverse",
+      "rho_between": -0.7801,
+      "rho_within_median": -0.6579,
+      "consistency": 0.6948
+    },
+    {
+      "a": "bwr_50",
+      "b": "ni_ip",
+      "direction": "inverse",
+      "rho_between": -0.7339,
+      "rho_within_median": -0.4608,
+      "consistency": 0.4494
+    },
+    {
+      "a": "bwr_50",
+      "b": "reflection_index",
+      "direction": "inverse",
+      "rho_between": -0.7339,
+      "rho_within_median": -0.4608,
+      "consistency": 0.4494
+    },
+    {
+      "a": "crest_factor",
+      "b": "kurtosis",
+      "direction": "same",
+      "rho_between": 0.9106,
+      "rho_within_median": 0.6721,
+      "consistency": 0.7041
+    },
+    {
+      "a": "crest_factor",
+      "b": "mean_intensity",
+      "direction": "inverse",
+      "rho_between": -0.8711,
+      "rho_within_median": -0.7094,
+      "consistency": 0.7675
+    },
+    {
+      "a": "crest_factor",
+      "b": "normalized_pulse_vol",
+      "direction": "same",
+      "rho_between": 0.8987,
+      "rho_within_median": 0.6634,
+      "consistency": 0.6712
+    },
+    {
+      "a": "crest_factor",
+      "b": "rms",
+      "direction": "inverse",
+      "rho_between": -0.8005,
+      "rho_within_median": -0.5006,
+      "consistency": 0.5004
+    },
+    {
+      "a": "diastolic_width_50",
+      "b": "intensity_ratio_s_d",
+      "direction": "inverse",
+      "rho_between": -0.7634,
+      "rho_within_median": -0.6991,
+      "consistency": 0.787
+    },
+    {
+      "a": "diastolic_width_50",
+      "b": "kurtosis",
+      "direction": "inverse",
+      "rho_between": -0.7134,
+      "rho_within_median": -0.6867,
+      "consistency": 0.7422
+    },
+    {
+      "a": "diastolic_width_50",
+      "b": "ni_ip",
+      "direction": "same",
+      "rho_between": 0.811,
+      "rho_within_median": 0.6819,
+      "consistency": 0.7318
+    },
+    {
+      "a": "diastolic_width_50",
+      "b": "reflection_index",
+      "direction": "same",
+      "rho_between": 0.811,
+      "rho_within_median": 0.6819,
+      "consistency": 0.7318
+    },
+    {
+      "a": "diastolic_width_50",
+      "b": "skewness",
+      "direction": "inverse",
+      "rho_between": -0.7054,
+      "rho_within_median": -0.6411,
+      "consistency": 0.6948
+    },
+    {
+      "a": "diastolic_width_50",
+      "b": "systolic_width_50",
+      "direction": "same",
+      "rho_between": 0.8194,
+      "rho_within_median": 0.6849,
+      "consistency": 0.7625
+    },
+    {
+      "a": "diastolic_width_50",
+      "b": "systolic_width_75",
+      "direction": "same",
+      "rho_between": 0.8341,
+      "rho_within_median": 0.6815,
+      "consistency": 0.7354
+    },
+    {
+      "a": "diastolic_width_75",
+      "b": "iqr",
+      "direction": "same",
+      "rho_between": 0.7525,
+      "rho_within_median": 0.48,
+      "consistency": 0.4666
+    },
+    {
+      "a": "diastolic_width_75",
+      "b": "kurtosis",
+      "direction": "inverse",
+      "rho_between": -0.7339,
+      "rho_within_median": -0.717,
+      "consistency": 0.7642
+    },
+    {
+      "a": "diastolic_width_75",
+      "b": "slope_systolic",
+      "direction": "inverse",
+      "rho_between": -0.7767,
+      "rho_within_median": -0.631,
+      "consistency": 0.716
+    },
+    {
+      "a": "diastolic_width_75",
+      "b": "t_dn",
+      "direction": "same",
+      "rho_between": 0.7968,
+      "rho_within_median": 0.5501,
+      "consistency": 0.5746
+    },
+    {
+      "a": "diastolic_width_75",
+      "b": "t_sys_ms",
+      "direction": "same",
+      "rho_between": 0.7741,
+      "rho_within_median": 0.6855,
+      "consistency": 0.7777
+    },
+    {
+      "a": "intensity_ratio_s_d",
+      "b": "pulse_width_50",
+      "direction": "inverse",
+      "rho_between": -0.7331,
+      "rho_within_median": -0.6607,
+      "consistency": 0.7405
+    },
+    {
+      "a": "iqr",
+      "b": "kurtosis",
+      "direction": "inverse",
+      "rho_between": -0.8096,
+      "rho_within_median": -0.6584,
+      "consistency": 0.7718
+    },
+    {
+      "a": "iqr",
+      "b": "pulse_width_50",
+      "direction": "same",
+      "rho_between": 0.7138,
+      "rho_within_median": 0.4676,
+      "consistency": 0.4446
+    },
+    {
+      "a": "iqr",
+      "b": "pulse_width_90",
+      "direction": "same",
+      "rho_between": 0.7675,
+      "rho_within_median": 0.5346,
+      "consistency": 0.5647
+    },
+    {
+      "a": "iqr",
+      "b": "slope_systolic",
+      "direction": "inverse",
+      "rho_between": -0.7193,
+      "rho_within_median": -0.546,
+      "consistency": 0.5934
+    },
+    {
+      "a": "iqr",
+      "b": "systolic_width_50",
+      "direction": "same",
+      "rho_between": 0.732,
+      "rho_within_median": 0.4737,
+      "consistency": 0.4463
+    },
+    {
+      "a": "iqr",
+      "b": "systolic_width_75",
+      "direction": "same",
+      "rho_between": 0.7426,
+      "rho_within_median": 0.479,
+      "consistency": 0.4683
+    },
+    {
+      "a": "kurtosis",
+      "b": "mean_intensity",
+      "direction": "inverse",
+      "rho_between": -0.7347,
+      "rho_within_median": -0.5707,
+      "consistency": 0.6272
+    },
+    {
+      "a": "kurtosis",
+      "b": "normalized_pulse_vol",
+      "direction": "same",
+      "rho_between": 0.8807,
+      "rho_within_median": 0.6838,
+      "consistency": 0.8098
+    },
+    {
+      "a": "kurtosis",
+      "b": "perfusion_index",
+      "direction": "same",
+      "rho_between": 0.7201,
+      "rho_within_median": 0.4435,
+      "consistency": 0.4455
+    },
+    {
+      "a": "kurtosis",
+      "b": "ppg_characteristic",
+      "direction": "inverse",
+      "rho_between": -0.888,
+      "rho_within_median": -0.7231,
+      "consistency": 0.7633
+    },
+    {
+      "a": "kurtosis",
+      "b": "pulse_width_50",
+      "direction": "inverse",
+      "rho_between": -0.7439,
+      "rho_within_median": -0.7321,
+      "consistency": 0.7582
+    },
+    {
+      "a": "kurtosis",
+      "b": "pulse_width_90",
+      "direction": "inverse",
+      "rho_between": -0.7551,
+      "rho_within_median": -0.7,
+      "consistency": 0.754
+    },
+    {
+      "a": "kurtosis",
+      "b": "rms",
+      "direction": "inverse",
+      "rho_between": -0.7996,
+      "rho_within_median": -0.6073,
+      "consistency": 0.6932
+    },
+    {
+      "a": "kurtosis",
+      "b": "skewness",
+      "direction": "same",
+      "rho_between": 0.9458,
+      "rho_within_median": 0.8046,
+      "consistency": 0.7523
+    },
+    {
+      "a": "kurtosis",
+      "b": "slope_systolic_n",
+      "direction": "same",
+      "rho_between": 0.7148,
+      "rho_within_median": 0.6498,
+      "consistency": 0.7236
+    },
+    {
+      "a": "kurtosis",
+      "b": "systolic_width_50",
+      "direction": "inverse",
+      "rho_between": -0.7379,
+      "rho_within_median": -0.6409,
+      "consistency": 0.6678
+    },
+    {
+      "a": "kurtosis",
+      "b": "systolic_width_75",
+      "direction": "inverse",
+      "rho_between": -0.7537,
+      "rho_within_median": -0.6364,
+      "consistency": 0.6746
+    },
+    {
+      "a": "mean_intensity",
+      "b": "perfusion_index",
+      "direction": "inverse",
+      "rho_between": -0.8853,
+      "rho_within_median": -0.6402,
+      "consistency": 0.6754
+    },
+    {
+      "a": "mean_intensity",
+      "b": "skewness",
+      "direction": "inverse",
+      "rho_between": -0.8223,
+      "rho_within_median": -0.6651,
+      "consistency": 0.7726
+    },
+    {
+      "a": "ni_ip",
+      "b": "pulse_width_50",
+      "direction": "same",
+      "rho_between": 0.7606,
+      "rho_within_median": 0.6494,
+      "consistency": 0.6838
+    },
+    {
+      "a": "normalized_pulse_vol",
+      "b": "perfusion_index",
+      "direction": "same",
+      "rho_between": 0.81,
+      "rho_within_median": 0.5589,
+      "consistency": 0.5469
+    },
+    {
+      "a": "normalized_pulse_vol",
+      "b": "skewness",
+      "direction": "same",
+      "rho_between": 0.8747,
+      "rho_within_median": 0.6375,
+      "consistency": 0.6729
+    },
+    {
+      "a": "perfusion_index",
+      "b": "rms",
+      "direction": "inverse",
+      "rho_between": -0.7075,
+      "rho_within_median": -0.357,
+      "consistency": 0.3254
+    },
+    {
+      "a": "pulse_width_50",
+      "b": "reflection_index",
+      "direction": "same",
+      "rho_between": 0.7606,
+      "rho_within_median": 0.6494,
+      "consistency": 0.6838
+    },
+    {
+      "a": "pulse_width_50",
+      "b": "skewness",
+      "direction": "inverse",
+      "rho_between": -0.7163,
+      "rho_within_median": -0.645,
+      "consistency": 0.7075
+    },
+    {
+      "a": "pulse_width_50",
+      "b": "slope_systolic",
+      "direction": "inverse",
+      "rho_between": -0.7566,
+      "rho_within_median": -0.7346,
+      "consistency": 0.7997
+    },
+    {
+      "a": "pulse_width_90",
+      "b": "t_dn",
+      "direction": "same",
+      "rho_between": 0.8218,
+      "rho_within_median": 0.5177,
+      "consistency": 0.5222
+    },
+    {
+      "a": "rms",
+      "b": "skewness",
+      "direction": "inverse",
+      "rho_between": -0.8017,
+      "rho_within_median": -0.5462,
+      "consistency": 0.5723
+    },
+    {
+      "a": "slope_md_n",
+      "b": "t_dia_ms",
+      "direction": "same",
+      "rho_between": 0.7046,
+      "rho_within_median": 0.5309,
+      "consistency": 0.5376
+    },
+    {
+      "a": "slope_systolic",
+      "b": "t_dn",
+      "direction": "inverse",
+      "rho_between": -0.7414,
+      "rho_within_median": -0.394,
+      "consistency": 0.3792
+    },
+    {
+      "a": "systolic_width_50",
+      "b": "t_dn",
+      "direction": "same",
+      "rho_between": 0.7645,
+      "rho_within_median": 0.3553,
+      "consistency": 0.3606
+    },
+    {
+      "a": "systolic_width_75",
+      "b": "t_dn",
+      "direction": "same",
+      "rho_between": 0.7735,
+      "rho_within_median": 0.3469,
+      "consistency": 0.3579
+    }
+  ],
+  "within_only_pairs": []
+}

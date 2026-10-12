@@ -1,0 +1,212 @@
+{
+ "meta": {
+  "source": "analysis/09_multidimensional_association/25_patient_clustering.py",
+  "summary": "Per source × cluster disease enrichment (FDR < 0.05 pre-filtered; engine re-filters and caps at query time)."
+ },
+ "sources": {
+  "aurora_a": {
+   "0": [
+    {
+     "disease": "aurora_high_blood_pressure",
+     "n_pos_cluster": 73,
+     "n_cluster": 199,
+     "prev_cluster": 0.367,
+     "prev_rest": 0.243,
+     "odds_ratio": 1.803,
+     "p": 0.0029465140038852,
+     "q_fdr": 0.012964661617095
+    }
+   ],
+   "1": [
+    {
+     "disease": "aurora_high_blood_pressure",
+     "n_pos_cluster": 80,
+     "n_cluster": 329,
+     "prev_cluster": 0.243,
+     "prev_rest": 0.367,
+     "odds_ratio": 0.555,
+     "p": 0.0029465140038852,
+     "q_fdr": 0.012964661617095
+    }
+   ]
+  },
+  "aurora_o": {
+   "0": [
+    {
+     "disease": "aurora_high_blood_pressure",
+     "n_pos_cluster": 82,
+     "n_cluster": 165,
+     "prev_cluster": 0.497,
+     "prev_rest": 0.364,
+     "odds_ratio": 1.729,
+     "p": 0.0069423940919625,
+     "q_fdr": 0.0190915837528969
+    },
+    {
+     "disease": "aurora_diabetes",
+     "n_pos_cluster": 30,
+     "n_cluster": 165,
+     "prev_cluster": 0.182,
+     "prev_rest": 0.076,
+     "odds_ratio": 2.688,
+     "p": 0.0011405334240153,
+     "q_fdr": 0.0083639117761127
+    }
+   ],
+   "1": [
+    {
+     "disease": "aurora_high_blood_pressure",
+     "n_pos_cluster": 100,
+     "n_cluster": 275,
+     "prev_cluster": 0.364,
+     "prev_rest": 0.497,
+     "odds_ratio": 0.578,
+     "p": 0.0069423940919625,
+     "q_fdr": 0.0190915837528969
+    },
+    {
+     "disease": "aurora_diabetes",
+     "n_pos_cluster": 21,
+     "n_cluster": 275,
+     "prev_cluster": 0.076,
+     "prev_rest": 0.182,
+     "odds_ratio": 0.372,
+     "p": 0.0011405334240153,
+     "q_fdr": 0.0083639117761127
+    }
+   ]
+  },
+  "mimic": {
+   "0": [
+    {
+     "disease": "mimic_coronary_artery_disease",
+     "n_pos_cluster": 197,
+     "n_cluster": 691,
+     "prev_cluster": 0.285,
+     "prev_rest": 0.365,
+     "odds_ratio": 0.695,
+     "p": 0.0016690320611628,
+     "q_fdr": 0.0091796763363955
+    },
+    {
+     "disease": "mimic_myocardial_infarction",
+     "n_pos_cluster": 85,
+     "n_cluster": 691,
+     "prev_cluster": 0.123,
+     "prev_rest": 0.189,
+     "odds_ratio": 0.603,
+     "p": 0.0008779300931972,
+     "q_fdr": 0.0083639117761127
+    },
+    {
+     "disease": "mimic_ckd",
+     "n_pos_cluster": 135,
+     "n_cluster": 691,
+     "prev_cluster": 0.195,
+     "prev_rest": 0.258,
+     "odds_ratio": 0.698,
+     "p": 0.0059601692761079,
+     "q_fdr": 0.0190915837528969
+    },
+    {
+     "disease": "mimic_obesity",
+     "n_pos_cluster": 104,
+     "n_cluster": 691,
+     "prev_cluster": 0.151,
+     "prev_rest": 0.06,
+     "odds_ratio": 2.797,
+     "p": 2.3858902342394617e-08,
+     "q_fdr": 5.248958515326816e-07
+    }
+   ],
+   "1": [
+    {
+     "disease": "mimic_coronary_artery_disease",
+     "n_pos_cluster": 257,
+     "n_cluster": 705,
+     "prev_cluster": 0.365,
+     "prev_rest": 0.285,
+     "odds_ratio": 1.439,
+     "p": 0.0016690320611628,
+     "q_fdr": 0.0091796763363955
+    },
+    {
+     "disease": "mimic_myocardial_infarction",
+     "n_pos_cluster": 133,
+     "n_cluster": 705,
+     "prev_cluster": 0.189,
+     "prev_rest": 0.123,
+     "odds_ratio": 1.658,
+     "p": 0.0008779300931972,
+     "q_fdr": 0.0083639117761127
+    },
+    {
+     "disease": "mimic_ckd",
+     "n_pos_cluster": 182,
+     "n_cluster": 705,
+     "prev_cluster": 0.258,
+     "prev_rest": 0.195,
+     "odds_ratio": 1.433,
+     "p": 0.0059601692761079,
+     "q_fdr": 0.0190915837528969
+    },
+    {
+     "disease": "mimic_obesity",
+     "n_pos_cluster": 42,
+     "n_cluster": 705,
+     "prev_cluster": 0.06,
+     "prev_rest": 0.151,
+     "odds_ratio": 0.358,
+     "p": 2.3858902342394617e-08,
+     "q_fdr": 5.248958515326816e-07
+    }
+   ]
+  },
+  "vital": {
+   "0": [
+    {
+     "disease": "vital_preop_htn",
+     "n_pos_cluster": 429,
+     "n_cluster": 1354,
+     "prev_cluster": 0.317,
+     "prev_rest": 0.368,
+     "odds_ratio": 0.797,
+     "p": 0.0124172657590768,
+     "q_fdr": 0.0303533162999656
+    },
+    {
+     "disease": "vital_preop_dm",
+     "n_pos_cluster": 134,
+     "n_cluster": 1354,
+     "prev_cluster": 0.099,
+     "prev_rest": 0.137,
+     "odds_ratio": 0.694,
+     "p": 0.006734370472907,
+     "q_fdr": 0.0190915837528969
+    }
+   ],
+   "1": [
+    {
+     "disease": "vital_preop_htn",
+     "n_pos_cluster": 331,
+     "n_cluster": 900,
+     "prev_cluster": 0.368,
+     "prev_rest": 0.317,
+     "odds_ratio": 1.254,
+     "p": 0.0124172657590768,
+     "q_fdr": 0.0303533162999656
+    },
+    {
+     "disease": "vital_preop_dm",
+     "n_pos_cluster": 123,
+     "n_cluster": 900,
+     "prev_cluster": 0.137,
+     "prev_rest": 0.099,
+     "odds_ratio": 1.441,
+     "p": 0.006734370472907,
+     "q_fdr": 0.0190915837528969
+    }
+   ]
+  }
+ }
+}

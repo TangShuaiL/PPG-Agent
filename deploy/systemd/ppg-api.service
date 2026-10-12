@@ -1,0 +1,15 @@
+[Unit]
+Description=PPG-Agent API (uvicorn, loopback only)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=<USER>
+WorkingDirectory=<PROJECT_ROOT>
+EnvironmentFile=$XDG_CONFIG_HOME/ppg/env
+ExecStart=python -m uvicorn web.api.main:app --host 127.0.0.1 --port 8000
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

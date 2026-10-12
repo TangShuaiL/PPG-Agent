@@ -1,0 +1,14 @@
+diastolic_search_ms: 200
+extra_bandpass: false
+mad_reject_k: 'off'
+max_beat_len_ms: 1200
+min_beat_len: 150
+min_segment_ms: 200
+notch_depth_threshold: 0.9
+onset_margin_ms: 5
+onset_rise_check_ms: 50
+onset_search_ms: 120
+peak_distance_ms: 300
+peak_prominence: 0.05
+resegment_min_ms: 150
+validation_mode: strict

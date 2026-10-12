@@ -1,0 +1,41 @@
+# Anker E7800 腕部 PPG 参数预设 (2026-09-01, 实证: SZTU-ABPM034 seg4293/5429/7627/4018/1536)
+#
+# 与 default.yaml 的差异:
+#   onset_search_ms   120 -> 200  (设备舒张末谷圆弧形, 120ms 窗够不到谷底)
+#   trough_diff_max   0.2 -> 0.4  (2026-09-02, 24h 自由生活体位慢漂移致严格谷差误杀;
+#                                  3人x150段阈值扫描: 门通过率 16.3%->34.6%,
+#                                  目视确认 td in (0.2,0.4] 约 2/3 为形态正常拍)
+#   template_corr_min 0.0 -> 0.6  (与 trough_diff_max=0.4 配套: 放宽谷差放回的拍
+#                                  须与段内严格拍中位模板 Pearson corr>=0.6,
+#                                  拦住形状级伪迹; 组合对拍: 门通过率 27.8%,
+#                                  放回拍伪迹形状 0% 混入; 无参考(严格拍<2)的段
+#                                  不做 corr 门, 保持原 valid)
+#
+# 三库 (mimic/vital/aurora) 维持全局 default (trough_diff_max=0.2,
+# template_corr_min=0.0), 临床环境残余漂移少, 行为逐位不变.
+# 质量判据 (实证, 勿违反):
+#   - o 与谷底的残余差距 (0.10-0.23) 是引擎 rise-check 语义 (o=起坡点, 非谷底),
+#     扩窗 >200ms 完全饱和, 不是参数问题, 勿再扩 onset_search_ms.
+#   - 低质量段 (seg1536) 在 oms>120 时 beat 数直接归零 —— 若 tuner 需要超出本预设的
+#     参数才能工作, 判定为信号质量问题, 走质量门 (score>=0.4 & n_beats>=8 &
+#     valid_ratio>=0.7) 剔除, 不通过继续调参解决.
+#
+# 其余参数维持全局 default.yaml; diastolic_search_ms 若 tuner 报 dn/ip 漏检可升 250
+# (RULE_OPTIONS 内建档), 但当前实证下 dn 检出正常, 不预调.
+
+diastolic_search_ms: 200
+extra_bandpass: false
+mad_reject_k: 'off'
+max_beat_len_ms: 1200
+min_beat_len: 150
+min_segment_ms: 200
+notch_depth_threshold: 0.9
+onset_margin_ms: 5
+onset_rise_check_ms: 50
+onset_search_ms: 200
+peak_distance_ms: 300
+peak_prominence: 0.05
+resegment_min_ms: 150
+template_corr_min: 0.6
+trough_diff_max: 0.4
+validation_mode: strict

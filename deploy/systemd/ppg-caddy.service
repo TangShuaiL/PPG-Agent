@@ -1,0 +1,14 @@
+[Unit]
+Description=Caddy (PPG loopback web entry: dist + /api proxy)
+After=network-online.target ppg-api.service
+Wants=network-online.target
+
+[Service]
+User=<USER>
+ExecStart=caddy run --config $XDG_CONFIG_HOME/caddy/Caddyfile
+ExecReload=caddy reload --config $XDG_CONFIG_HOME/caddy/Caddyfile
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

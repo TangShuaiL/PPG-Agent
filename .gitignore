@@ -1,0 +1,66 @@
+# Local/private model files
+models/local/
+models/adapters/
+models/model_registry.yaml
+
+# Generated outputs (适配引擎仍写 reports/analysis/)
+reports/analysis/*
+!reports/README.md
+!reports/analysis/.gitkeep
+tmp/
+
+# Dataset-derived clinical/patient-level artifacts
+knowledge/mimic3_disease_labels.csv
+knowledge/mimic3_pulsedb_disease_labels.csv
+knowledge/mimic3_file_to_disease.json
+knowledge/vitaldb_caseids.json
+knowledge/vitaldb_clinical_all.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets
+.env
+
+# 部署密钥：frp 共享 token 内嵌于 toml，绝不入库（结构见 *.example 注释）
+deploy/frps.toml
+deploy/frpc.toml
+
+# Large derived data (3.7G SQLite; regenerable via analysis pipeline)
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/uploads/
+
+# Web: dependencies & build artifacts (npm install / vite build)
+web/frontend/node_modules/
+web/frontend/dist/
+
+# Analysis outputs (~5.3G, regenerable by analysis scripts)
+analysis/*/output/
+
+# Generated report figures (~50M)
+reports/**/*.png
+
+# Runtime logs
+*.log
+
+# Private session transcript
+2026-08-05-181516-ppgagent.txt
+
+# Reference papers (copyrighted PDFs)
+Paper/
+
+# Local scratch dirs & script outputs (regenerable)
+_tmp_bin/
+scripts/output/
+
+# BeatMAE 外部仓（v3.3 断联）：clone 进来只读消费，其内容不入本仓；
+# 用 `external/*` 而非 `external/` 以便下方 `!` 例外生效（git 不下探被整体
+# 排除的目录）。契约文件 CONTRACT.md 是例外，随本仓版本化。
+external/*
+!external/CONTRACT.md

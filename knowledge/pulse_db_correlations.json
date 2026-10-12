@@ -1,0 +1,2959 @@
+{
+  "created_at": "2026-09-09T10:35:07.059200+00:00",
+  "source": "features_v2 segment parquet (quality_ok)",
+  "method": "spearman, pooled segments (unadjusted; aurora a/o split)",
+  "stats": [
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "lasi_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.0055591217994331,
+      "p_value": 9.372501404225537e-10,
+      "n": 1211849
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "lasi_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.015132808874607185,
+      "p_value": 2.571398170177218e-62,
+      "n": 1211849
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.06975144110788488,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.027374437166766217,
+      "p_value": 6.282338503866238e-202,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_n_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.0850228118752519,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_n_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.0827964582034032,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.042133843546206494,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.053160350410635035,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_n_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.04799016767766859,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_n_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.05438881001008033,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_50_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.18610555644784196,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_50_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.10631994217898365,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_90_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.15769682702431043,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_90_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.08648190858216068,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "bwr_50_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.11235729893683823,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "bwr_50_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.07249842336245396,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "reflection_index_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.14123387856967787,
+      "p_value": 0.0,
+      "n": 1211849
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "reflection_index_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.14290895806030413,
+      "p_value": 0.0,
+      "n": 1211849
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "ni_dn_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.024604850265367642,
+      "p_value": 1.2887579208029264e-161,
+      "n": 1211849
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "ni_dn_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.009558008046095473,
+      "p_value": 6.835629149874829e-26,
+      "n": 1211849
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "ni_ip_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.14123387856967787,
+      "p_value": 0.0,
+      "n": 1211849
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "ni_ip_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.14290895806030413,
+      "p_value": 0.0,
+      "n": 1211849
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "t_dn_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.09865197823553859,
+      "p_value": 0.0,
+      "n": 1211849
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "t_dn_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.04612921603559496,
+      "p_value": 0.0,
+      "n": 1211849
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "nt_dn_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.12199810956952985,
+      "p_value": 0.0,
+      "n": 1211849
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "nt_dn_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.1035318173838681,
+      "p_value": 0.0,
+      "n": 1211849
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_50_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.0955013141322207,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_50_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.03590036024142901,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_75_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.10961915620427497,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_75_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.04910031698992979,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_50_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.17842587848231306,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_50_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.10616334126478616,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_75_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.1786396115988532,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_75_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.10080134418811848,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "perfusion_index_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.1896624818415916,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "perfusion_index_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.26241529189302587,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "normalized_pulse_vol_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.24540995096076249,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "normalized_pulse_vol_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.2426954074190861,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "ppg_characteristic_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.23812898392957169,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "ppg_characteristic_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.2837888220721686,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "mean_intensity_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.23269649559826355,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "mean_intensity_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.28049057203858474,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_amp_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.03633935498948606,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_amp_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.1169890267432067,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "skewness_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.24211831349632545,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "skewness_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.25620434912976414,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "kurtosis_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.23744808387902935,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "kurtosis_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.20849645329344785,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "rms_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.24425402012844025,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "rms_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.2361763882927649,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "crest_factor_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.2262130886550984,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "crest_factor_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.2599423861077577,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "iqr_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.19572760156248772,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "iqr_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.10552294474518689,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_1_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.12445983093663443,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_1_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.09274698838862139,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_2_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.07700768937721966,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_2_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.036831163037824105,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_3_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.0626271542661513,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_3_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.009911495012807494,
+      "p_value": 4.977064710968476e-28,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_entropy_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.15247065009813032,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_entropy_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.10307881607630481,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "wavelet_entropy_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.04840299933294214,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "wavelet_entropy_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.07631801622840287,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_centroid_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.008416904886283199,
+      "p_value": 1.1530369800982884e-20,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_centroid_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.08429365578574731,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "fsqi_mean",
+      "target": "sbp_label",
+      "spearman_r": null,
+      "p_value": null,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "fsqi_mean",
+      "target": "dbp_label",
+      "spearman_r": null,
+      "p_value": null,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "intensity_ratio_s_d_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.21439788788261488,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "intensity_ratio_s_d_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.23286105232417043,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "beat_len_ms_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.01912012830135553,
+      "p_value": 1.61188721446426e-99,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "beat_len_ms_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.1076114106925007,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "hr_bpm_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.013005867590988322,
+      "p_value": 4.943179422945709e-47,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "hr_bpm_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.10038632436673092,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "t_sys_ms_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.042426717259398485,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "t_sys_ms_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.033447103092076075,
+      "p_value": 1.8427010005737592e-300,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "t_dia_ms_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.03400559271652672,
+      "p_value": 1.6416353196987e-310,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "t_dia_ms_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.11427878669060135,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "ecg_hr_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.04667963839939766,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "ecg_hr_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.11689018695259701,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "abp_pp_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.7532165266253252,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "vital",
+      "quality_filter": "quality_ok",
+      "feature": "abp_pp_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.18224335063231106,
+      "p_value": 0.0,
+      "n": 1226312
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "lasi_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.004321373702539423,
+      "p_value": 8.975605301544531e-14,
+      "n": 2976234
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "lasi_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.18340099226807538,
+      "p_value": 0.0,
+      "n": 2976234
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.011092191952115487,
+      "p_value": 5.495168419639775e-82,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.18060428287405877,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_n_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.037078911131476544,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_n_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.023793162447885652,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.021616746913492392,
+      "p_value": 8.065058680223816e-306,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.19793863237063852,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_n_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.07183253847588957,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_n_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.008506349927839135,
+      "p_value": 5.718818768836562e-49,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_50_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.13370918777322252,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_50_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.04543982233992607,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_90_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.13542180110949079,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_90_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.0773809725123176,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "bwr_50_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.11537253474040894,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "bwr_50_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.02049739232839731,
+      "p_value": 3.5159811437998515e-275,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "reflection_index_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.13693072071367285,
+      "p_value": 0.0,
+      "n": 2976234
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "reflection_index_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.15470613362202307,
+      "p_value": 0.0,
+      "n": 2976234
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "ni_dn_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.019575285296270704,
+      "p_value": 4.7440330703311746e-250,
+      "n": 2976234
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "ni_dn_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.06363779531007824,
+      "p_value": 0.0,
+      "n": 2976234
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "ni_ip_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.13693072071367285,
+      "p_value": 0.0,
+      "n": 2976234
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "ni_ip_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.15470613362202307,
+      "p_value": 0.0,
+      "n": 2976234
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "t_dn_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.08481273210124239,
+      "p_value": 0.0,
+      "n": 2976234
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "t_dn_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.11655663577596671,
+      "p_value": 0.0,
+      "n": 2976234
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "nt_dn_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.04036566443097296,
+      "p_value": 0.0,
+      "n": 2976234
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "nt_dn_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.002953005256537806,
+      "p_value": 3.497287677564309e-07,
+      "n": 2976234
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_50_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.07355368488067816,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_50_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.1138408643530966,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_75_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.08989825337806125,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_75_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.103257519015683,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_50_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.13810103800191054,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_50_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.026797937715609753,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_75_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.14623948443408252,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_75_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.0662068240109745,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "perfusion_index_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.013518639021380638,
+      "p_value": 7.611695931235956e-121,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "perfusion_index_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.1561546626888691,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "normalized_pulse_vol_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.08480860818687233,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "normalized_pulse_vol_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.10038680358438111,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "ppg_characteristic_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.12725799776242824,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "ppg_characteristic_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.19412460262859932,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "mean_intensity_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.09439505933703124,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "mean_intensity_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.17825078262437644,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_amp_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.09983473370159794,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_amp_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.04292388246342659,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "skewness_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.09253836238145734,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "skewness_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.1320246498694221,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "kurtosis_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.11289153431399884,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "kurtosis_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.07447723339394592,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "rms_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.13170814783868817,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "rms_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.13139953059097856,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "crest_factor_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.06376919886006013,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "crest_factor_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.1444530400430669,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "iqr_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.15645542357589992,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "iqr_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.018910875707695146,
+      "p_value": 1.5301992577904454e-234,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_1_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.009204275400289664,
+      "p_value": 4.993355980761719e-57,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_1_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.007335359101681814,
+      "p_value": 7.317038168421745e-37,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_2_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.025926474223820672,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_2_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.09796110262151111,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_3_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.029214412038538928,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_3_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.1317517443782855,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_entropy_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.04571996168166979,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_entropy_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.008324375501716628,
+      "p_value": 5.689018656355421e-47,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "wavelet_entropy_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.09874095068509145,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "wavelet_entropy_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.004593258256157778,
+      "p_value": 1.9898114669824453e-15,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_centroid_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.1298913688972573,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_centroid_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.01991136891323336,
+      "p_value": 8.665836183634115e-260,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "fsqi_mean",
+      "target": "sbp_label",
+      "spearman_r": null,
+      "p_value": null,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "fsqi_mean",
+      "target": "dbp_label",
+      "spearman_r": null,
+      "p_value": null,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "intensity_ratio_s_d_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.10719565010328092,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "intensity_ratio_s_d_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.15437810653435172,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "beat_len_ms_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.07030236192033575,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "beat_len_ms_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.17491512307708118,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "hr_bpm_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.07315916967859111,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "hr_bpm_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.1707697384595825,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "t_sys_ms_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.020278052332441145,
+      "p_value": 2.2866143090384995e-269,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "t_sys_ms_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.16510602315547152,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "t_dia_ms_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.06898328152431293,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "t_dia_ms_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.16507167595656966,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "ecg_hr_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.0725219600430863,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "ecg_hr_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.16874026202651546,
+      "p_value": 0.0,
+      "n": 2989589
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "abp_pp_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.8075946948647332,
+      "p_value": 0.0,
+      "n": 2989559
+    },
+    {
+      "dataset": "mimic",
+      "quality_filter": "quality_ok",
+      "feature": "abp_pp_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.045741375634947144,
+      "p_value": 0.0,
+      "n": 2989559
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "lasi_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.04117220052784562,
+      "p_value": 2.767049494202721e-06,
+      "n": 12953
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "lasi_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.17970752811081525,
+      "p_value": 1.8599788688202135e-94,
+      "n": 12953
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.026101019850591066,
+      "p_value": 0.0020209909872750693,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.13390037097113608,
+      "p_value": 5.791059347676768e-57,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_n_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.15101194861867742,
+      "p_value": 3.924455244934092e-72,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_n_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.14415027582510395,
+      "p_value": 8.051891182717213e-66,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.06227749519775727,
+      "p_value": 1.682783360054206e-13,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.1532960577191297,
+      "p_value": 2.701787046373005e-74,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_n_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.23894759354798847,
+      "p_value": 8.208823772531366e-181,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_n_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.14259338915594977,
+      "p_value": 1.970826315824147e-64,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_50_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.3911798912729466,
+      "p_value": 0.0,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_50_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.02874975483626251,
+      "p_value": 0.0006728376931228687,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_90_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.30758973876092494,
+      "p_value": 3.232690065256849e-304,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_90_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.04156623511376104,
+      "p_value": 8.76970685463958e-07,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "bwr_50_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.28233577736063475,
+      "p_value": 1.2880788444769667e-254,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "bwr_50_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.08577831632922846,
+      "p_value": 2.9246850472334314e-24,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "reflection_index_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.23832107270636133,
+      "p_value": 1.056965450229061e-166,
+      "n": 12953
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "reflection_index_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.10276054244670386,
+      "p_value": 9.464730650610948e-32,
+      "n": 12953
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "ni_dn_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.14503295834000546,
+      "p_value": 7.885178405177567e-62,
+      "n": 12953
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "ni_dn_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.0807767105544211,
+      "p_value": 3.339357265009253e-20,
+      "n": 12953
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "ni_ip_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.23832107270636133,
+      "p_value": 1.056965450229061e-166,
+      "n": 12953
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "ni_ip_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.10276054244670386,
+      "p_value": 9.464730650610948e-32,
+      "n": 12953
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "t_dn_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.14813563697069887,
+      "p_value": 1.876887731457426e-64,
+      "n": 12953
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "t_dn_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.04326193334476366,
+      "p_value": 8.413400517705487e-07,
+      "n": 12953
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "nt_dn_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.013673907839380692,
+      "p_value": 0.11966837124727041,
+      "n": 12953
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "nt_dn_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.02735600646221389,
+      "p_value": 0.0018475510520363694,
+      "n": 12953
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_50_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.12437662714231769,
+      "p_value": 2.4393433097045687e-49,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_50_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.0887655903271451,
+      "p_value": 7.178199193691284e-26,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_75_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.19775122730600733,
+      "p_value": 2.4657894014177247e-123,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_75_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.034833681783480154,
+      "p_value": 3.782190265153345e-05,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_50_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.4448190466148922,
+      "p_value": 0.0,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_50_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.06259458444071916,
+      "p_value": 1.2707197862830337e-13,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_75_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.32428877443358084,
+      "p_value": 0.0,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_75_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.013281096080822898,
+      "p_value": 0.11627943846770611,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "perfusion_index_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.25150924794473756,
+      "p_value": 9.648246964174835e-201,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "perfusion_index_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.0038971216523873476,
+      "p_value": 0.644910822264249,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "normalized_pulse_vol_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.18032477511036082,
+      "p_value": 1.5244842159418924e-102,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "normalized_pulse_vol_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.015972478754665637,
+      "p_value": 0.05890581328033986,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "ppg_characteristic_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.2871600328506095,
+      "p_value": 1.054536673110151e-263,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "ppg_characteristic_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.042131476361776804,
+      "p_value": 6.217429417363663e-07,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "mean_intensity_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.2189261604783408,
+      "p_value": 2.1607216598835643e-151,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "mean_intensity_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.02674859778211819,
+      "p_value": 0.001558109041680752,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_amp_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.0036477924250899454,
+      "p_value": 0.6661956804167006,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_amp_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.032883058700639275,
+      "p_value": 0.00010043677539305116,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "skewness_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.30266510983017386,
+      "p_value": 3.801977308275323e-294,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "skewness_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.01393613131253087,
+      "p_value": 0.09934172746163528,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "kurtosis_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.08316522271173632,
+      "p_value": 6.728526376628784e-23,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "kurtosis_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.09504254785442638,
+      "p_value": 1.965468729605656e-29,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "rms_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.18254709126966703,
+      "p_value": 4.421147648873393e-105,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "rms_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.02623240090864661,
+      "p_value": 0.0019185219309386839,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "crest_factor_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.27204349172683623,
+      "p_value": 7.875423760939985e-236,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "crest_factor_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.0038682212101118513,
+      "p_value": 0.6473648618421941,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "iqr_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.0012237981172709333,
+      "p_value": 0.8849306686290421,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "iqr_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.023437171384954346,
+      "p_value": 0.005573536165058905,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_1_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.2947281098091328,
+      "p_value": 2.5200085605643968e-278,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_1_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.027041169588325357,
+      "p_value": 0.0013826286445134024,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_2_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.2154310911893734,
+      "p_value": 1.5135386686455311e-146,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_2_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.05729888022813736,
+      "p_value": 1.1912404168419565e-11,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_3_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.18982213030115333,
+      "p_value": 1.277582135069193e-113,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_3_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.05882868164253903,
+      "p_value": 3.3397661123131826e-12,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_entropy_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.17348481490859133,
+      "p_value": 6.117308964187991e-95,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_entropy_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.2088655720140592,
+      "p_value": 1.1523899404873141e-137,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "wavelet_entropy_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.04940303615885087,
+      "p_value": 5.042038194308352e-09,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "wavelet_entropy_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.12088922379643668,
+      "p_value": 1.096207194808569e-46,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_centroid_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.03962523983049802,
+      "p_value": 2.762029712877998e-06,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_centroid_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.07829488713799068,
+      "p_value": 1.8140467353067043e-20,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "fsqi_mean",
+      "target": "sbp_label",
+      "spearman_r": null,
+      "p_value": null,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "fsqi_mean",
+      "target": "dbp_label",
+      "spearman_r": null,
+      "p_value": null,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "intensity_ratio_s_d_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.2893277890473024,
+      "p_value": 7.600904799625516e-268,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "intensity_ratio_s_d_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.09462480361156325,
+      "p_value": 3.452467303172046e-29,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "beat_len_ms_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.16359950266258413,
+      "p_value": 1.687442803050777e-84,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "beat_len_ms_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.011254493362807944,
+      "p_value": 0.18321967744220266,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "hr_bpm_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.16249714330121134,
+      "p_value": 2.2470948086318238e-83,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "hr_bpm_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.013587177688563427,
+      "p_value": 0.10810196580672772,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "t_sys_ms_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.06929931007006321,
+      "p_value": 2.3072653875495487e-16,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "t_sys_ms_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.1132480178631316,
+      "p_value": 3.769330944997774e-41,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "t_dia_ms_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.17068364364814725,
+      "p_value": 6.466254345084409e-92,
+      "n": 13987
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "t_dia_ms_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.021436741332369127,
+      "p_value": 0.011237492465447921,
+      "n": 13986
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "ecg_hr_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.1624209792951038,
+      "p_value": 3.154011003049336e-83,
+      "n": 13975
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "ecg_hr_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.008658512779789252,
+      "p_value": 0.3060880796230835,
+      "n": 13974
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "abp_pp_mean",
+      "target": "sbp_label",
+      "spearman_r": null,
+      "p_value": null,
+      "n": 0
+    },
+    {
+      "dataset": "aurora_a",
+      "quality_filter": "quality_ok",
+      "feature": "abp_pp_mean",
+      "target": "dbp_label",
+      "spearman_r": null,
+      "p_value": null,
+      "n": 0
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "lasi_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.14853310027609773,
+      "p_value": 5.743556035830505e-101,
+      "n": 20400
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "lasi_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.2449908149823935,
+      "p_value": 1.5561123169102922e-276,
+      "n": 20400
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.22120110797159748,
+      "p_value": 2.648735983471836e-230,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.20326094453030805,
+      "p_value": 5.0016082597337354e-194,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_n_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.030171724359977368,
+      "p_value": 1.2675466453456174e-05,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "slope_systolic_n_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.05059980031442597,
+      "p_value": 2.398694156513279e-13,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.17661177333927924,
+      "p_value": 3.115912620731087e-146,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.17768168705505594,
+      "p_value": 5.159499646032588e-148,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_n_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.04883073781904306,
+      "p_value": 1.5710533845764792e-12,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "slope_md_n_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.1032849476385929,
+      "p_value": 9.733263607770615e-51,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_50_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.23031152528607654,
+      "p_value": 5.1126401332883437e-250,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_50_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.13898507525120998,
+      "p_value": 9.083495230126575e-91,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_90_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.23260091278452286,
+      "p_value": 4.1288126313168664e-255,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_width_90_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.18520632802527107,
+      "p_value": 7.30330240011496e-161,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "bwr_50_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.004297266141545553,
+      "p_value": 0.5341752201468708,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "bwr_50_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.0651115324927621,
+      "p_value": 4.138718115974556e-21,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "reflection_index_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.09073604803881398,
+      "p_value": 1.4748696514292804e-38,
+      "n": 20400
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "reflection_index_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.034440912148713684,
+      "p_value": 8.640973752814389e-07,
+      "n": 20400
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "ni_dn_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.12392160172171858,
+      "p_value": 1.2736851991994247e-70,
+      "n": 20400
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "ni_dn_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.0609862625900101,
+      "p_value": 2.8275395417717412e-18,
+      "n": 20400
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "ni_ip_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.09073604803881398,
+      "p_value": 1.4748696514292804e-38,
+      "n": 20400
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "ni_ip_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.034440912148713684,
+      "p_value": 8.640973752814389e-07,
+      "n": 20400
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "t_dn_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.11789002696518881,
+      "p_value": 4.8166614532041396e-64,
+      "n": 20400
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "t_dn_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.10632702184046729,
+      "p_value": 2.2776527514247473e-52,
+      "n": 20400
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "nt_dn_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.07053515223607892,
+      "p_value": 6.3466196668955455e-24,
+      "n": 20400
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "nt_dn_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.14170987305457822,
+      "p_value": 5.4982902037594815e-92,
+      "n": 20400
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_50_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.22705302068123323,
+      "p_value": 7.260156559368793e-243,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_50_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.18197685027820715,
+      "p_value": 2.803634859409512e-155,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_75_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.2326819518887164,
+      "p_value": 2.719720977770509e-255,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "systolic_width_75_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.1969985262555044,
+      "p_value": 3.789674735038119e-182,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_50_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.20666481853678023,
+      "p_value": 1.1833073653981669e-200,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_50_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.10310260979233776,
+      "p_value": 1.451676508505788e-50,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_75_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.17732000484533988,
+      "p_value": 2.0698624815615384e-147,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "diastolic_width_75_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.08582109056755975,
+      "p_value": 1.628772633584597e-35,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "perfusion_index_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.007487350285615603,
+      "p_value": 0.2787485637068113,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "perfusion_index_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.18313846536558503,
+      "p_value": 2.826177401843781e-157,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "normalized_pulse_vol_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.13721623312157383,
+      "p_value": 1.68683665607118e-88,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "normalized_pulse_vol_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.04817213522859644,
+      "p_value": 3.110780914700467e-12,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "ppg_characteristic_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.045269591678945474,
+      "p_value": 5.675041997336305e-11,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "ppg_characteristic_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.11312900457806432,
+      "p_value": 1.422622603939295e-60,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "mean_intensity_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.08957330978119143,
+      "p_value": 1.5123878529666877e-38,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "mean_intensity_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.030300354845424107,
+      "p_value": 1.1638376601633402e-05,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_amp_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.1315671392839206,
+      "p_value": 1.8711177354313891e-81,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "pulse_amp_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.18204066539545521,
+      "p_value": 2.179671010323931e-155,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "skewness_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.04991112092143329,
+      "p_value": 5.024209804741086e-13,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "skewness_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.12256925334439704,
+      "p_value": 7.323415229238576e-71,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "kurtosis_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.12592739439767556,
+      "p_value": 1.0033851205628842e-74,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "kurtosis_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.06058097181967687,
+      "p_value": 1.7599356950945507e-18,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "rms_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.130947753957701,
+      "p_value": 1.0616373639904348e-80,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "rms_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.054993017702101084,
+      "p_value": 1.7022519656484536e-15,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "crest_factor_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.03208569918518286,
+      "p_value": 3.4386753226408887e-06,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "crest_factor_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.1320697058950082,
+      "p_value": 4.546925614758896e-82,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "iqr_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.18667901035637863,
+      "p_value": 1.9152222613563915e-163,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "iqr_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.21559540210870803,
+      "p_value": 1.313366549912902e-218,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_1_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.15341277342699083,
+      "p_value": 2.1150364856683796e-110,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_1_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.06721229095218767,
+      "p_value": 2.1607079758020903e-22,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_2_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.1878093701289798,
+      "p_value": 1.9324311525221994e-165,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_2_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.12204472078776951,
+      "p_value": 2.8739642828358657e-70,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_3_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.21392095759180454,
+      "p_value": 3.5319418925514733e-215,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "freq_dominant_3_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.16887200830490745,
+      "p_value": 1.0915850257759278e-133,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_entropy_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.13845215710452963,
+      "p_value": 4.415376061898565e-90,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_entropy_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.08741410973601127,
+      "p_value": 8.718276247361957e-37,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "wavelet_entropy_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.08487913036715172,
+      "p_value": 8.96676544617179e-35,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "wavelet_entropy_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.14978786640821648,
+      "p_value": 2.802984565830095e-105,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_centroid_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.10845703273934561,
+      "p_value": 8.593172060584828e-56,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "spectral_centroid_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.13364208450418066,
+      "p_value": 5.246976918676457e-84,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "fsqi_mean",
+      "target": "sbp_label",
+      "spearman_r": null,
+      "p_value": null,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "fsqi_mean",
+      "target": "dbp_label",
+      "spearman_r": null,
+      "p_value": null,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "intensity_ratio_s_d_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.1429338942159177,
+      "p_value": 6.091240776676723e-96,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "intensity_ratio_s_d_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.016100812752826193,
+      "p_value": 0.019843513155845375,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "beat_len_ms_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.2574411616424375,
+      "p_value": 0.0,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "beat_len_ms_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.30879552540257105,
+      "p_value": 0.0,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "hr_bpm_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.25731066161090466,
+      "p_value": 0.0,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "hr_bpm_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.3085920872990902,
+      "p_value": 0.0,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "t_sys_ms_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.22603970286577404,
+      "p_value": 1.1538295456411429e-240,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "t_sys_ms_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.18700212086066598,
+      "p_value": 5.163575787904946e-164,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "t_dia_ms_mean",
+      "target": "sbp_label",
+      "spearman_r": -0.2288696756999087,
+      "p_value": 7.715954686466738e-247,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "t_dia_ms_mean",
+      "target": "dbp_label",
+      "spearman_r": -0.30466021031312374,
+      "p_value": 0.0,
+      "n": 20929
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "ecg_hr_mean",
+      "target": "sbp_label",
+      "spearman_r": 0.24092213377735697,
+      "p_value": 9.06489893509378e-272,
+      "n": 20750
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "ecg_hr_mean",
+      "target": "dbp_label",
+      "spearman_r": 0.2893486102772604,
+      "p_value": 0.0,
+      "n": 20750
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "abp_pp_mean",
+      "target": "sbp_label",
+      "spearman_r": null,
+      "p_value": null,
+      "n": 0
+    },
+    {
+      "dataset": "aurora_o",
+      "quality_filter": "quality_ok",
+      "feature": "abp_pp_mean",
+      "target": "dbp_label",
+      "spearman_r": null,
+      "p_value": null,
+      "n": 0
+    }
+  ]
+}

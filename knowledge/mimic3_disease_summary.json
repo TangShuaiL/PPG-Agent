@@ -1,0 +1,98 @@
+{
+  "total_subjects": 31990,
+  "disease_prevalence": {
+    "hypertension_essential": {
+      "label": "原发性高血压",
+      "count": 18031,
+      "pct": 56.4
+    },
+    "hypertensive_heart": {
+      "label": "高血压性心脏病",
+      "count": 106,
+      "pct": 0.3
+    },
+    "hypertensive_ckd": {
+      "label": "高血压性肾病",
+      "count": 4586,
+      "pct": 14.3
+    },
+    "hypertensive_heart_ckd": {
+      "label": "高血压性心肾病",
+      "count": 78,
+      "pct": 0.2
+    },
+    "heart_failure": {
+      "label": "心力衰竭",
+      "count": 10154,
+      "pct": 31.7
+    },
+    "coronary_artery_disease": {
+      "label": "冠心病",
+      "count": 11926,
+      "pct": 37.3
+    },
+    "atrial_fibrillation": {
+      "label": "房颤",
+      "count": 10552,
+      "pct": 33.0
+    },
+    "myocardial_infarction": {
+      "label": "心肌梗死",
+      "count": 5032,
+      "pct": 15.7
+    },
+    "diabetes_type2": {
+      "label": "2型糖尿病",
+      "count": 7915,
+      "pct": 24.7
+    },
+    "diabetes_complicated": {
+      "label": "糖尿病并发症",
+      "count": 2184,
+      "pct": 6.8
+    },
+    "hyperlipidemia": {
+      "label": "高脂血症",
+      "count": 12268,
+      "pct": 38.3
+    },
+    "ckd": {
+      "label": "慢性肾病",
+      "count": 4897,
+      "pct": 15.3
+    },
+    "acute_kidney_failure": {
+      "label": "急性肾衰竭",
+      "count": 9536,
+      "pct": 29.8
+    },
+    "copd": {
+      "label": "慢性阻塞性肺病",
+      "count": 3592,
+      "pct": 11.2
+    },
+    "sepsis": {
+      "label": "脓毒症",
+      "count": 4560,
+      "pct": 14.3
+    },
+    "stroke": {
+      "label": "脑卒中",
+      "count": 1474,
+      "pct": 4.6
+    },
+    "obesity": {
+      "label": "肥胖",
+      "count": 2256,
+      "pct": 7.1
+    }
+  },
+  "comorbidity_distribution": {
+    "0": 0,
+    "1": 5866,
+    "2": 6367,
+    "3": 6305,
+    "4": 5279,
+    "5": 3485
+  }
+}

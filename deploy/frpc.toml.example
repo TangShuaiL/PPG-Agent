@@ -1,0 +1,18 @@
+# 本机 frpc 配置模板 —— 复制到 /opt/frp/frpc.toml 后填入云机 IP 与共享 token
+# 真实 toml 含共享 token，已 gitignore，不入库；此文件仅示意结构。
+# 复用本机现成的 /opt/frp/frpc 二进制与 frpc.service（不再新建第二个 frpc 实例）。
+serverAddr = "<CLOUD_PUBLIC_IP>"
+serverPort = 7000
+
+auth.method = "token"
+auth.token = "<REPLACE_WITH_SHARED_TOKEN>"
+transport.tls.enable = true
+
+# 唯一隧道：把本机回环 Web 入口(Caddy:8088) 主动出站映射到云机回环 8088。
+# 不要添加 "本机 SSH:22 → 云:xxxx" 之类的代理（会把本机 SSH 暴露到公网）。
+[[proxies]]
+name = "ppg-web"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 8088
+remotePort = 8088

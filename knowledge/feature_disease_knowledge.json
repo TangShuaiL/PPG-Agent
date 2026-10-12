@@ -1,0 +1,8314 @@
+{
+ "mimic": {
+  "mimic_hypertension_essential": {
+   "beat_len_ms": {
+    "rho": -0.0249,
+    "rho_raw": -0.0004,
+    "d": 0.0013,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.4834064938451592,
+    "sig": false,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "bwr_50": {
+    "rho": 0.0938,
+    "rho_raw": 0.0825,
+    "d": 0.1415,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0029656722741137325,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "crest_factor": {
+    "rho": 0.0854,
+    "rho_raw": 0.0499,
+    "d": 0.123,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0072690061694771135,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "diastolic_width_50": {
+    "rho": -0.0992,
+    "rho_raw": -0.0553,
+    "d": -0.135,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0016086996261028658,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "diastolic_width_75": {
+    "rho": -0.0752,
+    "rho_raw": -0.0249,
+    "d": -0.0739,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.017779170867257946,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.0891,
+    "rho_raw": 0.0811,
+    "d": 0.0638,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.00497211153096525,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "iqr": {
+    "rho": -0.015,
+    "rho_raw": 0.0193,
+    "d": 0.0327,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6763947547298499,
+    "sig": false,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "kurtosis": {
+    "rho": 0.0759,
+    "rho_raw": 0.0295,
+    "d": 0.0541,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.016811676049197748,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "lasi": {
+    "rho": -0.0513,
+    "rho_raw": -0.0853,
+    "d": -0.1852,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.11713374467488258,
+    "sig": false,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "mean_intensity": {
+    "rho": -0.0853,
+    "rho_raw": -0.0642,
+    "d": -0.1474,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.007283696562623212,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "ni_dn": {
+    "rho": -0.0851,
+    "rho_raw": -0.0702,
+    "d": -0.1346,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.007388053819698263,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "ni_ip": {
+    "rho": -0.1081,
+    "rho_raw": -0.0921,
+    "d": -0.1911,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0005071907926019025,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.0825,
+    "rho_raw": 0.0484,
+    "d": 0.0909,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.009457618372095073,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "nt_dn": {
+    "rho": -0.0126,
+    "rho_raw": 0.0117,
+    "d": 0.0286,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.7331850843431206,
+    "sig": false,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "perfusion_index": {
+    "rho": 0.0839,
+    "rho_raw": 0.0608,
+    "d": 0.1495,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0083527158190259,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "ppg_characteristic": {
+    "rho": -0.0822,
+    "rho_raw": -0.0513,
+    "d": -0.119,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.009578573728441064,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "pulse_amp": {
+    "rho": 0.0636,
+    "rho_raw": 0.0525,
+    "d": 0.085,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.05013645373713017,
+    "sig": false,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "pulse_width_50": {
+    "rho": -0.0887,
+    "rho_raw": -0.0373,
+    "d": -0.1016,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.005213187626333482,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "pulse_width_90": {
+    "rho": -0.0508,
+    "rho_raw": 0.0056,
+    "d": -0.0042,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.12113659132911199,
+    "sig": false,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "reflection_index": {
+    "rho": -0.1081,
+    "rho_raw": -0.0921,
+    "d": -0.1911,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0005071907926019025,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "rms": {
+    "rho": -0.0658,
+    "rho_raw": -0.0412,
+    "d": -0.0984,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.04292110356040972,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "skewness": {
+    "rho": 0.0929,
+    "rho_raw": 0.0559,
+    "d": 0.1387,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0032739396030157814,
+    "sig": true,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "slope_md": {
+    "rho": 0.0626,
+    "rho_raw": -0.0018,
+    "d": -0.0248,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.05333228508563023,
+    "sig": false,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "slope_md_n": {
+    "rho": 0.0232,
+    "rho_raw": -0.0016,
+    "d": -0.0068,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.5118447149545915,
+    "sig": false,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "slope_systolic": {
+    "rho": 0.0576,
+    "rho_raw": -0.0067,
+    "d": -0.0241,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.07537230857017313,
+    "sig": false,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "slope_systolic_n": {
+    "rho": 0.0285,
+    "rho_raw": -0.0017,
+    "d": -0.0119,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.41867452789072546,
+    "sig": false,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "systolic_width_50": {
+    "rho": -0.0456,
+    "rho_raw": 0.0158,
+    "d": -0.0102,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.17042039016031577,
+    "sig": false,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "systolic_width_75": {
+    "rho": -0.0451,
+    "rho_raw": 0.0156,
+    "d": 0.0047,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.1762921145748844,
+    "sig": false,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "t_dia_ms": {
+    "rho": -0.0172,
+    "rho_raw": -0.0022,
+    "d": 0.0058,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6390894089667161,
+    "sig": false,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "t_dn": {
+    "rho": -0.0119,
+    "rho_raw": 0.0292,
+    "d": 0.0536,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.7433320591852293,
+    "sig": false,
+    "n_pos": 823,
+    "n_neg": 573
+   },
+   "t_sys_ms": {
+    "rho": -0.0513,
+    "rho_raw": 0.0107,
+    "d": -0.0076,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.1170423899611161,
+    "sig": false,
+    "n_pos": 823,
+    "n_neg": 573
+   }
+  },
+  "mimic_heart_failure": {
+   "beat_len_ms": {
+    "rho": 0.0211,
+    "rho_raw": 0.0573,
+    "d": 0.1151,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.5571398711997745,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "bwr_50": {
+    "rho": 0.0592,
+    "rho_raw": 0.0427,
+    "d": 0.1064,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.06886270618522822,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "crest_factor": {
+    "rho": -0.0744,
+    "rho_raw": -0.1123,
+    "d": -0.2362,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.01916848646024043,
+    "sig": true,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "diastolic_width_50": {
+    "rho": -0.0047,
+    "rho_raw": 0.048,
+    "d": 0.1323,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8921689103708945,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "diastolic_width_75": {
+    "rho": -0.0358,
+    "rho_raw": 0.0266,
+    "d": 0.0752,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.28879474378049,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "intensity_ratio_s_d": {
+    "rho": -0.0962,
+    "rho_raw": -0.1093,
+    "d": 0.0044,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0023373098445477916,
+    "sig": true,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "iqr": {
+    "rho": -0.1155,
+    "rho_raw": -0.0691,
+    "d": -0.1535,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.00018548520381456968,
+    "sig": true,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "kurtosis": {
+    "rho": -0.0065,
+    "rho_raw": -0.0571,
+    "d": -0.0936,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8565034942148467,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "lasi": {
+    "rho": 0.0855,
+    "rho_raw": 0.0334,
+    "d": 0.053,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.007261528459468365,
+    "sig": true,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "mean_intensity": {
+    "rho": 0.0056,
+    "rho_raw": 0.0285,
+    "d": 0.0839,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8717176818371221,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "ni_dn": {
+    "rho": 0.0838,
+    "rho_raw": 0.1045,
+    "d": 0.1831,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0083527158190259,
+    "sig": true,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "ni_ip": {
+    "rho": 0.0915,
+    "rho_raw": 0.1134,
+    "d": 0.252,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0037876918808677188,
+    "sig": true,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "normalized_pulse_vol": {
+    "rho": -0.0154,
+    "rho_raw": -0.0515,
+    "d": -0.1152,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6670743731731144,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "nt_dn": {
+    "rho": -0.0554,
+    "rho_raw": -0.0279,
+    "d": -0.0219,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0885183003726421,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "perfusion_index": {
+    "rho": -0.1053,
+    "rho_raw": -0.1314,
+    "d": -0.2781,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.000740793137068321,
+    "sig": true,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "ppg_characteristic": {
+    "rho": -0.012,
+    "rho_raw": 0.0229,
+    "d": 0.0444,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.7418811012087524,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "pulse_amp": {
+    "rho": -0.157,
+    "rho_raw": -0.1718,
+    "d": -0.4228,
+    "direction": "lower_in_cases",
+    "q_fdr": 2.427152912247327e-07,
+    "sig": true,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "pulse_width_50": {
+    "rho": 0.0075,
+    "rho_raw": 0.0678,
+    "d": 0.1739,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8396696077660677,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "pulse_width_90": {
+    "rho": -0.0176,
+    "rho_raw": 0.0529,
+    "d": 0.1266,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6352325226752663,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "reflection_index": {
+    "rho": 0.0915,
+    "rho_raw": 0.1134,
+    "d": 0.252,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0037876918808677188,
+    "sig": true,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "rms": {
+    "rho": -0.0414,
+    "rho_raw": -0.0142,
+    "d": -0.0302,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.2153037412041127,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "skewness": {
+    "rho": -0.0635,
+    "rho_raw": -0.1034,
+    "d": -0.2372,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.05013645373713017,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "slope_md": {
+    "rho": -0.0927,
+    "rho_raw": -0.1575,
+    "d": -0.3245,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0032972926442483104,
+    "sig": true,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "slope_md_n": {
+    "rho": -0.0672,
+    "rho_raw": -0.0932,
+    "d": -0.1908,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.03780748818282374,
+    "sig": true,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "slope_systolic": {
+    "rho": -0.078,
+    "rho_raw": -0.1449,
+    "d": -0.3123,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.013804098135059088,
+    "sig": true,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "slope_systolic_n": {
+    "rho": -0.061,
+    "rho_raw": -0.0932,
+    "d": -0.2016,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.059761583017478255,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "systolic_width_50": {
+    "rho": 0.0276,
+    "rho_raw": 0.1002,
+    "d": 0.2281,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.43285312764977674,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "systolic_width_75": {
+    "rho": 0.0155,
+    "rho_raw": 0.0884,
+    "d": 0.1985,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6670743731731144,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "t_dia_ms": {
+    "rho": 0.0046,
+    "rho_raw": 0.0292,
+    "d": 0.0549,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8930493946703304,
+    "sig": false,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "t_dn": {
+    "rho": -0.0652,
+    "rho_raw": -0.0085,
+    "d": -0.0243,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.04446495809754022,
+    "sig": true,
+    "n_pos": 464,
+    "n_neg": 932
+   },
+   "t_sys_ms": {
+    "rho": 0.0653,
+    "rho_raw": 0.1342,
+    "d": 0.2921,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.04404767544139524,
+    "sig": true,
+    "n_pos": 464,
+    "n_neg": 932
+   }
+  },
+  "mimic_acute_kidney_failure": {
+   "beat_len_ms": {
+    "rho": -0.13,
+    "rho_raw": -0.1243,
+    "d": -0.2648,
+    "direction": "lower_in_cases",
+    "q_fdr": 2.433598431423883e-05,
+    "sig": true,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "bwr_50": {
+    "rho": 0.0397,
+    "rho_raw": 0.0388,
+    "d": 0.0954,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.23675889127712832,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "crest_factor": {
+    "rho": -0.1203,
+    "rho_raw": -0.1151,
+    "d": -0.2354,
+    "direction": "lower_in_cases",
+    "q_fdr": 9.303220628843702e-05,
+    "sig": true,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "diastolic_width_50": {
+    "rho": -0.0443,
+    "rho_raw": -0.0414,
+    "d": -0.0727,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.18428603176353603,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "diastolic_width_75": {
+    "rho": -0.0502,
+    "rho_raw": -0.0469,
+    "d": -0.0868,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.12568224832529235,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.0462,
+    "rho_raw": 0.0422,
+    "d": 0.0282,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.16355740100750402,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "iqr": {
+    "rho": 0.018,
+    "rho_raw": 0.0127,
+    "d": 0.0056,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6254041780509889,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "kurtosis": {
+    "rho": -0.1074,
+    "rho_raw": -0.0976,
+    "d": -0.1759,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0005454208527123471,
+    "sig": true,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "lasi": {
+    "rho": 0.0626,
+    "rho_raw": 0.0621,
+    "d": 0.1278,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.05333228508563023,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "mean_intensity": {
+    "rho": 0.0738,
+    "rho_raw": 0.0709,
+    "d": 0.1506,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.02017758119580993,
+    "sig": true,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "ni_dn": {
+    "rho": 0.0214,
+    "rho_raw": 0.0239,
+    "d": 0.0534,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.5540550415788359,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "ni_ip": {
+    "rho": -0.012,
+    "rho_raw": -0.0087,
+    "d": -0.0176,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.7418811012087524,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "normalized_pulse_vol": {
+    "rho": -0.098,
+    "rho_raw": -0.0915,
+    "d": -0.1571,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.001861058193363365,
+    "sig": true,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "nt_dn": {
+    "rho": 0.0813,
+    "rho_raw": 0.074,
+    "d": 0.1691,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.010192053991673718,
+    "sig": true,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "perfusion_index": {
+    "rho": -0.1271,
+    "rho_raw": -0.1255,
+    "d": -0.2516,
+    "direction": "lower_in_cases",
+    "q_fdr": 3.428392768042757e-05,
+    "sig": true,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "ppg_characteristic": {
+    "rho": 0.0769,
+    "rho_raw": 0.0724,
+    "d": 0.15,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.015283480610587444,
+    "sig": true,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "pulse_amp": {
+    "rho": -0.1107,
+    "rho_raw": -0.1128,
+    "d": -0.2597,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.000369472228495464,
+    "sig": true,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "pulse_width_50": {
+    "rho": -0.0426,
+    "rho_raw": -0.0389,
+    "d": -0.061,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.2035959506743504,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "pulse_width_90": {
+    "rho": -0.0503,
+    "rho_raw": -0.0457,
+    "d": -0.1008,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.12498419393734751,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "reflection_index": {
+    "rho": -0.012,
+    "rho_raw": -0.0087,
+    "d": -0.0176,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.7418811012087524,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "rms": {
+    "rho": 0.0543,
+    "rho_raw": 0.0497,
+    "d": 0.0887,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.09531509292039704,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "skewness": {
+    "rho": -0.1009,
+    "rho_raw": -0.0964,
+    "d": -0.196,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0012947198103333418,
+    "sig": true,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "slope_md": {
+    "rho": -0.0326,
+    "rho_raw": -0.0291,
+    "d": -0.0627,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.3446039494613264,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "slope_md_n": {
+    "rho": -0.1676,
+    "rho_raw": -0.1609,
+    "d": -0.3259,
+    "direction": "lower_in_cases",
+    "q_fdr": 2.115093740771288e-08,
+    "sig": true,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "slope_systolic": {
+    "rho": -0.0185,
+    "rho_raw": -0.0166,
+    "d": -0.0337,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6153238667869068,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "slope_systolic_n": {
+    "rho": -0.1556,
+    "rho_raw": -0.1476,
+    "d": -0.2889,
+    "direction": "lower_in_cases",
+    "q_fdr": 3.000260499655463e-07,
+    "sig": true,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "systolic_width_50": {
+    "rho": -0.0325,
+    "rho_raw": -0.0282,
+    "d": -0.0308,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.3465373641827638,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "systolic_width_75": {
+    "rho": -0.0391,
+    "rho_raw": -0.0345,
+    "d": -0.0566,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.24308038111277408,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "t_dia_ms": {
+    "rho": -0.1443,
+    "rho_raw": -0.1399,
+    "d": -0.2991,
+    "direction": "lower_in_cases",
+    "q_fdr": 1.9747692442781656e-06,
+    "sig": true,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "t_dn": {
+    "rho": -0.0584,
+    "rho_raw": -0.0566,
+    "d": -0.1253,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.07216262483040062,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   },
+   "t_sys_ms": {
+    "rho": -0.0173,
+    "rho_raw": -0.0141,
+    "d": -0.0142,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6390894089667161,
+    "sig": false,
+    "n_pos": 583,
+    "n_neg": 813
+   }
+  },
+  "mimic_diabetes_type2": {
+   "beat_len_ms": {
+    "rho": -0.017,
+    "rho_raw": -0.0003,
+    "d": -0.0176,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6436528680281595,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "bwr_50": {
+    "rho": 0.0622,
+    "rho_raw": 0.0553,
+    "d": 0.088,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.05530043667389312,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "crest_factor": {
+    "rho": 0.0251,
+    "rho_raw": 0.0089,
+    "d": 0.031,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.48003697247634386,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "diastolic_width_50": {
+    "rho": -0.0644,
+    "rho_raw": -0.0406,
+    "d": -0.0781,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.047330686556136946,
+    "sig": true,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "diastolic_width_75": {
+    "rho": -0.0454,
+    "rho_raw": -0.0201,
+    "d": -0.0332,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.17365287971616264,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.0433,
+    "rho_raw": 0.0341,
+    "d": 0.0367,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.19651016333111154,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "iqr": {
+    "rho": -0.04,
+    "rho_raw": -0.0269,
+    "d": -0.0553,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.23427272997958948,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "kurtosis": {
+    "rho": 0.0245,
+    "rho_raw": 0.0057,
+    "d": 0.0238,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.4916076173713029,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "lasi": {
+    "rho": 0.0066,
+    "rho_raw": -0.0081,
+    "d": -0.0534,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8553707331818803,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "mean_intensity": {
+    "rho": -0.0637,
+    "rho_raw": -0.0552,
+    "d": -0.1352,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.04994736375510299,
+    "sig": true,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "ni_dn": {
+    "rho": -0.0395,
+    "rho_raw": -0.0283,
+    "d": -0.0654,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.2401706572128861,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "ni_ip": {
+    "rho": -0.0522,
+    "rho_raw": -0.0399,
+    "d": -0.0712,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.1097780075998322,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.0578,
+    "rho_raw": 0.0436,
+    "d": 0.1069,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.07512052111307685,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "nt_dn": {
+    "rho": 0.0081,
+    "rho_raw": 0.0133,
+    "d": 0.0485,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8233621151836552,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "perfusion_index": {
+    "rho": 0.0112,
+    "rho_raw": -0.0006,
+    "d": 0.0149,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.7571309146978314,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "ppg_characteristic": {
+    "rho": -0.04,
+    "rho_raw": -0.0274,
+    "d": -0.0575,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.23385815311217106,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "pulse_amp": {
+    "rho": -0.0461,
+    "rho_raw": -0.0548,
+    "d": -0.1477,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.1647262442931841,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "pulse_width_50": {
+    "rho": -0.0567,
+    "rho_raw": -0.0291,
+    "d": -0.0569,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.08026926931263817,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "pulse_width_90": {
+    "rho": -0.032,
+    "rho_raw": -0.0034,
+    "d": 0.0076,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.35422672908317593,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "reflection_index": {
+    "rho": -0.0522,
+    "rho_raw": -0.0399,
+    "d": -0.0712,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.1097780075998322,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "rms": {
+    "rho": -0.0716,
+    "rho_raw": -0.0627,
+    "d": -0.1446,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.02492083971072401,
+    "sig": true,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "skewness": {
+    "rho": 0.0493,
+    "rho_raw": 0.0313,
+    "d": 0.0827,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.13297231967337358,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "slope_md": {
+    "rho": 0.012,
+    "rho_raw": -0.0188,
+    "d": -0.0674,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.7418811012087524,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "slope_md_n": {
+    "rho": -0.02,
+    "rho_raw": -0.0283,
+    "d": -0.0627,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.577904477861912,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "slope_systolic": {
+    "rho": 0.023,
+    "rho_raw": -0.0093,
+    "d": -0.0357,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.5153508950852761,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "slope_systolic_n": {
+    "rho": -0.0062,
+    "rho_raw": -0.0172,
+    "d": -0.042,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8591930616240497,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "systolic_width_50": {
+    "rho": -0.0331,
+    "rho_raw": -0.0002,
+    "d": -0.0059,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.3339348364906372,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "systolic_width_75": {
+    "rho": -0.0324,
+    "rho_raw": -0.0004,
+    "d": -0.0023,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.3465373641827638,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "t_dia_ms": {
+    "rho": -0.0163,
+    "rho_raw": -0.0043,
+    "d": -0.0252,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6510118554492617,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "t_dn": {
+    "rho": -0.0163,
+    "rho_raw": 0.0025,
+    "d": 0.021,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6510118554492617,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   },
+   "t_sys_ms": {
+    "rho": -0.0239,
+    "rho_raw": 0.0089,
+    "d": 0.011,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.49977863496989416,
+    "sig": false,
+    "n_pos": 420,
+    "n_neg": 976
+   }
+  },
+  "mimic_sepsis": {
+   "beat_len_ms": {
+    "rho": -0.123,
+    "rho_raw": -0.1286,
+    "d": -0.2991,
+    "direction": "lower_in_cases",
+    "q_fdr": 6.542809678460115e-05,
+    "sig": true,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "bwr_50": {
+    "rho": -0.0035,
+    "rho_raw": 0.0001,
+    "d": 0.0074,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.9176700569422488,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "crest_factor": {
+    "rho": -0.1099,
+    "rho_raw": -0.0947,
+    "d": -0.2293,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0004158023305624947,
+    "sig": true,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "diastolic_width_50": {
+    "rho": -0.0203,
+    "rho_raw": -0.0324,
+    "d": -0.065,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.5721827720352309,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "diastolic_width_75": {
+    "rho": -0.0333,
+    "rho_raw": -0.0461,
+    "d": -0.0884,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.3319025566898819,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.0164,
+    "rho_raw": 0.0187,
+    "d": 0.0148,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6504553918431322,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "iqr": {
+    "rho": 0.0241,
+    "rho_raw": 0.0112,
+    "d": 0.0226,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.49727768597122635,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "kurtosis": {
+    "rho": -0.1097,
+    "rho_raw": -0.0881,
+    "d": -0.1971,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.00042259376026404787,
+    "sig": true,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "lasi": {
+    "rho": 0.0823,
+    "rho_raw": 0.0902,
+    "d": 0.1822,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.009578573728441064,
+    "sig": true,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "mean_intensity": {
+    "rho": 0.0874,
+    "rho_raw": 0.0794,
+    "d": 0.1729,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.005983922878959724,
+    "sig": true,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "ni_dn": {
+    "rho": 0.0536,
+    "rho_raw": 0.0484,
+    "d": 0.1095,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.10010596151281197,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "ni_ip": {
+    "rho": 0.0143,
+    "rho_raw": 0.0093,
+    "d": 0.0174,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6904156894716819,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "normalized_pulse_vol": {
+    "rho": -0.0999,
+    "rho_raw": -0.0855,
+    "d": -0.1679,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0014788298460938877,
+    "sig": true,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "nt_dn": {
+    "rho": 0.0741,
+    "rho_raw": 0.0634,
+    "d": 0.1431,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.019671368491211438,
+    "sig": true,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "perfusion_index": {
+    "rho": -0.1127,
+    "rho_raw": -0.1034,
+    "d": -0.252,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0002800293146820676,
+    "sig": true,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "ppg_characteristic": {
+    "rho": 0.095,
+    "rho_raw": 0.0823,
+    "d": 0.1868,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.00266929425460473,
+    "sig": true,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "pulse_amp": {
+    "rho": -0.0977,
+    "rho_raw": -0.0935,
+    "d": -0.223,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0019283189398198982,
+    "sig": true,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "pulse_width_50": {
+    "rho": -0.0284,
+    "rho_raw": -0.0417,
+    "d": -0.0786,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.4198191961091746,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "pulse_width_90": {
+    "rho": -0.0436,
+    "rho_raw": -0.0569,
+    "d": -0.1307,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.19260537056292862,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "reflection_index": {
+    "rho": 0.0143,
+    "rho_raw": 0.0093,
+    "d": 0.0174,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6904156894716819,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "rms": {
+    "rho": 0.0606,
+    "rho_raw": 0.0513,
+    "d": 0.1047,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.06162476492914921,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "skewness": {
+    "rho": -0.1023,
+    "rho_raw": -0.0869,
+    "d": -0.1939,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0010993634743688744,
+    "sig": true,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "slope_md": {
+    "rho": -0.0094,
+    "rho_raw": 0.0112,
+    "d": 0.0099,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.7995870966368459,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "slope_md_n": {
+    "rho": -0.1476,
+    "rho_raw": -0.1354,
+    "d": -0.3058,
+    "direction": "lower_in_cases",
+    "q_fdr": 1.3141213935901423e-06,
+    "sig": true,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "slope_systolic": {
+    "rho": 0.0026,
+    "rho_raw": 0.022,
+    "d": 0.0316,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.9372592118260998,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "slope_systolic_n": {
+    "rho": -0.1376,
+    "rho_raw": -0.1226,
+    "d": -0.2755,
+    "direction": "lower_in_cases",
+    "q_fdr": 6.723438576540494e-06,
+    "sig": true,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "systolic_width_50": {
+    "rho": -0.0314,
+    "rho_raw": -0.047,
+    "d": -0.1047,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.36463363029946166,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "systolic_width_75": {
+    "rho": -0.0354,
+    "rho_raw": -0.0504,
+    "d": -0.1161,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.2964692930418195,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "t_dia_ms": {
+    "rho": -0.1343,
+    "rho_raw": -0.1381,
+    "d": -0.3197,
+    "direction": "lower_in_cases",
+    "q_fdr": 1.2335360985577406e-05,
+    "sig": true,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "t_dn": {
+    "rho": -0.0632,
+    "rho_raw": -0.0731,
+    "d": -0.1669,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.05136403838525707,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   },
+   "t_sys_ms": {
+    "rho": -0.0227,
+    "rho_raw": -0.0393,
+    "d": -0.0817,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.522078519691414,
+    "sig": false,
+    "n_pos": 366,
+    "n_neg": 1030
+   }
+  },
+  "mimic_coronary_artery_disease": {
+   "beat_len_ms": {
+    "rho": 0.0418,
+    "rho_raw": 0.0901,
+    "d": 0.1864,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2120598414118064,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "bwr_50": {
+    "rho": 0.041,
+    "rho_raw": 0.0194,
+    "d": 0.0325,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.21988070359123413,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "crest_factor": {
+    "rho": -0.0614,
+    "rho_raw": -0.1042,
+    "d": -0.2151,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.05834608940991633,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "diastolic_width_50": {
+    "rho": 0.0212,
+    "rho_raw": 0.0822,
+    "d": 0.1998,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.5571398711997745,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "diastolic_width_75": {
+    "rho": -0.0059,
+    "rho_raw": 0.0629,
+    "d": 0.1281,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8641657133110309,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "intensity_ratio_s_d": {
+    "rho": -0.1113,
+    "rho_raw": -0.1337,
+    "d": -0.0173,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0003382217896489883,
+    "sig": true,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "iqr": {
+    "rho": -0.0934,
+    "rho_raw": -0.051,
+    "d": -0.1166,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.003112165509829614,
+    "sig": true,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "kurtosis": {
+    "rho": 0.0095,
+    "rho_raw": -0.0451,
+    "d": -0.0796,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.7995870966368459,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "lasi": {
+    "rho": 0.0531,
+    "rho_raw": 0.003,
+    "d": -0.0007,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.10294652353335905,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "mean_intensity": {
+    "rho": 0.0465,
+    "rho_raw": 0.0665,
+    "d": 0.1498,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.1617305070705955,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "ni_dn": {
+    "rho": 0.0796,
+    "rho_raw": 0.1093,
+    "d": 0.1873,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.011462369966424841,
+    "sig": true,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "ni_ip": {
+    "rho": 0.095,
+    "rho_raw": 0.1269,
+    "d": 0.2888,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.002662271088496937,
+    "sig": true,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "normalized_pulse_vol": {
+    "rho": -0.027,
+    "rho_raw": -0.0615,
+    "d": -0.1572,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.443040120204804,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "nt_dn": {
+    "rho": -0.0744,
+    "rho_raw": -0.052,
+    "d": -0.0648,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.01916848646024043,
+    "sig": true,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "perfusion_index": {
+    "rho": -0.0869,
+    "rho_raw": -0.1181,
+    "d": -0.2589,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.006229757538631701,
+    "sig": true,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "ppg_characteristic": {
+    "rho": 0.0064,
+    "rho_raw": 0.0411,
+    "d": 0.0683,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8565034942148467,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "pulse_amp": {
+    "rho": -0.1078,
+    "rho_raw": -0.1314,
+    "d": -0.2933,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0005209296673516627,
+    "sig": true,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "pulse_width_50": {
+    "rho": 0.0351,
+    "rho_raw": 0.1041,
+    "d": 0.2301,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.30006665205615884,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "pulse_width_90": {
+    "rho": 0.0125,
+    "rho_raw": 0.09,
+    "d": 0.1704,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.7341781688363166,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "reflection_index": {
+    "rho": 0.095,
+    "rho_raw": 0.1269,
+    "d": 0.2888,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.002662271088496937,
+    "sig": true,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "rms": {
+    "rho": 0.0105,
+    "rho_raw": 0.0314,
+    "d": 0.0534,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.7762902350925741,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "skewness": {
+    "rho": -0.0635,
+    "rho_raw": -0.1084,
+    "d": -0.2256,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.05013645373713017,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "slope_md": {
+    "rho": -0.0896,
+    "rho_raw": -0.1674,
+    "d": -0.3383,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.004706629522691698,
+    "sig": true,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "slope_md_n": {
+    "rho": -0.0191,
+    "rho_raw": -0.0454,
+    "d": -0.1001,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6026944337198882,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "slope_systolic": {
+    "rho": -0.0776,
+    "rho_raw": -0.1573,
+    "d": -0.3216,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.014348294998482553,
+    "sig": true,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "slope_systolic_n": {
+    "rho": -0.0115,
+    "rho_raw": -0.0457,
+    "d": -0.1122,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.7503000797889029,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "systolic_width_50": {
+    "rho": 0.0614,
+    "rho_raw": 0.1426,
+    "d": 0.2534,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.05834608940991633,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "systolic_width_75": {
+    "rho": 0.0491,
+    "rho_raw": 0.1299,
+    "d": 0.2126,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.13535976698966773,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "t_dia_ms": {
+    "rho": 0.0268,
+    "rho_raw": 0.0623,
+    "d": 0.1295,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.4454736224982598,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "t_dn": {
+    "rho": -0.0274,
+    "rho_raw": 0.0308,
+    "d": 0.0288,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.4365051345979049,
+    "sig": false,
+    "n_pos": 454,
+    "n_neg": 942
+   },
+   "t_sys_ms": {
+    "rho": 0.0815,
+    "rho_raw": 0.1629,
+    "d": 0.3147,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.010021199144687907,
+    "sig": true,
+    "n_pos": 454,
+    "n_neg": 942
+   }
+  },
+  "mimic_myocardial_infarction": {
+   "beat_len_ms": {
+    "rho": 0.044,
+    "rho_raw": 0.0689,
+    "d": 0.1859,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.1880333596833474,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "bwr_50": {
+    "rho": -0.0087,
+    "rho_raw": -0.0196,
+    "d": -0.0442,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8130058523366512,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "crest_factor": {
+    "rho": -0.1048,
+    "rho_raw": -0.1309,
+    "d": -0.3641,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0007843085692069551,
+    "sig": true,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "diastolic_width_50": {
+    "rho": 0.0708,
+    "rho_raw": 0.1048,
+    "d": 0.3566,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.026725633114025673,
+    "sig": true,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "diastolic_width_75": {
+    "rho": 0.0373,
+    "rho_raw": 0.0778,
+    "d": 0.2315,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2678367305089824,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "intensity_ratio_s_d": {
+    "rho": -0.1337,
+    "rho_raw": -0.142,
+    "d": -0.1499,
+    "direction": "lower_in_cases",
+    "q_fdr": 1.3314507594340646e-05,
+    "sig": true,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "iqr": {
+    "rho": -0.0237,
+    "rho_raw": 0.0071,
+    "d": 0.0065,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.5036234490239095,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "kurtosis": {
+    "rho": -0.0394,
+    "rho_raw": -0.0746,
+    "d": -0.2041,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.2401706572128861,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "lasi": {
+    "rho": 0.067,
+    "rho_raw": 0.0281,
+    "d": 0.0288,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.03841084888560151,
+    "sig": true,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "mean_intensity": {
+    "rho": 0.1205,
+    "rho_raw": 0.1351,
+    "d": 0.3961,
+    "direction": "higher_in_cases",
+    "q_fdr": 9.137478937492909e-05,
+    "sig": true,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "ni_dn": {
+    "rho": 0.1087,
+    "rho_raw": 0.1228,
+    "d": 0.2907,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.00048711861900901276,
+    "sig": true,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "ni_ip": {
+    "rho": 0.1239,
+    "rho_raw": 0.1386,
+    "d": 0.4036,
+    "direction": "higher_in_cases",
+    "q_fdr": 5.7641727917547953e-05,
+    "sig": true,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "normalized_pulse_vol": {
+    "rho": -0.096,
+    "rho_raw": -0.1193,
+    "d": -0.3549,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0023656252265825423,
+    "sig": true,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "nt_dn": {
+    "rho": -0.0584,
+    "rho_raw": -0.0366,
+    "d": -0.0702,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.07216262483040062,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "perfusion_index": {
+    "rho": -0.1173,
+    "rho_raw": -0.1359,
+    "d": -0.368,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.00015181225258283784,
+    "sig": true,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "ppg_characteristic": {
+    "rho": 0.0684,
+    "rho_raw": 0.0914,
+    "d": 0.2379,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.033928093836271045,
+    "sig": true,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "pulse_amp": {
+    "rho": -0.0534,
+    "rho_raw": -0.0653,
+    "d": -0.158,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.10125690335071602,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "pulse_width_50": {
+    "rho": 0.0744,
+    "rho_raw": 0.1129,
+    "d": 0.3782,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.01916848646024043,
+    "sig": true,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "pulse_width_90": {
+    "rho": 0.0377,
+    "rho_raw": 0.084,
+    "d": 0.2601,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.26237020015374757,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "reflection_index": {
+    "rho": 0.1239,
+    "rho_raw": 0.1386,
+    "d": 0.4036,
+    "direction": "higher_in_cases",
+    "q_fdr": 5.7641727917547953e-05,
+    "sig": true,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "rms": {
+    "rho": 0.1033,
+    "rho_raw": 0.1194,
+    "d": 0.3174,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.000965114132697524,
+    "sig": true,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "skewness": {
+    "rho": -0.1128,
+    "rho_raw": -0.1394,
+    "d": -0.3947,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0002800293146820676,
+    "sig": true,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "slope_md": {
+    "rho": -0.0478,
+    "rho_raw": -0.0981,
+    "d": -0.2488,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.1490007552289972,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "slope_md_n": {
+    "rho": 0.0032,
+    "rho_raw": -0.0187,
+    "d": -0.0533,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.9230333090312837,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "slope_systolic": {
+    "rho": -0.0569,
+    "rho_raw": -0.1062,
+    "d": -0.2919,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.07969959557628196,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "slope_systolic_n": {
+    "rho": -0.0129,
+    "rho_raw": -0.0389,
+    "d": -0.1224,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.7249050545814822,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "systolic_width_50": {
+    "rho": 0.0564,
+    "rho_raw": 0.1051,
+    "d": 0.3529,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.08150389730827738,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "systolic_width_75": {
+    "rho": 0.0515,
+    "rho_raw": 0.1001,
+    "d": 0.3116,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.11576540935226452,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "t_dia_ms": {
+    "rho": 0.0309,
+    "rho_raw": 0.0476,
+    "d": 0.1238,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.37375157358014566,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "t_dn": {
+    "rho": -0.0157,
+    "rho_raw": 0.0237,
+    "d": 0.0201,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6629867257181172,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   },
+   "t_sys_ms": {
+    "rho": 0.0472,
+    "rho_raw": 0.0977,
+    "d": 0.3293,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.1545253086777532,
+    "sig": false,
+    "n_pos": 218,
+    "n_neg": 1178
+   }
+  },
+  "mimic_hypertensive_ckd": {
+   "beat_len_ms": {
+    "rho": 0.0518,
+    "rho_raw": 0.0725,
+    "d": 0.1611,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.11354440996873874,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "bwr_50": {
+    "rho": -0.0631,
+    "rho_raw": -0.0712,
+    "d": -0.1788,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.051722438699586475,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "crest_factor": {
+    "rho": -0.0425,
+    "rho_raw": -0.0625,
+    "d": -0.143,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.20402986292382094,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "diastolic_width_50": {
+    "rho": 0.0732,
+    "rho_raw": 0.0974,
+    "d": 0.2715,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.021508499084762857,
+    "sig": true,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "diastolic_width_75": {
+    "rho": 0.058,
+    "rho_raw": 0.0847,
+    "d": 0.2231,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0743063269313583,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "intensity_ratio_s_d": {
+    "rho": -0.0657,
+    "rho_raw": -0.0761,
+    "d": 0.0228,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.043208952413781955,
+    "sig": true,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "iqr": {
+    "rho": 0.0045,
+    "rho_raw": 0.0212,
+    "d": 0.0694,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8946634544137464,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "kurtosis": {
+    "rho": -0.0449,
+    "rho_raw": -0.067,
+    "d": -0.1534,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.17794586280302382,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "lasi": {
+    "rho": 0.0227,
+    "rho_raw": -0.0005,
+    "d": 0.0079,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.522078519691414,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "mean_intensity": {
+    "rho": 0.0269,
+    "rho_raw": 0.0373,
+    "d": 0.0857,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.443040120204804,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "ni_dn": {
+    "rho": 0.0614,
+    "rho_raw": 0.0749,
+    "d": 0.1725,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.05834608940991633,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "ni_ip": {
+    "rho": 0.0808,
+    "rho_raw": 0.0951,
+    "d": 0.2547,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.010413549287049111,
+    "sig": true,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "normalized_pulse_vol": {
+    "rho": -0.0341,
+    "rho_raw": -0.0502,
+    "d": -0.1062,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.318080905757972,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "nt_dn": {
+    "rho": -0.006,
+    "rho_raw": 0.0037,
+    "d": 0.0028,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8641657133110309,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "perfusion_index": {
+    "rho": -0.0432,
+    "rho_raw": -0.0585,
+    "d": -0.1208,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.1972385704983061,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "ppg_characteristic": {
+    "rho": 0.0352,
+    "rho_raw": 0.0506,
+    "d": 0.1205,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.29913479149855327,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "pulse_amp": {
+    "rho": -0.0581,
+    "rho_raw": -0.0694,
+    "d": -0.1491,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.07404467167040318,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "pulse_width_50": {
+    "rho": 0.0708,
+    "rho_raw": 0.0984,
+    "d": 0.2707,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.026725633114025673,
+    "sig": true,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "pulse_width_90": {
+    "rho": 0.0541,
+    "rho_raw": 0.0848,
+    "d": 0.1904,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.09653107502282252,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "reflection_index": {
+    "rho": 0.0808,
+    "rho_raw": 0.0951,
+    "d": 0.2547,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.010413549287049111,
+    "sig": true,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "rms": {
+    "rho": 0.0157,
+    "rho_raw": 0.0262,
+    "d": 0.0743,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6629867257181172,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "skewness": {
+    "rho": -0.0548,
+    "rho_raw": -0.0753,
+    "d": -0.1919,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.09217160826912915,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "slope_md": {
+    "rho": -0.0945,
+    "rho_raw": -0.1243,
+    "d": -0.3034,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.002782169258704921,
+    "sig": true,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "slope_md_n": {
+    "rho": -0.024,
+    "rho_raw": -0.0368,
+    "d": -0.0931,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.4988532541466849,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "slope_systolic": {
+    "rho": -0.0819,
+    "rho_raw": -0.1133,
+    "d": -0.2817,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.009777268455739663,
+    "sig": true,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "slope_systolic_n": {
+    "rho": -0.0183,
+    "rho_raw": -0.0344,
+    "d": -0.0892,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6216820424676401,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "systolic_width_50": {
+    "rho": 0.0685,
+    "rho_raw": 0.1013,
+    "d": 0.2153,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.03363713768824547,
+    "sig": true,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "systolic_width_75": {
+    "rho": 0.0648,
+    "rho_raw": 0.0972,
+    "d": 0.1958,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.04610649624299465,
+    "sig": true,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "t_dia_ms": {
+    "rho": 0.0425,
+    "rho_raw": 0.0576,
+    "d": 0.1125,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2035959506743504,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "t_dn": {
+    "rho": 0.0211,
+    "rho_raw": 0.0456,
+    "d": 0.0707,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.5571398711997745,
+    "sig": false,
+    "n_pos": 269,
+    "n_neg": 1127
+   },
+   "t_sys_ms": {
+    "rho": 0.0807,
+    "rho_raw": 0.1133,
+    "d": 0.2766,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.010413549287049111,
+    "sig": true,
+    "n_pos": 269,
+    "n_neg": 1127
+   }
+  },
+  "mimic_atrial_fibrillation": {
+   "beat_len_ms": {
+    "rho": 0.0013,
+    "rho_raw": 0.0612,
+    "d": 0.1125,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.9688689680322785,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "bwr_50": {
+    "rho": 0.0382,
+    "rho_raw": 0.0119,
+    "d": 0.0506,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2559066905610644,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "crest_factor": {
+    "rho": -0.0562,
+    "rho_raw": -0.1147,
+    "d": -0.2452,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.08254215250858254,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "diastolic_width_50": {
+    "rho": -0.0242,
+    "rho_raw": 0.0589,
+    "d": 0.1409,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.49727768597122635,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "diastolic_width_75": {
+    "rho": -0.0464,
+    "rho_raw": 0.049,
+    "d": 0.1132,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.16177395378808185,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "intensity_ratio_s_d": {
+    "rho": -0.0576,
+    "rho_raw": -0.0823,
+    "d": -0.0127,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.07537230857017313,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "iqr": {
+    "rho": -0.1873,
+    "rho_raw": -0.1153,
+    "d": -0.2301,
+    "direction": "lower_in_cases",
+    "q_fdr": 1.8910805066414378e-10,
+    "sig": true,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "kurtosis": {
+    "rho": 0.0276,
+    "rho_raw": -0.0506,
+    "d": -0.0939,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.43285312764977674,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "lasi": {
+    "rho": 0.0856,
+    "rho_raw": 0.011,
+    "d": -0.0066,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.007154482224781208,
+    "sig": true,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "mean_intensity": {
+    "rho": -0.0626,
+    "rho_raw": -0.0253,
+    "d": -0.0432,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.05333228508563023,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "ni_dn": {
+    "rho": 0.0426,
+    "rho_raw": 0.078,
+    "d": 0.1342,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2035959506743504,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "ni_ip": {
+    "rho": 0.0595,
+    "rho_raw": 0.0969,
+    "d": 0.2174,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.06729111134545374,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.0602,
+    "rho_raw": 0.0018,
+    "d": 0.0062,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.06351948052350709,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "nt_dn": {
+    "rho": -0.022,
+    "rho_raw": 0.0119,
+    "d": 0.081,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.5384177742062282,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "perfusion_index": {
+    "rho": -0.1166,
+    "rho_raw": -0.1549,
+    "d": -0.3398,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.00016363085362241635,
+    "sig": true,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "ppg_characteristic": {
+    "rho": -0.0271,
+    "rho_raw": 0.025,
+    "d": 0.0643,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.4400167214625754,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "pulse_amp": {
+    "rho": -0.2687,
+    "rho_raw": -0.2855,
+    "d": -0.7082,
+    "direction": "lower_in_cases",
+    "q_fdr": 1.0581417669578117e-21,
+    "sig": true,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "pulse_width_50": {
+    "rho": -0.021,
+    "rho_raw": 0.0752,
+    "d": 0.1764,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.557384219300891,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "pulse_width_90": {
+    "rho": -0.0394,
+    "rho_raw": 0.0702,
+    "d": 0.1369,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2401706572128861,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "reflection_index": {
+    "rho": 0.0595,
+    "rho_raw": 0.0969,
+    "d": 0.2174,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.06729111134545374,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "rms": {
+    "rho": -0.1465,
+    "rho_raw": -0.1009,
+    "d": -0.2243,
+    "direction": "lower_in_cases",
+    "q_fdr": 1.4805568695432973e-06,
+    "sig": true,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "skewness": {
+    "rho": -0.0149,
+    "rho_raw": -0.0795,
+    "d": -0.1676,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.678388574439945,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "slope_md": {
+    "rho": -0.023,
+    "rho_raw": -0.1378,
+    "d": -0.2956,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.5153508950852761,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "slope_md_n": {
+    "rho": -0.0299,
+    "rho_raw": -0.0688,
+    "d": -0.1472,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.38951553254126536,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "slope_systolic": {
+    "rho": -0.0103,
+    "rho_raw": -0.1275,
+    "d": -0.2798,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.7788692145691676,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "slope_systolic_n": {
+    "rho": -0.0142,
+    "rho_raw": -0.0639,
+    "d": -0.1426,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6917453436133192,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "systolic_width_50": {
+    "rho": -0.0132,
+    "rho_raw": 0.1059,
+    "d": 0.2125,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.719376760547865,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "systolic_width_75": {
+    "rho": -0.0223,
+    "rho_raw": 0.0959,
+    "d": 0.1833,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.5322639669401533,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "t_dia_ms": {
+    "rho": -0.004,
+    "rho_raw": 0.0377,
+    "d": 0.0543,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.9048556710584025,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "t_dn": {
+    "rho": -0.0487,
+    "rho_raw": 0.0329,
+    "d": 0.0524,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.13947833161834688,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   },
+   "t_sys_ms": {
+    "rho": 0.0176,
+    "rho_raw": 0.1344,
+    "d": 0.2687,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.634837383134312,
+    "sig": false,
+    "n_pos": 474,
+    "n_neg": 922
+   }
+  },
+  "mimic_hyperlipidemia": {
+   "beat_len_ms": {
+    "rho": 0.0427,
+    "rho_raw": 0.0694,
+    "d": 0.1503,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2026826743203555,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "bwr_50": {
+    "rho": 0.021,
+    "rho_raw": 0.0096,
+    "d": 0.0245,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.5571398711997745,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "crest_factor": {
+    "rho": 0.0676,
+    "rho_raw": 0.0364,
+    "d": 0.0859,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.036248377313195045,
+    "sig": true,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "diastolic_width_50": {
+    "rho": -0.0156,
+    "rho_raw": 0.0216,
+    "d": 0.0514,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6636510470496316,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "diastolic_width_75": {
+    "rho": -0.0105,
+    "rho_raw": 0.0303,
+    "d": 0.0565,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.7762902350925741,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "intensity_ratio_s_d": {
+    "rho": -0.0087,
+    "rho_raw": -0.0226,
+    "d": -0.0484,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8130058523366512,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "iqr": {
+    "rho": -0.0339,
+    "rho_raw": -0.0098,
+    "d": -0.0181,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.32071124355071495,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "kurtosis": {
+    "rho": 0.0629,
+    "rho_raw": 0.0256,
+    "d": 0.0563,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.05217928340635161,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "lasi": {
+    "rho": -0.0304,
+    "rho_raw": -0.056,
+    "d": -0.1273,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.3819588355706071,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "mean_intensity": {
+    "rho": -0.0594,
+    "rho_raw": -0.0438,
+    "d": -0.0935,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.06729111134545374,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "ni_dn": {
+    "rho": -0.0047,
+    "rho_raw": 0.0134,
+    "d": 0.0145,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8930493946703304,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "ni_ip": {
+    "rho": -0.0276,
+    "rho_raw": -0.0075,
+    "d": -0.0166,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.43285312764977674,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.06,
+    "rho_raw": 0.0344,
+    "d": 0.0561,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.06479285194820622,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "nt_dn": {
+    "rho": -0.0565,
+    "rho_raw": -0.0418,
+    "d": -0.0745,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0811109757301789,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "perfusion_index": {
+    "rho": 0.0545,
+    "rho_raw": 0.0324,
+    "d": 0.0867,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.09441198808886857,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "ppg_characteristic": {
+    "rho": -0.0618,
+    "rho_raw": -0.0377,
+    "d": -0.0934,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.05700124326415106,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "pulse_amp": {
+    "rho": 0.0193,
+    "rho_raw": 0.0039,
+    "d": 0.0288,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.5968566103056453,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "pulse_width_50": {
+    "rho": -0.0094,
+    "rho_raw": 0.0334,
+    "d": 0.0684,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.7996232395219877,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "pulse_width_90": {
+    "rho": 0.0028,
+    "rho_raw": 0.0486,
+    "d": 0.0776,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.9353140745909612,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "reflection_index": {
+    "rho": -0.0276,
+    "rho_raw": -0.0075,
+    "d": -0.0166,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.43285312764977674,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "rms": {
+    "rho": -0.0568,
+    "rho_raw": -0.0406,
+    "d": -0.0733,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.07991686984819267,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "skewness": {
+    "rho": 0.0591,
+    "rho_raw": 0.027,
+    "d": 0.0703,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0688984083711632,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "slope_md": {
+    "rho": -0.0158,
+    "rho_raw": -0.0668,
+    "d": -0.135,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6627480181441338,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "slope_md_n": {
+    "rho": 0.0388,
+    "rho_raw": 0.0201,
+    "d": 0.0502,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.24788678769945652,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "slope_systolic": {
+    "rho": -0.0088,
+    "rho_raw": -0.0608,
+    "d": -0.117,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8121668708438963,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "slope_systolic_n": {
+    "rho": 0.0422,
+    "rho_raw": 0.0186,
+    "d": 0.0477,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.20798670492072568,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "systolic_width_50": {
+    "rho": 0.0075,
+    "rho_raw": 0.0589,
+    "d": 0.0895,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.838645960267734,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "systolic_width_75": {
+    "rho": 0.0063,
+    "rho_raw": 0.0567,
+    "d": 0.0793,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8571077249524591,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "t_dia_ms": {
+    "rho": 0.0446,
+    "rho_raw": 0.0635,
+    "d": 0.1387,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.18206955142493214,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "t_dn": {
+    "rho": -0.0086,
+    "rho_raw": 0.0252,
+    "d": 0.0532,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8146003139399182,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   },
+   "t_sys_ms": {
+    "rho": 0.0191,
+    "rho_raw": 0.0705,
+    "d": 0.1217,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.602199339629428,
+    "sig": false,
+    "n_pos": 621,
+    "n_neg": 775
+   }
+  },
+  "mimic_ckd": {
+   "beat_len_ms": {
+    "rho": 0.0416,
+    "rho_raw": 0.0669,
+    "d": 0.148,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.21402474619486433,
+    "sig": false,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "bwr_50": {
+    "rho": -0.0471,
+    "rho_raw": -0.057,
+    "d": -0.1196,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.15507212851699942,
+    "sig": false,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "crest_factor": {
+    "rho": -0.0818,
+    "rho_raw": -0.1047,
+    "d": -0.2341,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.009777268455739663,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "diastolic_width_50": {
+    "rho": 0.0808,
+    "rho_raw": 0.1105,
+    "d": 0.2952,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.010413549287049111,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "diastolic_width_75": {
+    "rho": 0.0712,
+    "rho_raw": 0.1035,
+    "d": 0.2557,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.025951731643812512,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "intensity_ratio_s_d": {
+    "rho": -0.0722,
+    "rho_raw": -0.0843,
+    "d": -0.0714,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.023526733368444335,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "iqr": {
+    "rho": 0.026,
+    "rho_raw": 0.0456,
+    "d": 0.1143,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.46280494937861344,
+    "sig": false,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "kurtosis": {
+    "rho": -0.0828,
+    "rho_raw": -0.1077,
+    "d": -0.2366,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.009158779415533272,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "lasi": {
+    "rho": 0.0033,
+    "rho_raw": -0.0237,
+    "d": -0.0432,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.9211988191270866,
+    "sig": false,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "mean_intensity": {
+    "rho": 0.0561,
+    "rho_raw": 0.0683,
+    "d": 0.1545,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.08307490939092055,
+    "sig": false,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "ni_dn": {
+    "rho": 0.0648,
+    "rho_raw": 0.0807,
+    "d": 0.174,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.04610649624299465,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "ni_ip": {
+    "rho": 0.0817,
+    "rho_raw": 0.0987,
+    "d": 0.2533,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.009777268455739663,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "normalized_pulse_vol": {
+    "rho": -0.0696,
+    "rho_raw": -0.0881,
+    "d": -0.1796,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.03029659025359927,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "nt_dn": {
+    "rho": 0.024,
+    "rho_raw": 0.0351,
+    "d": 0.0701,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.49906045805189464,
+    "sig": false,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "perfusion_index": {
+    "rho": -0.0775,
+    "rho_raw": -0.0953,
+    "d": -0.2047,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.014348294998482553,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "ppg_characteristic": {
+    "rho": 0.0676,
+    "rho_raw": 0.0855,
+    "d": 0.1969,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.036248377313195045,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "pulse_amp": {
+    "rho": -0.0752,
+    "rho_raw": -0.0884,
+    "d": -0.2013,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.017779170867257946,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "pulse_width_50": {
+    "rho": 0.0869,
+    "rho_raw": 0.1201,
+    "d": 0.3155,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.006229757538631701,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "pulse_width_90": {
+    "rho": 0.076,
+    "rho_raw": 0.1121,
+    "d": 0.2407,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.016706658790419077,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "reflection_index": {
+    "rho": 0.0817,
+    "rho_raw": 0.0987,
+    "d": 0.2533,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.009777268455739663,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "rms": {
+    "rho": 0.0427,
+    "rho_raw": 0.0551,
+    "d": 0.1337,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2026826743203555,
+    "sig": false,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "skewness": {
+    "rho": -0.0869,
+    "rho_raw": -0.1106,
+    "d": -0.2637,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.006229757538631701,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "slope_md": {
+    "rho": -0.1293,
+    "rho_raw": -0.1634,
+    "d": -0.3692,
+    "direction": "lower_in_cases",
+    "q_fdr": 2.5335458197417102e-05,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "slope_md_n": {
+    "rho": -0.0565,
+    "rho_raw": -0.0712,
+    "d": -0.1674,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.08150389730827738,
+    "sig": false,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "slope_systolic": {
+    "rho": -0.1162,
+    "rho_raw": -0.1519,
+    "d": -0.3548,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.00016728494312263036,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "slope_systolic_n": {
+    "rho": -0.0576,
+    "rho_raw": -0.0759,
+    "d": -0.1802,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.07537230857017313,
+    "sig": false,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "systolic_width_50": {
+    "rho": 0.0982,
+    "rho_raw": 0.136,
+    "d": 0.2926,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0018184080486576366,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "systolic_width_75": {
+    "rho": 0.0925,
+    "rho_raw": 0.1301,
+    "d": 0.2462,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0033712860120250843,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "t_dia_ms": {
+    "rho": 0.0238,
+    "rho_raw": 0.0421,
+    "d": 0.0784,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.5010045335560612,
+    "sig": false,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "t_dn": {
+    "rho": 0.0392,
+    "rho_raw": 0.0682,
+    "d": 0.1044,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.24269227364873922,
+    "sig": false,
+    "n_pos": 317,
+    "n_neg": 1079
+   },
+   "t_sys_ms": {
+    "rho": 0.1125,
+    "rho_raw": 0.15,
+    "d": 0.3518,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0002814107818658123,
+    "sig": true,
+    "n_pos": 317,
+    "n_neg": 1079
+   }
+  },
+  "mimic_copd": {
+   "beat_len_ms": {
+    "rho": -0.0428,
+    "rho_raw": -0.0266,
+    "d": -0.0821,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.2026826743203555,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "bwr_50": {
+    "rho": 0.0379,
+    "rho_raw": 0.0316,
+    "d": 0.0789,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.26011618416455645,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "crest_factor": {
+    "rho": -0.0236,
+    "rho_raw": -0.0381,
+    "d": -0.1242,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.5039958241282859,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "diastolic_width_50": {
+    "rho": -0.0202,
+    "rho_raw": 0.0008,
+    "d": 0.021,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.5731022226735822,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "diastolic_width_75": {
+    "rho": -0.0101,
+    "rho_raw": 0.0127,
+    "d": 0.0346,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.7850285871941599,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.0465,
+    "rho_raw": 0.0387,
+    "d": 0.0711,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.16116043200937902,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "iqr": {
+    "rho": -0.0232,
+    "rho_raw": -0.0096,
+    "d": -0.0177,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.5118447149545915,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "kurtosis": {
+    "rho": -0.0207,
+    "rho_raw": -0.0372,
+    "d": -0.1115,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.5630510729457708,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "lasi": {
+    "rho": -0.0172,
+    "rho_raw": -0.0316,
+    "d": -0.0814,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6394445738893371,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "mean_intensity": {
+    "rho": -0.0168,
+    "rho_raw": -0.0086,
+    "d": -0.0137,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.645748980175946,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "ni_dn": {
+    "rho": -0.0069,
+    "rho_raw": 0.0029,
+    "d": 0.047,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8516422479395319,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "ni_ip": {
+    "rho": -0.0312,
+    "rho_raw": -0.0203,
+    "d": -0.0231,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.36599919238785916,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.0063,
+    "rho_raw": -0.0066,
+    "d": -0.0074,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8571077249524591,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "nt_dn": {
+    "rho": 0.0291,
+    "rho_raw": 0.0352,
+    "d": 0.0768,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.4066946346838736,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "perfusion_index": {
+    "rho": -0.0371,
+    "rho_raw": -0.0477,
+    "d": -0.1462,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.26982714558778226,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "ppg_characteristic": {
+    "rho": 0.0143,
+    "rho_raw": 0.0257,
+    "d": 0.1082,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6909118587707148,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "pulse_amp": {
+    "rho": -0.102,
+    "rho_raw": -0.1093,
+    "d": -0.3035,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0011392076218233464,
+    "sig": true,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "pulse_width_50": {
+    "rho": -0.0113,
+    "rho_raw": 0.0126,
+    "d": 0.0424,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.7539744536945069,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "pulse_width_90": {
+    "rho": 0.0004,
+    "rho_raw": 0.0258,
+    "d": 0.0597,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.9907649124480947,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "reflection_index": {
+    "rho": -0.0312,
+    "rho_raw": -0.0203,
+    "d": -0.0231,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.36599919238785916,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "rms": {
+    "rho": -0.0365,
+    "rho_raw": -0.0274,
+    "d": -0.0727,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.2793338082439843,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "skewness": {
+    "rho": -0.0051,
+    "rho_raw": -0.0209,
+    "d": -0.0704,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8856194837267846,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "slope_md": {
+    "rho": -0.0313,
+    "rho_raw": -0.0566,
+    "d": -0.1543,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.36599919238785916,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "slope_md_n": {
+    "rho": -0.0638,
+    "rho_raw": -0.0717,
+    "d": -0.2253,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.04935775041812657,
+    "sig": true,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "slope_systolic": {
+    "rho": -0.0211,
+    "rho_raw": -0.0477,
+    "d": -0.1386,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.5571398711997745,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "slope_systolic_n": {
+    "rho": -0.0577,
+    "rho_raw": -0.0676,
+    "d": -0.2152,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.07537230857017313,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "systolic_width_50": {
+    "rho": 0.0208,
+    "rho_raw": 0.0471,
+    "d": 0.0968,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.5610705182020442,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "systolic_width_75": {
+    "rho": 0.0168,
+    "rho_raw": 0.043,
+    "d": 0.085,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.645748980175946,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "t_dia_ms": {
+    "rho": -0.0539,
+    "rho_raw": -0.0426,
+    "d": -0.1258,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.09832264536197774,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "t_dn": {
+    "rho": -0.0117,
+    "rho_raw": 0.0075,
+    "d": -0.0158,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.7468319366558578,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   },
+   "t_sys_ms": {
+    "rho": 0.0317,
+    "rho_raw": 0.0575,
+    "d": 0.1403,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.3595399599224921,
+    "sig": false,
+    "n_pos": 166,
+    "n_neg": 1230
+   }
+  },
+  "mimic_stroke": {
+   "beat_len_ms": {
+    "rho": 0.0428,
+    "rho_raw": 0.0457,
+    "d": 0.183,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2026826743203555,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "bwr_50": {
+    "rho": -0.0242,
+    "rho_raw": -0.0263,
+    "d": -0.1246,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.49727768597122635,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "crest_factor": {
+    "rho": 0.0019,
+    "rho_raw": -0.0074,
+    "d": -0.0258,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.9542941214186444,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "diastolic_width_50": {
+    "rho": 0.0507,
+    "rho_raw": 0.0579,
+    "d": 0.2472,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.12140520609271412,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "diastolic_width_75": {
+    "rho": 0.0414,
+    "rho_raw": 0.0509,
+    "d": 0.2017,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2153037412041127,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "intensity_ratio_s_d": {
+    "rho": -0.0366,
+    "rho_raw": -0.0349,
+    "d": -0.0146,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.2780829223902441,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "iqr": {
+    "rho": 0.0448,
+    "rho_raw": 0.0555,
+    "d": 0.1928,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.17938052797738854,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "kurtosis": {
+    "rho": -0.0234,
+    "rho_raw": -0.0352,
+    "d": -0.1226,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.5084594571342239,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "lasi": {
+    "rho": 0.0012,
+    "rho_raw": -0.0122,
+    "d": -0.019,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.9731361792781671,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "mean_intensity": {
+    "rho": -0.0058,
+    "rho_raw": 0.0011,
+    "d": 0.0175,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8679743397051312,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "ni_dn": {
+    "rho": 0.0497,
+    "rho_raw": 0.0506,
+    "d": 0.2171,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.13024780288391646,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "ni_ip": {
+    "rho": 0.051,
+    "rho_raw": 0.0516,
+    "d": 0.2034,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.11908904790684995,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.0038,
+    "rho_raw": -0.007,
+    "d": -0.0299,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.9083472285641404,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "nt_dn": {
+    "rho": -0.0287,
+    "rho_raw": -0.017,
+    "d": -0.0846,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.41519005937957143,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "perfusion_index": {
+    "rho": 0.0166,
+    "rho_raw": 0.011,
+    "d": 0.0725,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.647435869074586,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "ppg_characteristic": {
+    "rho": 0.0151,
+    "rho_raw": 0.0239,
+    "d": 0.12,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6763947547298499,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "pulse_amp": {
+    "rho": 0.0475,
+    "rho_raw": 0.0469,
+    "d": 0.1474,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.15128740635683682,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "pulse_width_50": {
+    "rho": 0.0538,
+    "rho_raw": 0.0615,
+    "d": 0.2648,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0983988298707235,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "pulse_width_90": {
+    "rho": 0.0518,
+    "rho_raw": 0.061,
+    "d": 0.236,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.11302426308172721,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "reflection_index": {
+    "rho": 0.051,
+    "rho_raw": 0.0516,
+    "d": 0.2034,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.11908904790684995,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "rms": {
+    "rho": 0.0082,
+    "rho_raw": 0.017,
+    "d": 0.0796,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8233621151836552,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "skewness": {
+    "rho": -0.0174,
+    "rho_raw": -0.026,
+    "d": -0.1103,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6378926777639515,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "slope_md": {
+    "rho": -0.0383,
+    "rho_raw": -0.0487,
+    "d": -0.171,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.2548891799020491,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "slope_md_n": {
+    "rho": 0.0043,
+    "rho_raw": -0.0046,
+    "d": 0.0182,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8967894847190594,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "slope_systolic": {
+    "rho": -0.0386,
+    "rho_raw": -0.0491,
+    "d": -0.1862,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.2507722239438548,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "slope_systolic_n": {
+    "rho": -0.0044,
+    "rho_raw": -0.0144,
+    "d": -0.0075,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8958381715803996,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "systolic_width_50": {
+    "rho": 0.0525,
+    "rho_raw": 0.0611,
+    "d": 0.2449,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.10815774651178083,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "systolic_width_75": {
+    "rho": 0.0538,
+    "rho_raw": 0.0625,
+    "d": 0.2536,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.09865048471173112,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "t_dia_ms": {
+    "rho": 0.0386,
+    "rho_raw": 0.0395,
+    "d": 0.1512,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2507722239438548,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "t_dn": {
+    "rho": 0.0022,
+    "rho_raw": 0.0149,
+    "d": 0.0136,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.9464632689662662,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   },
+   "t_sys_ms": {
+    "rho": 0.0479,
+    "rho_raw": 0.0566,
+    "d": 0.2348,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.14735432211708155,
+    "sig": false,
+    "n_pos": 97,
+    "n_neg": 1299
+   }
+  },
+  "mimic_obesity": {
+   "beat_len_ms": {
+    "rho": -0.0086,
+    "rho_raw": -0.0369,
+    "d": -0.1002,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8146003139399182,
+    "sig": false,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "bwr_50": {
+    "rho": 0.0663,
+    "rho_raw": 0.0761,
+    "d": 0.2263,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.040951917262502475,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "crest_factor": {
+    "rho": 0.1086,
+    "rho_raw": 0.1278,
+    "d": 0.4211,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0004875992068735075,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "diastolic_width_50": {
+    "rho": -0.0903,
+    "rho_raw": -0.118,
+    "d": -0.3874,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.004400044456800421,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "diastolic_width_75": {
+    "rho": -0.0897,
+    "rho_raw": -0.1177,
+    "d": -0.3532,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.004704428178597217,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.063,
+    "rho_raw": 0.0785,
+    "d": 0.0586,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.05217928340635161,
+    "sig": false,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "iqr": {
+    "rho": -0.1284,
+    "rho_raw": -0.1352,
+    "d": -0.4346,
+    "direction": "lower_in_cases",
+    "q_fdr": 2.7794691479623792e-05,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "kurtosis": {
+    "rho": 0.1292,
+    "rho_raw": 0.1456,
+    "d": 0.4703,
+    "direction": "higher_in_cases",
+    "q_fdr": 2.5335458197417102e-05,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "lasi": {
+    "rho": 0.0279,
+    "rho_raw": 0.0476,
+    "d": 0.1342,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.4295374926384214,
+    "sig": false,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "mean_intensity": {
+    "rho": -0.1454,
+    "rho_raw": -0.1521,
+    "d": -0.4854,
+    "direction": "lower_in_cases",
+    "q_fdr": 1.6473078231403944e-06,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "ni_dn": {
+    "rho": -0.0868,
+    "rho_raw": -0.1042,
+    "d": -0.2863,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.006255678707632572,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "ni_ip": {
+    "rho": -0.0745,
+    "rho_raw": -0.094,
+    "d": -0.3215,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.019062876090266728,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.1438,
+    "rho_raw": 0.1541,
+    "d": 0.493,
+    "direction": "higher_in_cases",
+    "q_fdr": 2.0115034655637507e-06,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "nt_dn": {
+    "rho": -0.0382,
+    "rho_raw": -0.0427,
+    "d": -0.1101,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.2550472630852028,
+    "sig": false,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "perfusion_index": {
+    "rho": 0.0797,
+    "rho_raw": 0.0967,
+    "d": 0.3082,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.011462369966424841,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "ppg_characteristic": {
+    "rho": -0.1284,
+    "rho_raw": -0.14,
+    "d": -0.431,
+    "direction": "lower_in_cases",
+    "q_fdr": 2.7794691479623792e-05,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "pulse_amp": {
+    "rho": -0.047,
+    "rho_raw": -0.0293,
+    "d": -0.1328,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.15560457111892126,
+    "sig": false,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "pulse_width_50": {
+    "rho": -0.0973,
+    "rho_raw": -0.128,
+    "d": -0.4056,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.001998693988003279,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "pulse_width_90": {
+    "rho": -0.0932,
+    "rho_raw": -0.1245,
+    "d": -0.3698,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0031750629580773043,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "reflection_index": {
+    "rho": -0.0745,
+    "rho_raw": -0.094,
+    "d": -0.3215,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.019062876090266728,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "rms": {
+    "rho": -0.1526,
+    "rho_raw": -0.1562,
+    "d": -0.5222,
+    "direction": "lower_in_cases",
+    "q_fdr": 5.498752957610303e-07,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "skewness": {
+    "rho": 0.1302,
+    "rho_raw": 0.1495,
+    "d": 0.4888,
+    "direction": "higher_in_cases",
+    "q_fdr": 2.433598431423883e-05,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "slope_md": {
+    "rho": 0.0806,
+    "rho_raw": 0.1188,
+    "d": 0.365,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.010453125755904104,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "slope_md_n": {
+    "rho": 0.0568,
+    "rho_raw": 0.0677,
+    "d": 0.1988,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.08005234615071614,
+    "sig": false,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "slope_systolic": {
+    "rho": 0.0887,
+    "rho_raw": 0.1256,
+    "d": 0.3896,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.005213187626333482,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "slope_systolic_n": {
+    "rho": 0.0756,
+    "rho_raw": 0.089,
+    "d": 0.2476,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.017328854742007762,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "systolic_width_50": {
+    "rho": -0.093,
+    "rho_raw": -0.1291,
+    "d": -0.3636,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.003251409685646049,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "systolic_width_75": {
+    "rho": -0.0947,
+    "rho_raw": -0.1294,
+    "d": -0.3653,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.002749045133011269,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "t_dia_ms": {
+    "rho": 0.0093,
+    "rho_raw": -0.0122,
+    "d": -0.0252,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8023763074640708,
+    "sig": false,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "t_dn": {
+    "rho": -0.0314,
+    "rho_raw": -0.0572,
+    "d": -0.1435,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.36463363029946166,
+    "sig": false,
+    "n_pos": 146,
+    "n_neg": 1250
+   },
+   "t_sys_ms": {
+    "rho": -0.0803,
+    "rho_raw": -0.1203,
+    "d": -0.3519,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.01074317161280001,
+    "sig": true,
+    "n_pos": 146,
+    "n_neg": 1250
+   }
+  },
+  "mimic_diabetes_complicated": {
+   "beat_len_ms": {
+    "rho": 0.0165,
+    "rho_raw": 0.0133,
+    "d": 0.1001,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6502532888097738,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "bwr_50": {
+    "rho": -0.0125,
+    "rho_raw": -0.0115,
+    "d": 0.0196,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.7334093175048111,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "crest_factor": {
+    "rho": -0.018,
+    "rho_raw": -0.0153,
+    "d": -0.0462,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6260487283383832,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "diastolic_width_50": {
+    "rho": 0.0208,
+    "rho_raw": 0.0168,
+    "d": 0.0559,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.5610705182020442,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "diastolic_width_75": {
+    "rho": 0.0396,
+    "rho_raw": 0.0338,
+    "d": 0.0911,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.238764222066539,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.0002,
+    "rho_raw": 0.0021,
+    "d": -0.2244,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.9952163345681879,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "iqr": {
+    "rho": 0.0254,
+    "rho_raw": 0.0235,
+    "d": 0.1207,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.4732350039166769,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "kurtosis": {
+    "rho": -0.0267,
+    "rho_raw": -0.023,
+    "d": -0.1254,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.4472812716454784,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "lasi": {
+    "rho": -0.0604,
+    "rho_raw": -0.0555,
+    "d": -0.1701,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.06252663756432596,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "mean_intensity": {
+    "rho": 0.0117,
+    "rho_raw": 0.0109,
+    "d": 0.03,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.7460613775518476,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "ni_dn": {
+    "rho": -0.012,
+    "rho_raw": -0.0139,
+    "d": -0.0578,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.7418811012087524,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "ni_ip": {
+    "rho": -0.0132,
+    "rho_raw": -0.0153,
+    "d": -0.0423,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.719376760547865,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "normalized_pulse_vol": {
+    "rho": -0.0347,
+    "rho_raw": -0.0323,
+    "d": -0.1373,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.3059148174194765,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "nt_dn": {
+    "rho": 0.0364,
+    "rho_raw": 0.0354,
+    "d": 0.0684,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2806324085692298,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "perfusion_index": {
+    "rho": -0.0069,
+    "rho_raw": -0.0051,
+    "d": 0.0066,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8516422479395319,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "ppg_characteristic": {
+    "rho": 0.0009,
+    "rho_raw": -0.0003,
+    "d": -0.0301,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.9782088808518734,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "pulse_amp": {
+    "rho": -0.0011,
+    "rho_raw": 0.0007,
+    "d": 0.0545,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.9737949194548371,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "pulse_width_50": {
+    "rho": 0.0301,
+    "rho_raw": 0.0246,
+    "d": 0.08,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.386585821521346,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "pulse_width_90": {
+    "rho": 0.0476,
+    "rho_raw": 0.0395,
+    "d": 0.0813,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.1496426992994604,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "reflection_index": {
+    "rho": -0.0132,
+    "rho_raw": -0.0153,
+    "d": -0.0423,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.719376760547865,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "rms": {
+    "rho": 0.0189,
+    "rho_raw": 0.0181,
+    "d": 0.0771,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.606700616510309,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "skewness": {
+    "rho": -0.016,
+    "rho_raw": -0.0132,
+    "d": -0.0387,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6594863177326306,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "slope_md": {
+    "rho": -0.0729,
+    "rho_raw": -0.06,
+    "d": -0.2106,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.022145731782624245,
+    "sig": true,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "slope_md_n": {
+    "rho": -0.037,
+    "rho_raw": -0.0353,
+    "d": -0.0818,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.27150393073973156,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "slope_systolic": {
+    "rho": -0.0683,
+    "rho_raw": -0.0558,
+    "d": -0.2042,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.03418036817098594,
+    "sig": true,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "slope_systolic_n": {
+    "rho": -0.0344,
+    "rho_raw": -0.0321,
+    "d": -0.0929,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.3121894793951197,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "systolic_width_50": {
+    "rho": 0.0575,
+    "rho_raw": 0.0467,
+    "d": 0.1214,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.07537230857017313,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "systolic_width_75": {
+    "rho": 0.055,
+    "rho_raw": 0.0448,
+    "d": 0.0586,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.09124689989169005,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "t_dia_ms": {
+    "rho": 0.0076,
+    "rho_raw": 0.0053,
+    "d": 0.0774,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.838645960267734,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "t_dn": {
+    "rho": 0.0607,
+    "rho_raw": 0.0548,
+    "d": 0.1447,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.06136279329922407,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   },
+   "t_sys_ms": {
+    "rho": 0.0525,
+    "rho_raw": 0.0421,
+    "d": 0.1337,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.10815774651178083,
+    "sig": false,
+    "n_pos": 121,
+    "n_neg": 1275
+   }
+  },
+  "age_association": {
+   "beat_len_ms": {
+    "rho": 0.1879,
+    "rho_raw": 0.1883,
+    "direction": "higher_with_age",
+    "q_fdr": 7.845372155429399e-14,
+    "sig": true
+   },
+   "bwr_50": {
+    "rho": -0.0575,
+    "rho_raw": -0.0589,
+    "direction": "lower_with_age",
+    "q_fdr": 0.027701835777757085,
+    "sig": true
+   },
+   "crest_factor": {
+    "rho": -0.2588,
+    "rho_raw": -0.2617,
+    "direction": "lower_with_age",
+    "q_fdr": 1.9957306716001863e-25,
+    "sig": true
+   },
+   "diastolic_width_50": {
+    "rho": 0.2872,
+    "rho_raw": 0.2898,
+    "direction": "higher_with_age",
+    "q_fdr": 3.069588994001959e-31,
+    "sig": true
+   },
+   "diastolic_width_75": {
+    "rho": 0.3436,
+    "rho_raw": 0.3449,
+    "direction": "higher_with_age",
+    "q_fdr": 5.5384125287370837e-45,
+    "sig": true
+   },
+   "intensity_ratio_s_d": {
+    "rho": -0.0619,
+    "rho_raw": -0.0597,
+    "direction": "lower_with_age",
+    "q_fdr": 0.01751355323423155,
+    "sig": true
+   },
+   "iqr": {
+    "rho": 0.264,
+    "rho_raw": 0.2656,
+    "direction": "higher_with_age",
+    "q_fdr": 2.0815052825332802e-26,
+    "sig": true
+   },
+   "kurtosis": {
+    "rho": -0.3305,
+    "rho_raw": -0.3307,
+    "direction": "lower_with_age",
+    "q_fdr": 1.7069504475539908e-41,
+    "sig": true
+   },
+   "lasi": {
+    "rho": -0.2903,
+    "rho_raw": -0.2924,
+    "direction": "lower_with_age",
+    "q_fdr": 6.566188427531778e-32,
+    "sig": true
+   },
+   "mean_intensity": {
+    "rho": 0.1441,
+    "rho_raw": 0.1481,
+    "direction": "higher_with_age",
+    "q_fdr": 1.3305303519343848e-08,
+    "sig": true
+   },
+   "ni_dn": {
+    "rho": 0.0856,
+    "rho_raw": 0.0849,
+    "direction": "higher_with_age",
+    "q_fdr": 0.0008733651307786522,
+    "sig": true
+   },
+   "ni_ip": {
+    "rho": 0.1076,
+    "rho_raw": 0.1074,
+    "direction": "higher_with_age",
+    "q_fdr": 2.6048863989856576e-05,
+    "sig": true
+   },
+   "normalized_pulse_vol": {
+    "rho": -0.2475,
+    "rho_raw": -0.2504,
+    "direction": "lower_with_age",
+    "q_fdr": 2.6236789185978052e-23,
+    "sig": true
+   },
+   "nt_dn": {
+    "rho": 0.1939,
+    "rho_raw": 0.1979,
+    "direction": "higher_with_age",
+    "q_fdr": 1.1702771073070368e-14,
+    "sig": true
+   },
+   "perfusion_index": {
+    "rho": -0.1829,
+    "rho_raw": -0.1855,
+    "direction": "lower_with_age",
+    "q_fdr": 3.4624266726133735e-13,
+    "sig": true
+   },
+   "ppg_characteristic": {
+    "rho": 0.2038,
+    "rho_raw": 0.2075,
+    "direction": "higher_with_age",
+    "q_fdr": 4.4046560380928057e-16,
+    "sig": true
+   },
+   "pulse_amp": {
+    "rho": -0.1093,
+    "rho_raw": -0.1082,
+    "direction": "lower_with_age",
+    "q_fdr": 1.9815550207293628e-05,
+    "sig": true
+   },
+   "pulse_width_50": {
+    "rho": 0.3443,
+    "rho_raw": 0.346,
+    "direction": "higher_with_age",
+    "q_fdr": 3.824314699601128e-45,
+    "sig": true
+   },
+   "pulse_width_90": {
+    "rho": 0.4097,
+    "rho_raw": 0.409,
+    "direction": "higher_with_age",
+    "q_fdr": 3.2200718569472036e-65,
+    "sig": true
+   },
+   "reflection_index": {
+    "rho": 0.1076,
+    "rho_raw": 0.1074,
+    "direction": "higher_with_age",
+    "q_fdr": 2.6048863989856576e-05,
+    "sig": true
+   },
+   "rms": {
+    "rho": 0.1706,
+    "rho_raw": 0.1749,
+    "direction": "higher_with_age",
+    "q_fdr": 1.370844043505687e-11,
+    "sig": true
+   },
+   "skewness": {
+    "rho": -0.2621,
+    "rho_raw": -0.2649,
+    "direction": "lower_with_age",
+    "q_fdr": 4.760695777304866e-26,
+    "sig": true
+   },
+   "slope_md": {
+    "rho": -0.4847,
+    "rho_raw": -0.4827,
+    "direction": "lower_with_age",
+    "q_fdr": 5.553987473298653e-94,
+    "sig": true
+   },
+   "slope_md_n": {
+    "rho": -0.2207,
+    "rho_raw": -0.224,
+    "direction": "lower_with_age",
+    "q_fdr": 1.1131098826478297e-18,
+    "sig": true
+   },
+   "slope_systolic": {
+    "rho": -0.4827,
+    "rho_raw": -0.4806,
+    "direction": "lower_with_age",
+    "q_fdr": 2.9202465058511033e-93,
+    "sig": true
+   },
+   "slope_systolic_n": {
+    "rho": -0.254,
+    "rho_raw": -0.2569,
+    "direction": "lower_with_age",
+    "q_fdr": 1.6073271709075883e-24,
+    "sig": true
+   },
+   "systolic_width_50": {
+    "rho": 0.4626,
+    "rho_raw": 0.4611,
+    "direction": "higher_with_age",
+    "q_fdr": 5.099171609282069e-85,
+    "sig": true
+   },
+   "systolic_width_75": {
+    "rho": 0.4541,
+    "rho_raw": 0.4526,
+    "direction": "higher_with_age",
+    "q_fdr": 1.234782819033482e-81,
+    "sig": true
+   },
+   "t_dia_ms": {
+    "rho": 0.1118,
+    "rho_raw": 0.1108,
+    "direction": "higher_with_age",
+    "q_fdr": 1.2749078828900843e-05,
+    "sig": true
+   },
+   "t_dn": {
+    "rho": 0.3283,
+    "rho_raw": 0.3296,
+    "direction": "higher_with_age",
+    "q_fdr": 5.492968374005135e-41,
+    "sig": true
+   },
+   "t_sys_ms": {
+    "rho": 0.4699,
+    "rho_raw": 0.4692,
+    "direction": "higher_with_age",
+    "q_fdr": 6.651821073466845e-88,
+    "sig": true
+   }
+  },
+  "sex_association": {
+   "beat_len_ms": {
+    "rho": -0.007,
+    "rho_raw": -0.0144,
+    "direction": "lower_in_male",
+    "q_fdr": 0.8122507858921894,
+    "sig": false
+   },
+   "bwr_50": {
+    "rho": 0.0344,
+    "rho_raw": 0.0367,
+    "direction": "higher_in_male",
+    "q_fdr": 0.2142611900719981,
+    "sig": false
+   },
+   "crest_factor": {
+    "rho": 0.147,
+    "rho_raw": 0.1522,
+    "direction": "higher_in_male",
+    "q_fdr": 9.051931116350795e-09,
+    "sig": true
+   },
+   "diastolic_width_50": {
+    "rho": -0.1345,
+    "rho_raw": -0.1403,
+    "direction": "lower_in_male",
+    "q_fdr": 1.5950168785136734e-07,
+    "sig": true
+   },
+   "diastolic_width_75": {
+    "rho": -0.181,
+    "rho_raw": -0.1836,
+    "direction": "lower_in_male",
+    "q_fdr": 9.82263269923429e-13,
+    "sig": true
+   },
+   "intensity_ratio_s_d": {
+    "rho": -0.0532,
+    "rho_raw": -0.0507,
+    "direction": "lower_in_male",
+    "q_fdr": 0.0465450448407749,
+    "sig": true
+   },
+   "iqr": {
+    "rho": -0.2433,
+    "rho_raw": -0.2451,
+    "direction": "lower_in_male",
+    "q_fdr": 8.146457223959149e-22,
+    "sig": true
+   },
+   "kurtosis": {
+    "rho": 0.2285,
+    "rho_raw": 0.2288,
+    "direction": "higher_in_male",
+    "q_fdr": 2.2244593218834533e-19,
+    "sig": true
+   },
+   "lasi": {
+    "rho": 0.1923,
+    "rho_raw": 0.1955,
+    "direction": "higher_in_male",
+    "q_fdr": 3.377270366858133e-14,
+    "sig": true
+   },
+   "mean_intensity": {
+    "rho": -0.1312,
+    "rho_raw": -0.1356,
+    "direction": "lower_in_male",
+    "q_fdr": 3.057668281045316e-07,
+    "sig": true
+   },
+   "ni_dn": {
+    "rho": 0.0199,
+    "rho_raw": 0.0164,
+    "direction": "higher_in_male",
+    "q_fdr": 0.4822995029718026,
+    "sig": false
+   },
+   "ni_ip": {
+    "rho": 0.007,
+    "rho_raw": 0.0027,
+    "direction": "higher_in_male",
+    "q_fdr": 0.8122507858921894,
+    "sig": false
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.1948,
+    "rho_raw": 0.1985,
+    "direction": "higher_in_male",
+    "q_fdr": 1.7186993502538326e-14,
+    "sig": true
+   },
+   "nt_dn": {
+    "rho": -0.2045,
+    "rho_raw": -0.2082,
+    "direction": "lower_in_male",
+    "q_fdr": 9.134372131373188e-16,
+    "sig": true
+   },
+   "perfusion_index": {
+    "rho": 0.0775,
+    "rho_raw": 0.0836,
+    "direction": "higher_in_male",
+    "q_fdr": 0.0033318673682104045,
+    "sig": true
+   },
+   "ppg_characteristic": {
+    "rho": -0.1647,
+    "rho_raw": -0.1693,
+    "direction": "lower_in_male",
+    "q_fdr": 1.0150345113849316e-10,
+    "sig": true
+   },
+   "pulse_amp": {
+    "rho": -0.0301,
+    "rho_raw": -0.0255,
+    "direction": "lower_in_male",
+    "q_fdr": 0.27988234661976946,
+    "sig": false
+   },
+   "pulse_width_50": {
+    "rho": -0.1575,
+    "rho_raw": -0.1615,
+    "direction": "lower_in_male",
+    "q_fdr": 6.381602804882008e-10,
+    "sig": true
+   },
+   "pulse_width_90": {
+    "rho": -0.2043,
+    "rho_raw": -0.2027,
+    "direction": "lower_in_male",
+    "q_fdr": 9.13442518144499e-16,
+    "sig": true
+   },
+   "reflection_index": {
+    "rho": 0.007,
+    "rho_raw": 0.0027,
+    "direction": "higher_in_male",
+    "q_fdr": 0.8122507858921894,
+    "sig": false
+   },
+   "rms": {
+    "rho": -0.1823,
+    "rho_raw": -0.1864,
+    "direction": "lower_in_male",
+    "q_fdr": 6.707715647392045e-13,
+    "sig": true
+   },
+   "skewness": {
+    "rho": 0.1457,
+    "rho_raw": 0.151,
+    "direction": "higher_in_male",
+    "q_fdr": 1.2035594768109184e-08,
+    "sig": true
+   },
+   "slope_md": {
+    "rho": 0.2023,
+    "rho_raw": 0.1965,
+    "direction": "higher_in_male",
+    "q_fdr": 1.6145912112329634e-15,
+    "sig": true
+   },
+   "slope_md_n": {
+    "rho": 0.1454,
+    "rho_raw": 0.1506,
+    "direction": "higher_in_male",
+    "q_fdr": 1.2721923576117805e-08,
+    "sig": true
+   },
+   "slope_systolic": {
+    "rho": 0.2076,
+    "rho_raw": 0.2013,
+    "direction": "higher_in_male",
+    "q_fdr": 3.673711021473329e-16,
+    "sig": true
+   },
+   "slope_systolic_n": {
+    "rho": 0.1673,
+    "rho_raw": 0.1719,
+    "direction": "higher_in_male",
+    "q_fdr": 5.002297875396176e-11,
+    "sig": true
+   },
+   "systolic_width_50": {
+    "rho": -0.2001,
+    "rho_raw": -0.196,
+    "direction": "lower_in_male",
+    "q_fdr": 3.1002888266828477e-15,
+    "sig": true
+   },
+   "systolic_width_75": {
+    "rho": -0.2055,
+    "rho_raw": -0.2013,
+    "direction": "lower_in_male",
+    "q_fdr": 6.779534080309173e-16,
+    "sig": true
+   },
+   "t_dia_ms": {
+    "rho": 0.026,
+    "rho_raw": 0.0214,
+    "direction": "higher_in_male",
+    "q_fdr": 0.3503318764595691,
+    "sig": false
+   },
+   "t_dn": {
+    "rho": -0.1947,
+    "rho_raw": -0.197,
+    "direction": "lower_in_male",
+    "q_fdr": 1.7186993502538326e-14,
+    "sig": true
+   },
+   "t_sys_ms": {
+    "rho": -0.1799,
+    "rho_raw": -0.1776,
+    "direction": "lower_in_male",
+    "q_fdr": 1.3231139212365102e-12,
+    "sig": true
+   }
+  }
+ },
+ "vital": {
+  "vital_preop_htn": {
+   "beat_len_ms": {
+    "rho": -0.0044,
+    "rho_raw": 0.0346,
+    "d": 0.0778,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8717176818371221,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "bwr_50": {
+    "rho": 0.0636,
+    "rho_raw": 0.0478,
+    "d": 0.0823,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.010413549287049111,
+    "sig": true,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "crest_factor": {
+    "rho": 0.043,
+    "rho_raw": 0.0088,
+    "d": 0.0241,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.09312845770942428,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "diastolic_width_50": {
+    "rho": -0.0635,
+    "rho_raw": -0.0025,
+    "d": 0.0059,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.010413549287049111,
+    "sig": true,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "diastolic_width_75": {
+    "rho": -0.0572,
+    "rho_raw": 0.04,
+    "d": 0.0829,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.02244930896720106,
+    "sig": true,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.0515,
+    "rho_raw": 0.0572,
+    "d": 0.0625,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.04404767544139524,
+    "sig": true,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "iqr": {
+    "rho": -0.0292,
+    "rho_raw": 0.0506,
+    "d": 0.116,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.26982714558778226,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "kurtosis": {
+    "rho": 0.039,
+    "rho_raw": -0.0236,
+    "d": -0.0568,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.13112461009214346,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "lasi": {
+    "rho": -0.0222,
+    "rho_raw": -0.0977,
+    "d": -0.2024,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.4237107984766647,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "mean_intensity": {
+    "rho": -0.0622,
+    "rho_raw": -0.0536,
+    "d": -0.1137,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0122530234037241,
+    "sig": true,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "ni_dn": {
+    "rho": -0.0242,
+    "rho_raw": -0.0834,
+    "d": -0.1578,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.3749607067450097,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "ni_ip": {
+    "rho": -0.0635,
+    "rho_raw": -0.0767,
+    "d": -0.1524,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.010413549287049111,
+    "sig": true,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.054,
+    "rho_raw": -0.0002,
+    "d": 0.0132,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.033471223107670596,
+    "sig": true,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "nt_dn": {
+    "rho": -0.0201,
+    "rho_raw": 0.0617,
+    "d": 0.1102,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.47222354375100384,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "perfusion_index": {
+    "rho": 0.0503,
+    "rho_raw": 0.0481,
+    "d": 0.1079,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.049316641550773005,
+    "sig": true,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "ppg_characteristic": {
+    "rho": -0.0568,
+    "rho_raw": -0.0426,
+    "d": -0.0799,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.023526733368444335,
+    "sig": true,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "pulse_amp": {
+    "rho": 0.032,
+    "rho_raw": 0.0409,
+    "d": 0.0198,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.22524303352554734,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "pulse_width_50": {
+    "rho": -0.061,
+    "rho_raw": 0.0169,
+    "d": 0.0519,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.014348294998482553,
+    "sig": true,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "pulse_width_90": {
+    "rho": -0.0453,
+    "rho_raw": 0.0664,
+    "d": 0.1109,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.07537230857017313,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "reflection_index": {
+    "rho": -0.0635,
+    "rho_raw": -0.0767,
+    "d": -0.1524,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.010413549287049111,
+    "sig": true,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "rms": {
+    "rho": -0.0502,
+    "rho_raw": -0.007,
+    "d": -0.0229,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.04935775041812657,
+    "sig": true,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "skewness": {
+    "rho": 0.0397,
+    "rho_raw": 0.0062,
+    "d": 0.0124,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.12291471180097661,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "slope_md": {
+    "rho": 0.0078,
+    "rho_raw": -0.1149,
+    "d": -0.2576,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.7886610901799338,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "slope_md_n": {
+    "rho": -0.0038,
+    "rho_raw": -0.0483,
+    "d": -0.1067,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8920710596230819,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "slope_systolic": {
+    "rho": 0.0113,
+    "rho_raw": -0.1139,
+    "d": -0.2488,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6904156894716819,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "slope_systolic_n": {
+    "rho": -0.0016,
+    "rho_raw": -0.0554,
+    "d": -0.1186,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.9508747491467019,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "systolic_width_50": {
+    "rho": -0.0276,
+    "rho_raw": 0.0925,
+    "d": 0.1552,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.30006665205615884,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "systolic_width_75": {
+    "rho": -0.0326,
+    "rho_raw": 0.0867,
+    "d": 0.1391,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2153037412041127,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "t_dia_ms": {
+    "rho": -0.0018,
+    "rho_raw": 0.0228,
+    "d": 0.05,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.945684559427293,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "t_dn": {
+    "rho": -0.0221,
+    "rho_raw": 0.0927,
+    "d": 0.1374,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.4245452883249087,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   },
+   "t_sys_ms": {
+    "rho": -0.0188,
+    "rho_raw": 0.0998,
+    "d": 0.1962,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.49977863496989416,
+    "sig": false,
+    "n_pos": 760,
+    "n_neg": 1494
+   }
+  },
+  "vital_preop_dm": {
+   "beat_len_ms": {
+    "rho": -0.0459,
+    "rho_raw": -0.0249,
+    "d": -0.043,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.07216262483040062,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "bwr_50": {
+    "rho": 0.0456,
+    "rho_raw": 0.0378,
+    "d": 0.1025,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.07473044694979586,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "crest_factor": {
+    "rho": -0.0284,
+    "rho_raw": -0.0443,
+    "d": -0.1258,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.28453057461063047,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "diastolic_width_50": {
+    "rho": -0.0283,
+    "rho_raw": 0.0024,
+    "d": 0.0214,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.28782900030898856,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "diastolic_width_75": {
+    "rho": -0.009,
+    "rho_raw": 0.039,
+    "d": 0.1191,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.7503000797889029,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.0194,
+    "rho_raw": 0.0233,
+    "d": -0.0238,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.48851060342368136,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "iqr": {
+    "rho": 0.0317,
+    "rho_raw": 0.0696,
+    "d": 0.214,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.230104504914307,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "kurtosis": {
+    "rho": -0.0295,
+    "rho_raw": -0.059,
+    "d": -0.1875,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.2665751498898873,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "lasi": {
+    "rho": -0.0714,
+    "rho_raw": -0.1082,
+    "d": -0.3515,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.004206370237844001,
+    "sig": true,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "mean_intensity": {
+    "rho": 0.0237,
+    "rho_raw": 0.0261,
+    "d": 0.0927,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.386585821521346,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "ni_dn": {
+    "rho": -0.0474,
+    "rho_raw": -0.0772,
+    "d": -0.2148,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.06364027538294141,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "ni_ip": {
+    "rho": -0.066,
+    "rho_raw": -0.0731,
+    "d": -0.2366,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0083527158190259,
+    "sig": true,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "normalized_pulse_vol": {
+    "rho": -0.0329,
+    "rho_raw": -0.0576,
+    "d": -0.1676,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.2120598414118064,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "nt_dn": {
+    "rho": 0.0518,
+    "rho_raw": 0.0907,
+    "d": 0.241,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.04287856762725058,
+    "sig": true,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "perfusion_index": {
+    "rho": -0.019,
+    "rho_raw": -0.0186,
+    "d": -0.0281,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.49727768597122635,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "ppg_characteristic": {
+    "rho": 0.0214,
+    "rho_raw": 0.0269,
+    "d": 0.105,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.4390207351945019,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "pulse_amp": {
+    "rho": 0.0078,
+    "rho_raw": 0.0132,
+    "d": 0.0376,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.788476156425279,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "pulse_width_50": {
+    "rho": -0.0193,
+    "rho_raw": 0.0195,
+    "d": 0.0805,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.49107330166635105,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "pulse_width_90": {
+    "rho": 0.0094,
+    "rho_raw": 0.0637,
+    "d": 0.1735,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.7418811012087524,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "reflection_index": {
+    "rho": -0.066,
+    "rho_raw": -0.0731,
+    "d": -0.2366,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0083527158190259,
+    "sig": true,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "rms": {
+    "rho": 0.0348,
+    "rho_raw": 0.0543,
+    "d": 0.1886,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.18553891270874692,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "skewness": {
+    "rho": -0.0198,
+    "rho_raw": -0.0355,
+    "d": -0.1233,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.48003697247634386,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "slope_md": {
+    "rho": -0.0355,
+    "rho_raw": -0.0948,
+    "d": -0.298,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.1762921145748844,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "slope_md_n": {
+    "rho": -0.0695,
+    "rho_raw": -0.0909,
+    "d": -0.2699,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.005421734220340831,
+    "sig": true,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "slope_systolic": {
+    "rho": -0.0378,
+    "rho_raw": -0.0978,
+    "d": -0.2962,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.1469374260292555,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "slope_systolic_n": {
+    "rho": -0.0669,
+    "rho_raw": -0.0927,
+    "d": -0.2844,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.00747283348470455,
+    "sig": true,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "systolic_width_50": {
+    "rho": 0.0254,
+    "rho_raw": 0.0834,
+    "d": 0.1965,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.34803384256194164,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "systolic_width_75": {
+    "rho": 0.0236,
+    "rho_raw": 0.081,
+    "d": 0.1854,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.3877641454940962,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "t_dia_ms": {
+    "rho": -0.0535,
+    "rho_raw": -0.0399,
+    "d": -0.088,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.03534919029994162,
+    "sig": true,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "t_dn": {
+    "rho": 0.0335,
+    "rho_raw": 0.0887,
+    "d": 0.1977,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2035959506743504,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   },
+   "t_sys_ms": {
+    "rho": 0.0278,
+    "rho_raw": 0.0854,
+    "d": 0.2284,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.29712949818067125,
+    "sig": false,
+    "n_pos": 257,
+    "n_neg": 1997
+   }
+  },
+  "vital_emop": {
+   "beat_len_ms": {
+    "rho": -0.1929,
+    "rho_raw": -0.1945,
+    "d": -0.6574,
+    "direction": "lower_in_cases",
+    "q_fdr": 5.363917642226324e-18,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "bwr_50": {
+    "rho": 0.1134,
+    "rho_raw": 0.1159,
+    "d": 0.381,
+    "direction": "higher_in_cases",
+    "q_fdr": 2.0115034655637507e-06,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "crest_factor": {
+    "rho": -0.1371,
+    "rho_raw": -0.1305,
+    "d": -0.4191,
+    "direction": "lower_in_cases",
+    "q_fdr": 5.814178253210526e-09,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "diastolic_width_50": {
+    "rho": -0.1048,
+    "rho_raw": -0.1087,
+    "d": -0.3482,
+    "direction": "lower_in_cases",
+    "q_fdr": 1.4886940317041948e-05,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "diastolic_width_75": {
+    "rho": -0.1023,
+    "rho_raw": -0.1059,
+    "d": -0.3277,
+    "direction": "lower_in_cases",
+    "q_fdr": 2.433598431423883e-05,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.0349,
+    "rho_raw": 0.0354,
+    "d": -0.0239,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.1842638408967545,
+    "sig": false,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "iqr": {
+    "rho": 0.0129,
+    "rho_raw": 0.0022,
+    "d": 0.0135,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6504553918431322,
+    "sig": false,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "kurtosis": {
+    "rho": -0.1018,
+    "rho_raw": -0.0894,
+    "d": -0.2776,
+    "direction": "lower_in_cases",
+    "q_fdr": 2.5335458197417102e-05,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "lasi": {
+    "rho": 0.0005,
+    "rho_raw": 0.0068,
+    "d": -0.029,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.9836926071112141,
+    "sig": false,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "mean_intensity": {
+    "rho": 0.1179,
+    "rho_raw": 0.1144,
+    "d": 0.374,
+    "direction": "higher_in_cases",
+    "q_fdr": 9.935645015204393e-07,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "ni_dn": {
+    "rho": -0.0058,
+    "rho_raw": -0.002,
+    "d": 0.0109,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.843092144186954,
+    "sig": false,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "ni_ip": {
+    "rho": -0.0647,
+    "rho_raw": -0.0652,
+    "d": -0.1928,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.009578573728441064,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "normalized_pulse_vol": {
+    "rho": -0.115,
+    "rho_raw": -0.1043,
+    "d": -0.3092,
+    "direction": "lower_in_cases",
+    "q_fdr": 1.5947882170223808e-06,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "nt_dn": {
+    "rho": 0.0854,
+    "rho_raw": 0.0744,
+    "d": 0.2408,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0004963852641483165,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "perfusion_index": {
+    "rho": -0.1354,
+    "rho_raw": -0.1339,
+    "d": -0.4174,
+    "direction": "lower_in_cases",
+    "q_fdr": 8.787459219744055e-09,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "ppg_characteristic": {
+    "rho": 0.116,
+    "rho_raw": 0.1118,
+    "d": 0.3691,
+    "direction": "higher_in_cases",
+    "q_fdr": 1.36215267974803e-06,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "pulse_amp": {
+    "rho": -0.0796,
+    "rho_raw": -0.0809,
+    "d": -0.3431,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0012707049728183004,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "pulse_width_50": {
+    "rho": -0.0953,
+    "rho_raw": -0.0996,
+    "d": -0.3152,
+    "direction": "lower_in_cases",
+    "q_fdr": 8.694226700321919e-05,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "pulse_width_90": {
+    "rho": -0.0824,
+    "rho_raw": -0.0869,
+    "d": -0.2396,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0007843085692069551,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "reflection_index": {
+    "rho": -0.0647,
+    "rho_raw": -0.0652,
+    "d": -0.1928,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.009578573728441064,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "rms": {
+    "rho": 0.0978,
+    "rho_raw": 0.0889,
+    "d": 0.2769,
+    "direction": "higher_in_cases",
+    "q_fdr": 5.759209204516422e-05,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "skewness": {
+    "rho": -0.1105,
+    "rho_raw": -0.103,
+    "d": -0.3414,
+    "direction": "lower_in_cases",
+    "q_fdr": 4.144617917595355e-06,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "slope_md": {
+    "rho": 0.0681,
+    "rho_raw": 0.0734,
+    "d": 0.2225,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.006404164309744633,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "slope_md_n": {
+    "rho": -0.1825,
+    "rho_raw": -0.1751,
+    "d": -0.5444,
+    "direction": "lower_in_cases",
+    "q_fdr": 4.057457467112246e-16,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "slope_systolic": {
+    "rho": 0.0612,
+    "rho_raw": 0.0671,
+    "d": 0.1971,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.014115657253956207,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "slope_systolic_n": {
+    "rho": -0.176,
+    "rho_raw": -0.1669,
+    "d": -0.5176,
+    "direction": "lower_in_cases",
+    "q_fdr": 4.954668111185893e-15,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "systolic_width_50": {
+    "rho": -0.0647,
+    "rho_raw": -0.0703,
+    "d": -0.1599,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.009578573728441064,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "systolic_width_75": {
+    "rho": -0.0665,
+    "rho_raw": -0.072,
+    "d": -0.1716,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.007957832514597576,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "t_dia_ms": {
+    "rho": -0.1989,
+    "rho_raw": -0.2001,
+    "d": -0.6705,
+    "direction": "lower_in_cases",
+    "q_fdr": 4.9976369723804755e-19,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "t_dn": {
+    "rho": -0.0688,
+    "rho_raw": -0.0739,
+    "d": -0.228,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.005983922878959724,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   },
+   "t_sys_ms": {
+    "rho": -0.0889,
+    "rho_raw": -0.0923,
+    "d": -0.2535,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0002800293146820676,
+    "sig": true,
+    "n_pos": 270,
+    "n_neg": 1984
+   }
+  },
+  "age_association": {
+   "beat_len_ms": {
+    "rho": 0.1283,
+    "rho_raw": 0.1269,
+    "direction": "higher_with_age",
+    "q_fdr": 2.1862286145687853e-09,
+    "sig": true
+   },
+   "bwr_50": {
+    "rho": -0.0858,
+    "rho_raw": -0.0656,
+    "direction": "lower_with_age",
+    "q_fdr": 7.722743493392035e-05,
+    "sig": true
+   },
+   "crest_factor": {
+    "rho": -0.1337,
+    "rho_raw": -0.1203,
+    "direction": "lower_with_age",
+    "q_fdr": 4.21677362944136e-10,
+    "sig": true
+   },
+   "diastolic_width_50": {
+    "rho": 0.2301,
+    "rho_raw": 0.2079,
+    "direction": "higher_with_age",
+    "q_fdr": 8.823218165579121e-28,
+    "sig": true
+   },
+   "diastolic_width_75": {
+    "rho": 0.3383,
+    "rho_raw": 0.3183,
+    "direction": "higher_with_age",
+    "q_fdr": 1.656014267932363e-60,
+    "sig": true
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.0093,
+    "rho_raw": 0.0167,
+    "direction": "higher_with_age",
+    "q_fdr": 0.6630217942924923,
+    "sig": false
+   },
+   "iqr": {
+    "rho": 0.3059,
+    "rho_raw": 0.2797,
+    "direction": "higher_with_age",
+    "q_fdr": 4.060455681795014e-49,
+    "sig": true
+   },
+   "kurtosis": {
+    "rho": -0.2428,
+    "rho_raw": -0.2201,
+    "direction": "lower_with_age",
+    "q_fdr": 6.441830008019509e-31,
+    "sig": true
+   },
+   "lasi": {
+    "rho": -0.2514,
+    "rho_raw": -0.2507,
+    "direction": "lower_with_age",
+    "q_fdr": 4.570231534431032e-33,
+    "sig": true
+   },
+   "mean_intensity": {
+    "rho": 0.0482,
+    "rho_raw": 0.0349,
+    "direction": "higher_with_age",
+    "q_fdr": 0.028941482056995586,
+    "sig": true
+   },
+   "ni_dn": {
+    "rho": -0.1802,
+    "rho_raw": -0.1867,
+    "direction": "lower_with_age",
+    "q_fdr": 2.067873792754121e-17,
+    "sig": true
+   },
+   "ni_ip": {
+    "rho": -0.0214,
+    "rho_raw": -0.0348,
+    "direction": "lower_with_age",
+    "q_fdr": 0.33128542474933154,
+    "sig": false
+   },
+   "normalized_pulse_vol": {
+    "rho": -0.2073,
+    "rho_raw": -0.1873,
+    "direction": "lower_with_age",
+    "q_fdr": 1.0015703066000115e-22,
+    "sig": true
+   },
+   "nt_dn": {
+    "rho": 0.2751,
+    "rho_raw": 0.2682,
+    "direction": "higher_with_age",
+    "q_fdr": 1.1993862673733552e-39,
+    "sig": true
+   },
+   "perfusion_index": {
+    "rho": -0.0163,
+    "rho_raw": -0.009,
+    "direction": "lower_with_age",
+    "q_fdr": 0.4541582257149873,
+    "sig": false
+   },
+   "ppg_characteristic": {
+    "rho": 0.0688,
+    "rho_raw": 0.0548,
+    "direction": "higher_with_age",
+    "q_fdr": 0.001569216550085741,
+    "sig": true
+   },
+   "pulse_amp": {
+    "rho": 0.042,
+    "rho_raw": 0.0388,
+    "direction": "higher_with_age",
+    "q_fdr": 0.056205567113153415,
+    "sig": false
+   },
+   "pulse_width_50": {
+    "rho": 0.2802,
+    "rho_raw": 0.2592,
+    "direction": "higher_with_age",
+    "q_fdr": 3.9622570837679046e-41,
+    "sig": true
+   },
+   "pulse_width_90": {
+    "rho": 0.3809,
+    "rho_raw": 0.3641,
+    "direction": "higher_with_age",
+    "q_fdr": 1.0170887830368576e-77,
+    "sig": true
+   },
+   "reflection_index": {
+    "rho": -0.0214,
+    "rho_raw": -0.0348,
+    "direction": "lower_with_age",
+    "q_fdr": 0.33128542474933154,
+    "sig": false
+   },
+   "rms": {
+    "rho": 0.1749,
+    "rho_raw": 0.1545,
+    "direction": "higher_with_age",
+    "q_fdr": 1.8482975108921554e-16,
+    "sig": true
+   },
+   "skewness": {
+    "rho": -0.1419,
+    "rho_raw": -0.1239,
+    "direction": "lower_with_age",
+    "q_fdr": 3.1368610908568745e-11,
+    "sig": true
+   },
+   "slope_md": {
+    "rho": -0.4237,
+    "rho_raw": -0.4104,
+    "direction": "lower_with_age",
+    "q_fdr": 4.458677480188401e-97,
+    "sig": true
+   },
+   "slope_md_n": {
+    "rho": -0.1615,
+    "rho_raw": -0.1546,
+    "direction": "lower_with_age",
+    "q_fdr": 3.234988738404284e-14,
+    "sig": true
+   },
+   "slope_systolic": {
+    "rho": -0.4303,
+    "rho_raw": -0.4168,
+    "direction": "lower_with_age",
+    "q_fdr": 3.7810460188955617e-100,
+    "sig": true
+   },
+   "slope_systolic_n": {
+    "rho": -0.1924,
+    "rho_raw": -0.1848,
+    "direction": "lower_with_age",
+    "q_fdr": 1.0980074737538435e-19,
+    "sig": true
+   },
+   "systolic_width_50": {
+    "rho": 0.4055,
+    "rho_raw": 0.3929,
+    "direction": "higher_with_age",
+    "q_fdr": 1.3999091206222663e-88,
+    "sig": true
+   },
+   "systolic_width_75": {
+    "rho": 0.4028,
+    "rho_raw": 0.3892,
+    "direction": "higher_with_age",
+    "q_fdr": 2.079219766253199e-87,
+    "sig": true
+   },
+   "t_dia_ms": {
+    "rho": 0.0795,
+    "rho_raw": 0.0795,
+    "direction": "higher_with_age",
+    "q_fdr": 0.0002520435648132396,
+    "sig": true
+   },
+   "t_dn": {
+    "rho": 0.3847,
+    "rho_raw": 0.3752,
+    "direction": "higher_with_age",
+    "q_fdr": 2.359893046801357e-79,
+    "sig": true
+   },
+   "t_sys_ms": {
+    "rho": 0.3999,
+    "rho_raw": 0.3894,
+    "direction": "higher_with_age",
+    "q_fdr": 4.172653841696494e-86,
+    "sig": true
+   }
+  },
+  "sex_association": {
+   "beat_len_ms": {
+    "rho": -0.019,
+    "rho_raw": -0.0031,
+    "direction": "lower_in_male",
+    "q_fdr": 0.4215937225271422,
+    "sig": false
+   },
+   "bwr_50": {
+    "rho": 0.1604,
+    "rho_raw": 0.1508,
+    "direction": "higher_in_male",
+    "q_fdr": 8.116537116902729e-14,
+    "sig": true
+   },
+   "crest_factor": {
+    "rho": 0.1121,
+    "rho_raw": 0.0956,
+    "direction": "higher_in_male",
+    "q_fdr": 2.414156515725813e-07,
+    "sig": true
+   },
+   "diastolic_width_50": {
+    "rho": -0.1767,
+    "rho_raw": -0.1459,
+    "direction": "lower_in_male",
+    "q_fdr": 2.929670546301168e-16,
+    "sig": true
+   },
+   "diastolic_width_75": {
+    "rho": -0.1705,
+    "rho_raw": -0.1211,
+    "direction": "lower_in_male",
+    "q_fdr": 2.290107314830942e-15,
+    "sig": true
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.0588,
+    "rho_raw": 0.0604,
+    "direction": "higher_in_male",
+    "q_fdr": 0.008749263059461611,
+    "sig": true
+   },
+   "iqr": {
+    "rho": -0.2056,
+    "rho_raw": -0.1614,
+    "direction": "lower_in_male",
+    "q_fdr": 1.0934531154869786e-21,
+    "sig": true
+   },
+   "kurtosis": {
+    "rho": 0.1807,
+    "rho_raw": 0.1478,
+    "direction": "higher_in_male",
+    "q_fdr": 6.111346310481845e-17,
+    "sig": true
+   },
+   "lasi": {
+    "rho": 0.0212,
+    "rho_raw": -0.0106,
+    "direction": "lower_in_male",
+    "q_fdr": 0.36561808841140586,
+    "sig": false
+   },
+   "mean_intensity": {
+    "rho": -0.1075,
+    "rho_raw": -0.1024,
+    "direction": "lower_in_male",
+    "q_fdr": 7.096203121973303e-07,
+    "sig": true
+   },
+   "ni_dn": {
+    "rho": -0.0447,
+    "rho_raw": -0.0666,
+    "direction": "lower_in_male",
+    "q_fdr": 0.047684336024192024,
+    "sig": true
+   },
+   "ni_ip": {
+    "rho": -0.1078,
+    "rho_raw": -0.1112,
+    "direction": "lower_in_male",
+    "q_fdr": 6.861662733697251e-07,
+    "sig": true
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.1614,
+    "rho_raw": 0.1342,
+    "direction": "higher_in_male",
+    "q_fdr": 5.88357820655597e-14,
+    "sig": true
+   },
+   "nt_dn": {
+    "rho": -0.0736,
+    "rho_raw": -0.0373,
+    "direction": "lower_in_male",
+    "q_fdr": 0.0009057256058604546,
+    "sig": true
+   },
+   "perfusion_index": {
+    "rho": 0.0599,
+    "rho_raw": 0.0583,
+    "direction": "higher_in_male",
+    "q_fdr": 0.007603883560877661,
+    "sig": true
+   },
+   "ppg_characteristic": {
+    "rho": -0.1143,
+    "rho_raw": -0.1065,
+    "direction": "lower_in_male",
+    "q_fdr": 1.4242061421292392e-07,
+    "sig": true
+   },
+   "pulse_amp": {
+    "rho": -0.0284,
+    "rho_raw": -0.0234,
+    "direction": "lower_in_male",
+    "q_fdr": 0.2244626891321785,
+    "sig": false
+   },
+   "pulse_width_50": {
+    "rho": -0.172,
+    "rho_raw": -0.1329,
+    "direction": "lower_in_male",
+    "q_fdr": 1.3849677540323102e-15,
+    "sig": true
+   },
+   "pulse_width_90": {
+    "rho": -0.1548,
+    "rho_raw": -0.0982,
+    "direction": "lower_in_male",
+    "q_fdr": 6.109755594573404e-13,
+    "sig": true
+   },
+   "reflection_index": {
+    "rho": -0.1078,
+    "rho_raw": -0.1112,
+    "direction": "lower_in_male",
+    "q_fdr": 6.861662733697251e-07,
+    "sig": true
+   },
+   "rms": {
+    "rho": -0.1635,
+    "rho_raw": -0.1412,
+    "direction": "lower_in_male",
+    "q_fdr": 2.86167931031402e-14,
+    "sig": true
+   },
+   "skewness": {
+    "rho": 0.145,
+    "rho_raw": 0.1275,
+    "direction": "higher_in_male",
+    "q_fdr": 1.6780388759450256e-11,
+    "sig": true
+   },
+   "slope_md": {
+    "rho": 0.1362,
+    "rho_raw": 0.0726,
+    "direction": "higher_in_male",
+    "q_fdr": 2.7732478547503e-10,
+    "sig": true
+   },
+   "slope_md_n": {
+    "rho": 0.0655,
+    "rho_raw": 0.0452,
+    "direction": "higher_in_male",
+    "q_fdr": 0.0033318673682104045,
+    "sig": true
+   },
+   "slope_systolic": {
+    "rho": 0.1378,
+    "rho_raw": 0.0729,
+    "direction": "higher_in_male",
+    "q_fdr": 1.6624287210162293e-10,
+    "sig": true
+   },
+   "slope_systolic_n": {
+    "rho": 0.0728,
+    "rho_raw": 0.0482,
+    "direction": "higher_in_male",
+    "q_fdr": 0.0010213550154646487,
+    "sig": true
+   },
+   "systolic_width_50": {
+    "rho": -0.1295,
+    "rho_raw": -0.0697,
+    "direction": "lower_in_male",
+    "q_fdr": 2.027990612785206e-09,
+    "sig": true
+   },
+   "systolic_width_75": {
+    "rho": -0.1352,
+    "rho_raw": -0.0756,
+    "direction": "lower_in_male",
+    "q_fdr": 3.6677392800102344e-10,
+    "sig": true
+   },
+   "t_dia_ms": {
+    "rho": -0.0056,
+    "rho_raw": 0.0042,
+    "direction": "higher_in_male",
+    "q_fdr": 0.8157459476521706,
+    "sig": false
+   },
+   "t_dn": {
+    "rho": -0.1041,
+    "rho_raw": -0.0495,
+    "direction": "lower_in_male",
+    "q_fdr": 1.6274810562237098e-06,
+    "sig": true
+   },
+   "t_sys_ms": {
+    "rho": -0.1127,
+    "rho_raw": -0.055,
+    "direction": "lower_in_male",
+    "q_fdr": 2.0919510874349596e-07,
+    "sig": true
+   }
+  }
+ },
+ "aurora_a": {
+  "aurora_high_blood_pressure": {
+   "beat_len_ms": {
+    "rho": -0.0546,
+    "rho_raw": -0.018,
+    "d": -0.0941,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.32824100576088355,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "bwr_50": {
+    "rho": 0.0438,
+    "rho_raw": 0.1159,
+    "d": 0.2853,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.4433493197063444,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "crest_factor": {
+    "rho": 0.0655,
+    "rho_raw": 0.1756,
+    "d": 0.344,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.23069750414542045,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "diastolic_width_50": {
+    "rho": -0.1194,
+    "rho_raw": -0.2314,
+    "d": -0.5443,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.02081095035022206,
+    "sig": true,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "diastolic_width_75": {
+    "rho": -0.063,
+    "rho_raw": -0.1301,
+    "d": -0.3218,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.2489901072301143,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.0348,
+    "rho_raw": 0.0946,
+    "d": 0.2233,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.5540550415788359,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "iqr": {
+    "rho": -0.0116,
+    "rho_raw": 0.0578,
+    "d": 0.1077,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.845401335952137,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "kurtosis": {
+    "rho": 0.0146,
+    "rho_raw": -0.0104,
+    "d": -0.0416,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8078877020352789,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "lasi": {
+    "rho": 0.0676,
+    "rho_raw": 0.1396,
+    "d": 0.2797,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.21423009815632327,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "mean_intensity": {
+    "rho": -0.0604,
+    "rho_raw": -0.1538,
+    "d": -0.3197,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.26982714558778226,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "ni_dn": {
+    "rho": -0.0803,
+    "rho_raw": -0.094,
+    "d": -0.2052,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.13297231967337358,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "ni_ip": {
+    "rho": -0.0272,
+    "rho_raw": -0.0473,
+    "d": -0.1321,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6465645525058348,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.0415,
+    "rho_raw": 0.0972,
+    "d": 0.1862,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.4722882972006547,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "nt_dn": {
+    "rho": 0.0448,
+    "rho_raw": -0.0177,
+    "d": -0.0489,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.4334445776524753,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "perfusion_index": {
+    "rho": 0.0542,
+    "rho_raw": 0.165,
+    "d": 0.3131,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.3319025566898819,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "ppg_characteristic": {
+    "rho": -0.0775,
+    "rho_raw": -0.2009,
+    "d": -0.4202,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.1496426992994604,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "pulse_amp": {
+    "rho": 0.0075,
+    "rho_raw": 0.0443,
+    "d": 0.0389,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8930493946703304,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "pulse_width_50": {
+    "rho": -0.0953,
+    "rho_raw": -0.1877,
+    "d": -0.4631,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.07161494433611938,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "pulse_width_90": {
+    "rho": -0.0859,
+    "rho_raw": -0.1583,
+    "d": -0.3788,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.1056560238415068,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "reflection_index": {
+    "rho": -0.0272,
+    "rho_raw": -0.0473,
+    "d": -0.1321,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6465645525058348,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "rms": {
+    "rho": -0.0492,
+    "rho_raw": -0.1227,
+    "d": -0.2632,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.38515304450603294,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "skewness": {
+    "rho": 0.0649,
+    "rho_raw": 0.178,
+    "d": 0.3628,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2344648251939479,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "slope_md": {
+    "rho": 0.0292,
+    "rho_raw": -0.0888,
+    "d": -0.1554,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6271841058465794,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "slope_md_n": {
+    "rho": -0.0683,
+    "rho_raw": -0.141,
+    "d": -0.3198,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.21052309630959523,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "slope_systolic": {
+    "rho": 0.0301,
+    "rho_raw": -0.0334,
+    "d": -0.0441,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6153238667869068,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "slope_systolic_n": {
+    "rho": -0.0257,
+    "rho_raw": -0.0484,
+    "d": -0.1924,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6627480181441338,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "systolic_width_50": {
+    "rho": -0.0595,
+    "rho_raw": -0.0551,
+    "d": -0.1295,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.2780829223902441,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "systolic_width_75": {
+    "rho": -0.0884,
+    "rho_raw": -0.1219,
+    "d": -0.2698,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.09531509292039704,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "t_dia_ms": {
+    "rho": -0.0425,
+    "rho_raw": -0.0097,
+    "d": -0.0782,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.4604799972437405,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "t_dn": {
+    "rho": -0.0343,
+    "rho_raw": -0.0653,
+    "d": -0.089,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.5571398711997745,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   },
+   "t_sys_ms": {
+    "rho": -0.0473,
+    "rho_raw": -0.0058,
+    "d": -0.0282,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.40792706424510977,
+    "sig": false,
+    "n_pos": 153,
+    "n_neg": 375
+   }
+  },
+  "age_association": {
+   "beat_len_ms": {
+    "rho": 0.0989,
+    "rho_raw": 0.1006,
+    "direction": "higher_with_age",
+    "q_fdr": 0.02975723697193273,
+    "sig": true
+   },
+   "bwr_50": {
+    "rho": 0.3517,
+    "rho_raw": 0.3446,
+    "direction": "higher_with_age",
+    "q_fdr": 2.448512683233519e-16,
+    "sig": true
+   },
+   "crest_factor": {
+    "rho": 0.319,
+    "rho_raw": 0.3122,
+    "direction": "higher_with_age",
+    "q_fdr": 1.5158283034646996e-13,
+    "sig": true
+   },
+   "diastolic_width_50": {
+    "rho": -0.3993,
+    "rho_raw": -0.4034,
+    "direction": "lower_with_age",
+    "q_fdr": 4.594502455486195e-21,
+    "sig": true
+   },
+   "diastolic_width_75": {
+    "rho": -0.2054,
+    "rho_raw": -0.2048,
+    "direction": "lower_with_age",
+    "q_fdr": 3.7584864765059884e-06,
+    "sig": true
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.1763,
+    "rho_raw": 0.1755,
+    "direction": "higher_with_age",
+    "q_fdr": 7.772229162890855e-05,
+    "sig": true
+   },
+   "iqr": {
+    "rho": 0.1995,
+    "rho_raw": 0.2006,
+    "direction": "higher_with_age",
+    "q_fdr": 7.229642565855242e-06,
+    "sig": true
+   },
+   "kurtosis": {
+    "rho": -0.0735,
+    "rho_raw": -0.0749,
+    "direction": "lower_with_age",
+    "q_fdr": 0.10823619648282912,
+    "sig": false
+   },
+   "lasi": {
+    "rho": 0.2229,
+    "rho_raw": 0.2228,
+    "direction": "higher_with_age",
+    "q_fdr": 4.654948997062539e-07,
+    "sig": true
+   },
+   "mean_intensity": {
+    "rho": -0.272,
+    "rho_raw": -0.2675,
+    "direction": "lower_with_age",
+    "q_fdr": 4.692721144359998e-10,
+    "sig": true
+   },
+   "ni_dn": {
+    "rho": -0.0789,
+    "rho_raw": -0.0852,
+    "direction": "lower_with_age",
+    "q_fdr": 0.08446132813885918,
+    "sig": false
+   },
+   "ni_ip": {
+    "rho": -0.0651,
+    "rho_raw": -0.0658,
+    "direction": "lower_with_age",
+    "q_fdr": 0.1499150335775655,
+    "sig": false
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.1448,
+    "rho_raw": 0.1361,
+    "direction": "higher_with_age",
+    "q_fdr": 0.001247630781817536,
+    "sig": true
+   },
+   "nt_dn": {
+    "rho": -0.1232,
+    "rho_raw": -0.1059,
+    "direction": "lower_with_age",
+    "q_fdr": 0.006402686673556782,
+    "sig": true
+   },
+   "perfusion_index": {
+    "rho": 0.3163,
+    "rho_raw": 0.3091,
+    "direction": "higher_with_age",
+    "q_fdr": 2.504539332682201e-13,
+    "sig": true
+   },
+   "ppg_characteristic": {
+    "rho": -0.3765,
+    "rho_raw": -0.3745,
+    "direction": "lower_with_age",
+    "q_fdr": 1.0988811928314454e-18,
+    "sig": true
+   },
+   "pulse_amp": {
+    "rho": 0.0941,
+    "rho_raw": 0.09,
+    "direction": "higher_with_age",
+    "q_fdr": 0.03867350180366034,
+    "sig": true
+   },
+   "pulse_width_50": {
+    "rho": -0.2843,
+    "rho_raw": -0.2815,
+    "direction": "lower_with_age",
+    "q_fdr": 6.578106203034359e-11,
+    "sig": true
+   },
+   "pulse_width_90": {
+    "rho": -0.2134,
+    "rho_raw": -0.2077,
+    "direction": "lower_with_age",
+    "q_fdr": 1.4738123318335576e-06,
+    "sig": true
+   },
+   "reflection_index": {
+    "rho": -0.0651,
+    "rho_raw": -0.0658,
+    "direction": "lower_with_age",
+    "q_fdr": 0.1499150335775655,
+    "sig": false
+   },
+   "rms": {
+    "rho": -0.2141,
+    "rho_raw": -0.2114,
+    "direction": "lower_with_age",
+    "q_fdr": 1.3660388314819824e-06,
+    "sig": true
+   },
+   "skewness": {
+    "rho": 0.3307,
+    "rho_raw": 0.3252,
+    "direction": "higher_with_age",
+    "q_fdr": 1.686999873063312e-14,
+    "sig": true
+   },
+   "slope_md": {
+    "rho": -0.4344,
+    "rho_raw": -0.4226,
+    "direction": "lower_with_age",
+    "q_fdr": 4.2541095472944685e-25,
+    "sig": true
+   },
+   "slope_md_n": {
+    "rho": -0.3676,
+    "rho_raw": -0.3597,
+    "direction": "lower_with_age",
+    "q_fdr": 7.969982381643357e-18,
+    "sig": true
+   },
+   "slope_systolic": {
+    "rho": -0.2565,
+    "rho_raw": -0.2619,
+    "direction": "lower_with_age",
+    "q_fdr": 4.84772493190263e-09,
+    "sig": true
+   },
+   "slope_systolic_n": {
+    "rho": -0.1925,
+    "rho_raw": -0.2,
+    "direction": "lower_with_age",
+    "q_fdr": 1.533744246196166e-05,
+    "sig": true
+   },
+   "systolic_width_50": {
+    "rho": 0.0644,
+    "rho_raw": 0.082,
+    "direction": "higher_with_age",
+    "q_fdr": 0.1532407873090827,
+    "sig": false
+   },
+   "systolic_width_75": {
+    "rho": -0.0759,
+    "rho_raw": -0.0602,
+    "direction": "lower_with_age",
+    "q_fdr": 0.09726740992439795,
+    "sig": false
+   },
+   "t_dia_ms": {
+    "rho": 0.0691,
+    "rho_raw": 0.0639,
+    "direction": "higher_with_age",
+    "q_fdr": 0.12820118905539984,
+    "sig": false
+   },
+   "t_dn": {
+    "rho": -0.0657,
+    "rho_raw": -0.0553,
+    "direction": "lower_with_age",
+    "q_fdr": 0.14831637250467797,
+    "sig": false
+   },
+   "t_sys_ms": {
+    "rho": 0.1897,
+    "rho_raw": 0.1993,
+    "direction": "higher_with_age",
+    "q_fdr": 2.0199581455978144e-05,
+    "sig": true
+   }
+  },
+  "sex_association": {
+   "beat_len_ms": {
+    "rho": -0.0238,
+    "rho_raw": -0.03,
+    "direction": "lower_in_male",
+    "q_fdr": 0.6540372402639661,
+    "sig": false
+   },
+   "bwr_50": {
+    "rho": -0.4322,
+    "rho_raw": -0.4269,
+    "direction": "lower_in_male",
+    "q_fdr": 1.1981214693807506e-23,
+    "sig": true
+   },
+   "crest_factor": {
+    "rho": 0.1062,
+    "rho_raw": 0.0808,
+    "direction": "higher_in_male",
+    "q_fdr": 0.022914031023258258,
+    "sig": true
+   },
+   "diastolic_width_50": {
+    "rho": 0.1145,
+    "rho_raw": 0.1302,
+    "direction": "higher_in_male",
+    "q_fdr": 0.01383549503021518,
+    "sig": true
+   },
+   "diastolic_width_75": {
+    "rho": -0.0159,
+    "rho_raw": -0.0024,
+    "direction": "lower_in_male",
+    "q_fdr": 0.77858786264907,
+    "sig": false
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.0184,
+    "rho_raw": 0.0068,
+    "direction": "higher_in_male",
+    "q_fdr": 0.7393745381376372,
+    "sig": false
+   },
+   "iqr": {
+    "rho": -0.0129,
+    "rho_raw": -0.0254,
+    "direction": "lower_in_male",
+    "q_fdr": 0.8122507858921894,
+    "sig": false
+   },
+   "kurtosis": {
+    "rho": 0.0206,
+    "rho_raw": 0.0252,
+    "direction": "higher_in_male",
+    "q_fdr": 0.7056821005946847,
+    "sig": false
+   },
+   "lasi": {
+    "rho": 0.009,
+    "rho_raw": -0.0055,
+    "direction": "lower_in_male",
+    "q_fdr": 0.840499986888372,
+    "sig": false
+   },
+   "mean_intensity": {
+    "rho": -0.0747,
+    "rho_raw": -0.0548,
+    "direction": "lower_in_male",
+    "q_fdr": 0.11490141369635364,
+    "sig": false
+   },
+   "ni_dn": {
+    "rho": 0.1038,
+    "rho_raw": 0.1086,
+    "direction": "higher_in_male",
+    "q_fdr": 0.026078165976235097,
+    "sig": true
+   },
+   "ni_ip": {
+    "rho": 0.0088,
+    "rho_raw": 0.0129,
+    "direction": "higher_in_male",
+    "q_fdr": 0.840499986888372,
+    "sig": false
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.1272,
+    "rho_raw": 0.1171,
+    "direction": "higher_in_male",
+    "q_fdr": 0.006051865701846299,
+    "sig": true
+   },
+   "nt_dn": {
+    "rho": -0.2277,
+    "rho_raw": -0.2192,
+    "direction": "lower_in_male",
+    "q_fdr": 3.032108870371193e-07,
+    "sig": true
+   },
+   "perfusion_index": {
+    "rho": 0.1105,
+    "rho_raw": 0.0852,
+    "direction": "higher_in_male",
+    "q_fdr": 0.017812935750116304,
+    "sig": true
+   },
+   "ppg_characteristic": {
+    "rho": -0.045,
+    "rho_raw": -0.0178,
+    "direction": "lower_in_male",
+    "q_fdr": 0.35291623678093453,
+    "sig": false
+   },
+   "pulse_amp": {
+    "rho": 0.065,
+    "rho_raw": 0.0589,
+    "direction": "higher_in_male",
+    "q_fdr": 0.17519278632809865,
+    "sig": false
+   },
+   "pulse_width_50": {
+    "rho": -0.0538,
+    "rho_raw": -0.0336,
+    "direction": "lower_in_male",
+    "q_fdr": 0.26886718174301405,
+    "sig": false
+   },
+   "pulse_width_90": {
+    "rho": -0.0881,
+    "rho_raw": -0.0727,
+    "direction": "lower_in_male",
+    "q_fdr": 0.05933993106467687,
+    "sig": false
+   },
+   "reflection_index": {
+    "rho": 0.0088,
+    "rho_raw": 0.0129,
+    "direction": "higher_in_male",
+    "q_fdr": 0.840499986888372,
+    "sig": false
+   },
+   "rms": {
+    "rho": -0.0489,
+    "rho_raw": -0.0343,
+    "direction": "lower_in_male",
+    "q_fdr": 0.3149027596612285,
+    "sig": false
+   },
+   "skewness": {
+    "rho": 0.0905,
+    "rho_raw": 0.0646,
+    "direction": "higher_in_male",
+    "q_fdr": 0.05253023436694184,
+    "sig": false
+   },
+   "slope_md": {
+    "rho": 0.4148,
+    "rho_raw": 0.4021,
+    "direction": "higher_in_male",
+    "q_fdr": 5.627373321782349e-22,
+    "sig": true
+   },
+   "slope_md_n": {
+    "rho": 0.4272,
+    "rho_raw": 0.4207,
+    "direction": "higher_in_male",
+    "q_fdr": 3.257326865508287e-23,
+    "sig": true
+   },
+   "slope_systolic": {
+    "rho": 0.3528,
+    "rho_raw": 0.3565,
+    "direction": "higher_in_male",
+    "q_fdr": 5.713281824863547e-16,
+    "sig": true
+   },
+   "slope_systolic_n": {
+    "rho": 0.4541,
+    "rho_raw": 0.4567,
+    "direction": "higher_in_male",
+    "q_fdr": 4.0022136610490353e-26,
+    "sig": true
+   },
+   "systolic_width_50": {
+    "rho": -0.333,
+    "rho_raw": -0.3365,
+    "direction": "lower_in_male",
+    "q_fdr": 1.987770232887954e-14,
+    "sig": true
+   },
+   "systolic_width_75": {
+    "rho": -0.2198,
+    "rho_raw": -0.2151,
+    "direction": "lower_in_male",
+    "q_fdr": 7.607725113974023e-07,
+    "sig": true
+   },
+   "t_dia_ms": {
+    "rho": 0.0809,
+    "rho_raw": 0.0765,
+    "direction": "higher_in_male",
+    "q_fdr": 0.08526373669537754,
+    "sig": false
+   },
+   "t_dn": {
+    "rho": -0.1542,
+    "rho_raw": -0.1502,
+    "direction": "lower_in_male",
+    "q_fdr": 0.0007391442938466017,
+    "sig": true
+   },
+   "t_sys_ms": {
+    "rho": -0.3774,
+    "rho_raw": -0.3818,
+    "direction": "lower_in_male",
+    "q_fdr": 3.1964284414479e-18,
+    "sig": true
+   }
+  }
+ },
+ "aurora_o": {
+  "aurora_high_blood_pressure": {
+   "beat_len_ms": {
+    "rho": -0.115,
+    "rho_raw": -0.0768,
+    "d": -0.1433,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.046824175721023896,
+    "sig": true,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "bwr_50": {
+    "rho": 0.1349,
+    "rho_raw": 0.1591,
+    "d": 0.3446,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.016889212134264114,
+    "sig": true,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "crest_factor": {
+    "rho": 0.1094,
+    "rho_raw": 0.1535,
+    "d": 0.3956,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.05834608940991633,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "diastolic_width_50": {
+    "rho": -0.2126,
+    "rho_raw": -0.2285,
+    "d": -0.4887,
+    "direction": "lower_in_cases",
+    "q_fdr": 9.530249173230344e-05,
+    "sig": true,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "diastolic_width_75": {
+    "rho": -0.1562,
+    "rho_raw": -0.1669,
+    "d": -0.338,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.005689247778417669,
+    "sig": true,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.1801,
+    "rho_raw": 0.1822,
+    "d": 0.3099,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0012194595572427764,
+    "sig": true,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "iqr": {
+    "rho": 0.0301,
+    "rho_raw": 0.0413,
+    "d": 0.0762,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6455045237808005,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "kurtosis": {
+    "rho": 0.0902,
+    "rho_raw": 0.0875,
+    "d": 0.2333,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.1218155041122439,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "lasi": {
+    "rho": 0.0231,
+    "rho_raw": 0.0515,
+    "d": 0.0589,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.7241576667935152,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "mean_intensity": {
+    "rho": -0.0517,
+    "rho_raw": -0.097,
+    "d": -0.2523,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.40828640843635405,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "ni_dn": {
+    "rho": -0.1428,
+    "rho_raw": -0.1434,
+    "d": -0.3031,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.01074317161280001,
+    "sig": true,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "ni_ip": {
+    "rho": -0.1477,
+    "rho_raw": -0.1394,
+    "d": -0.3275,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.009085346367637139,
+    "sig": true,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.0745,
+    "rho_raw": 0.0878,
+    "d": 0.218,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.2120598414118064,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "nt_dn": {
+    "rho": 0.0118,
+    "rho_raw": -0.0339,
+    "d": -0.0924,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8553707331818803,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "perfusion_index": {
+    "rho": 0.1046,
+    "rho_raw": 0.1465,
+    "d": 0.3773,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.07109788558081745,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "ppg_characteristic": {
+    "rho": -0.0672,
+    "rho_raw": -0.1357,
+    "d": -0.3495,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.26273397737233695,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "pulse_amp": {
+    "rho": 0.1267,
+    "rho_raw": 0.1264,
+    "d": 0.2623,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.025951731643812512,
+    "sig": true,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "pulse_width_50": {
+    "rho": -0.1892,
+    "rho_raw": -0.2015,
+    "d": -0.429,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.000603577198706451,
+    "sig": true,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "pulse_width_90": {
+    "rho": -0.1445,
+    "rho_raw": -0.1521,
+    "d": -0.3267,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.010218738700540787,
+    "sig": true,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "reflection_index": {
+    "rho": -0.1477,
+    "rho_raw": -0.1394,
+    "d": -0.3275,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.009085346367637139,
+    "sig": true,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "rms": {
+    "rho": -0.031,
+    "rho_raw": -0.0694,
+    "d": -0.1336,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6388139217353961,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "skewness": {
+    "rho": 0.1378,
+    "rho_raw": 0.178,
+    "d": 0.4386,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.014348294998482553,
+    "sig": true,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "slope_md": {
+    "rho": 0.0457,
+    "rho_raw": 0.0027,
+    "d": 0.0135,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.4707444144837385,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "slope_md_n": {
+    "rho": -0.1146,
+    "rho_raw": -0.0926,
+    "d": -0.1822,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.047330686556136946,
+    "sig": true,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "slope_systolic": {
+    "rho": 0.0719,
+    "rho_raw": 0.0364,
+    "d": 0.1033,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.230104504914307,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "slope_systolic_n": {
+    "rho": -0.0307,
+    "rho_raw": -0.0147,
+    "d": 0.0027,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6390894089667161,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "systolic_width_50": {
+    "rho": -0.1092,
+    "rho_raw": -0.0887,
+    "d": -0.1759,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.05848264766596794,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "systolic_width_75": {
+    "rho": -0.11,
+    "rho_raw": -0.0975,
+    "d": -0.1974,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.05700124326415106,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "t_dia_ms": {
+    "rho": -0.1114,
+    "rho_raw": -0.07,
+    "d": -0.1343,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.05333228508563023,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "t_dn": {
+    "rho": -0.1224,
+    "rho_raw": -0.1136,
+    "d": -0.243,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0330184286423987,
+    "sig": true,
+    "n_pos": 182,
+    "n_neg": 258
+   },
+   "t_sys_ms": {
+    "rho": -0.0947,
+    "rho_raw": -0.0692,
+    "d": -0.1266,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.10294652353335905,
+    "sig": false,
+    "n_pos": 182,
+    "n_neg": 258
+   }
+  },
+  "aurora_diabetes": {
+   "beat_len_ms": {
+    "rho": -0.2068,
+    "rho_raw": -0.1928,
+    "d": -0.6107,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.00016363085362241635,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "bwr_50": {
+    "rho": 0.0791,
+    "rho_raw": 0.0616,
+    "d": 0.2448,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.1842638408967545,
+    "sig": false,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "crest_factor": {
+    "rho": 0.0151,
+    "rho_raw": 0.0324,
+    "d": 0.1222,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.8162010798554501,
+    "sig": false,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "diastolic_width_50": {
+    "rho": -0.2161,
+    "rho_raw": -0.2083,
+    "d": -0.6054,
+    "direction": "lower_in_cases",
+    "q_fdr": 7.241539023865698e-05,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "diastolic_width_75": {
+    "rho": -0.2163,
+    "rho_raw": -0.2177,
+    "d": -0.6575,
+    "direction": "lower_in_cases",
+    "q_fdr": 7.241539023865698e-05,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.1765,
+    "rho_raw": 0.1646,
+    "d": 0.3236,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0015724199212587063,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "iqr": {
+    "rho": -0.1045,
+    "rho_raw": -0.1055,
+    "d": -0.2912,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.07144788908872544,
+    "sig": false,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "kurtosis": {
+    "rho": 0.1363,
+    "rho_raw": 0.1405,
+    "d": 0.3229,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.015596511091896532,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "lasi": {
+    "rho": 0.0575,
+    "rho_raw": 0.0639,
+    "d": 0.2096,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.34960458876295075,
+    "sig": false,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "mean_intensity": {
+    "rho": 0.05,
+    "rho_raw": 0.036,
+    "d": 0.0451,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.42584477709451246,
+    "sig": false,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "ni_dn": {
+    "rho": -0.0994,
+    "rho_raw": -0.0971,
+    "d": -0.2593,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.08550776137921857,
+    "sig": false,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "ni_ip": {
+    "rho": -0.1473,
+    "rho_raw": -0.1391,
+    "d": -0.4005,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.009158779415533272,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.055,
+    "rho_raw": 0.0627,
+    "d": 0.1785,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.37376018592975546,
+    "sig": false,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "nt_dn": {
+    "rho": 0.012,
+    "rho_raw": -0.0133,
+    "d": -0.034,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8543875742647333,
+    "sig": false,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "perfusion_index": {
+    "rho": -0.0258,
+    "rho_raw": -0.0098,
+    "d": 0.0198,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.6902759259938727,
+    "sig": false,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "ppg_characteristic": {
+    "rho": 0.0163,
+    "rho_raw": -0.0066,
+    "d": -0.0513,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8048807726539561,
+    "sig": false,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "pulse_amp": {
+    "rho": -0.0129,
+    "rho_raw": -0.0064,
+    "d": -0.0005,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8438385391417383,
+    "sig": false,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "pulse_width_50": {
+    "rho": -0.2061,
+    "rho_raw": -0.2066,
+    "d": -0.603,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.00016728494312263036,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "pulse_width_90": {
+    "rho": -0.2162,
+    "rho_raw": -0.2223,
+    "d": -0.65,
+    "direction": "lower_in_cases",
+    "q_fdr": 7.241539023865698e-05,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "reflection_index": {
+    "rho": -0.1473,
+    "rho_raw": -0.1391,
+    "d": -0.4005,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.009158779415533272,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "rms": {
+    "rho": -0.0115,
+    "rho_raw": -0.0229,
+    "d": -0.0728,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.8565034942148467,
+    "sig": false,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "skewness": {
+    "rho": 0.0324,
+    "rho_raw": 0.0458,
+    "d": 0.1555,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6230943417927535,
+    "sig": false,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "slope_md": {
+    "rho": 0.1673,
+    "rho_raw": 0.1578,
+    "d": 0.4553,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.002890962810417284,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "slope_md_n": {
+    "rho": -0.1164,
+    "rho_raw": -0.0802,
+    "d": -0.2689,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.04404767544139524,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "slope_systolic": {
+    "rho": 0.167,
+    "rho_raw": 0.1616,
+    "d": 0.4632,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.0029251580732792865,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "slope_systolic_n": {
+    "rho": -0.0262,
+    "rho_raw": 0.0026,
+    "d": -0.0225,
+    "direction": "higher_in_cases",
+    "q_fdr": 0.6846537874507607,
+    "sig": false,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "systolic_width_50": {
+    "rho": -0.1745,
+    "rho_raw": -0.175,
+    "d": -0.5021,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0018184080486576366,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "systolic_width_75": {
+    "rho": -0.1863,
+    "rho_raw": -0.1888,
+    "d": -0.5325,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.0007626338191206511,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "t_dia_ms": {
+    "rho": -0.2034,
+    "rho_raw": -0.184,
+    "d": -0.5836,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.00020611274204521702,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "t_dn": {
+    "rho": -0.2629,
+    "rho_raw": -0.2647,
+    "d": -0.7833,
+    "direction": "lower_in_cases",
+    "q_fdr": 1.0041296899547936e-06,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   },
+   "t_sys_ms": {
+    "rho": -0.1597,
+    "rho_raw": -0.1589,
+    "d": -0.4389,
+    "direction": "lower_in_cases",
+    "q_fdr": 0.004638734853326854,
+    "sig": true,
+    "n_pos": 51,
+    "n_neg": 389
+   }
+  },
+  "age_association": {
+   "beat_len_ms": {
+    "rho": 0.115,
+    "rho_raw": 0.1048,
+    "direction": "higher_with_age",
+    "q_fdr": 0.0210550735640006,
+    "sig": true
+   },
+   "bwr_50": {
+    "rho": 0.366,
+    "rho_raw": 0.3875,
+    "direction": "higher_with_age",
+    "q_fdr": 6.199146011631113e-15,
+    "sig": true
+   },
+   "crest_factor": {
+    "rho": 0.1661,
+    "rho_raw": 0.1478,
+    "direction": "higher_with_age",
+    "q_fdr": 0.0007178144426543946,
+    "sig": true
+   },
+   "diastolic_width_50": {
+    "rho": -0.1866,
+    "rho_raw": -0.2044,
+    "direction": "lower_with_age",
+    "q_fdr": 0.00013444841185097697,
+    "sig": true
+   },
+   "diastolic_width_75": {
+    "rho": -0.0768,
+    "rho_raw": -0.0788,
+    "direction": "lower_with_age",
+    "q_fdr": 0.12377126808716385,
+    "sig": false
+   },
+   "intensity_ratio_s_d": {
+    "rho": 0.1334,
+    "rho_raw": 0.1566,
+    "direction": "higher_with_age",
+    "q_fdr": 0.006993923393944601,
+    "sig": true
+   },
+   "iqr": {
+    "rho": 0.1006,
+    "rho_raw": 0.1158,
+    "direction": "higher_with_age",
+    "q_fdr": 0.04379026393215543,
+    "sig": true
+   },
+   "kurtosis": {
+    "rho": -0.0416,
+    "rho_raw": -0.057,
+    "direction": "lower_with_age",
+    "q_fdr": 0.40716455326372114,
+    "sig": false
+   },
+   "lasi": {
+    "rho": 0.124,
+    "rho_raw": 0.1232,
+    "direction": "higher_with_age",
+    "q_fdr": 0.012585823284564333,
+    "sig": true
+   },
+   "mean_intensity": {
+    "rho": -0.192,
+    "rho_raw": -0.187,
+    "direction": "lower_with_age",
+    "q_fdr": 8.361904916102573e-05,
+    "sig": true
+   },
+   "ni_dn": {
+    "rho": -0.0488,
+    "rho_raw": -0.057,
+    "direction": "lower_with_age",
+    "q_fdr": 0.33128542474933154,
+    "sig": false
+   },
+   "ni_ip": {
+    "rho": -0.038,
+    "rho_raw": -0.0541,
+    "direction": "lower_with_age",
+    "q_fdr": 0.44466257991584307,
+    "sig": false
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.0328,
+    "rho_raw": 0.02,
+    "direction": "higher_with_age",
+    "q_fdr": 0.5041051994110639,
+    "sig": false
+   },
+   "nt_dn": {
+    "rho": -0.0797,
+    "rho_raw": -0.0359,
+    "direction": "lower_with_age",
+    "q_fdr": 0.11069839572532217,
+    "sig": false
+   },
+   "perfusion_index": {
+    "rho": 0.1662,
+    "rho_raw": 0.1529,
+    "direction": "higher_with_age",
+    "q_fdr": 0.0007178144426543946,
+    "sig": true
+   },
+   "ppg_characteristic": {
+    "rho": -0.2756,
+    "rho_raw": -0.2603,
+    "direction": "lower_with_age",
+    "q_fdr": 8.796030381278002e-09,
+    "sig": true
+   },
+   "pulse_amp": {
+    "rho": -0.0227,
+    "rho_raw": -0.0375,
+    "direction": "lower_with_age",
+    "q_fdr": 0.6455627073426788,
+    "sig": false
+   },
+   "pulse_width_50": {
+    "rho": -0.0999,
+    "rho_raw": -0.1052,
+    "direction": "lower_with_age",
+    "q_fdr": 0.04475828538641159,
+    "sig": true
+   },
+   "pulse_width_90": {
+    "rho": -0.0157,
+    "rho_raw": -0.0012,
+    "direction": "lower_with_age",
+    "q_fdr": 0.7421878912557983,
+    "sig": false
+   },
+   "reflection_index": {
+    "rho": -0.038,
+    "rho_raw": -0.0541,
+    "direction": "lower_with_age",
+    "q_fdr": 0.44466257991584307,
+    "sig": false
+   },
+   "rms": {
+    "rho": -0.1519,
+    "rho_raw": -0.1451,
+    "direction": "lower_with_age",
+    "q_fdr": 0.0019876209026718074,
+    "sig": true
+   },
+   "skewness": {
+    "rho": 0.1766,
+    "rho_raw": 0.1674,
+    "direction": "higher_with_age",
+    "q_fdr": 0.00030756827702276533,
+    "sig": true
+   },
+   "slope_md": {
+    "rho": -0.2691,
+    "rho_raw": -0.2929,
+    "direction": "lower_with_age",
+    "q_fdr": 2.0130646729123228e-08,
+    "sig": true
+   },
+   "slope_md_n": {
+    "rho": -0.1638,
+    "rho_raw": -0.2061,
+    "direction": "lower_with_age",
+    "q_fdr": 0.0008517387460270944,
+    "sig": true
+   },
+   "slope_systolic": {
+    "rho": -0.22,
+    "rho_raw": -0.244,
+    "direction": "lower_with_age",
+    "q_fdr": 6.088160685769062e-06,
+    "sig": true
+   },
+   "slope_systolic_n": {
+    "rho": -0.1548,
+    "rho_raw": -0.2,
+    "direction": "lower_with_age",
+    "q_fdr": 0.0016264288139421108,
+    "sig": true
+   },
+   "systolic_width_50": {
+    "rho": 0.149,
+    "rho_raw": 0.1761,
+    "direction": "higher_with_age",
+    "q_fdr": 0.0024277090872925284,
+    "sig": true
+   },
+   "systolic_width_75": {
+    "rho": 0.1062,
+    "rho_raw": 0.1311,
+    "direction": "higher_with_age",
+    "q_fdr": 0.03304100782319464,
+    "sig": true
+   },
+   "t_dia_ms": {
+    "rho": 0.0978,
+    "rho_raw": 0.0765,
+    "direction": "higher_with_age",
+    "q_fdr": 0.04953662075737314,
+    "sig": true
+   },
+   "t_dn": {
+    "rho": 0.0796,
+    "rho_raw": 0.1018,
+    "direction": "higher_with_age",
+    "q_fdr": 0.11069839572532217,
+    "sig": false
+   },
+   "t_sys_ms": {
+    "rho": 0.1776,
+    "rho_raw": 0.2046,
+    "direction": "higher_with_age",
+    "q_fdr": 0.00028818837660356543,
+    "sig": true
+   }
+  },
+  "sex_association": {
+   "beat_len_ms": {
+    "rho": 0.0803,
+    "rho_raw": 0.0647,
+    "direction": "higher_in_male",
+    "q_fdr": 0.1222618819494997,
+    "sig": false
+   },
+   "bwr_50": {
+    "rho": -0.353,
+    "rho_raw": -0.3754,
+    "direction": "lower_in_male",
+    "q_fdr": 9.996882310815126e-14,
+    "sig": true
+   },
+   "crest_factor": {
+    "rho": 0.1374,
+    "rho_raw": 0.1144,
+    "direction": "higher_in_male",
+    "q_fdr": 0.00677084354075567,
+    "sig": true
+   },
+   "diastolic_width_50": {
+    "rho": 0.1365,
+    "rho_raw": 0.1604,
+    "direction": "higher_in_male",
+    "q_fdr": 0.0070840481537074,
+    "sig": true
+   },
+   "diastolic_width_75": {
+    "rho": 0.0098,
+    "rho_raw": 0.0205,
+    "direction": "higher_in_male",
+    "q_fdr": 0.840499986888372,
+    "sig": false
+   },
+   "intensity_ratio_s_d": {
+    "rho": -0.18,
+    "rho_raw": -0.1976,
+    "direction": "lower_in_male",
+    "q_fdr": 0.0002936156237711703,
+    "sig": true
+   },
+   "iqr": {
+    "rho": -0.1094,
+    "rho_raw": -0.1235,
+    "direction": "lower_in_male",
+    "q_fdr": 0.03243566623557738,
+    "sig": true
+   },
+   "kurtosis": {
+    "rho": 0.1108,
+    "rho_raw": 0.1174,
+    "direction": "higher_in_male",
+    "q_fdr": 0.030426318782850414,
+    "sig": true
+   },
+   "lasi": {
+    "rho": 0.014,
+    "rho_raw": -0.0032,
+    "direction": "lower_in_male",
+    "q_fdr": 0.8122507858921894,
+    "sig": false
+   },
+   "mean_intensity": {
+    "rho": -0.0499,
+    "rho_raw": -0.023,
+    "direction": "lower_in_male",
+    "q_fdr": 0.3503318764595691,
+    "sig": false
+   },
+   "ni_dn": {
+    "rho": 0.0564,
+    "rho_raw": 0.0636,
+    "direction": "higher_in_male",
+    "q_fdr": 0.2889713788616323,
+    "sig": false
+   },
+   "ni_ip": {
+    "rho": 0.1161,
+    "rho_raw": 0.1223,
+    "direction": "higher_in_male",
+    "q_fdr": 0.022914031023258258,
+    "sig": true
+   },
+   "normalized_pulse_vol": {
+    "rho": 0.0941,
+    "rho_raw": 0.0905,
+    "direction": "higher_in_male",
+    "q_fdr": 0.0660719225988833,
+    "sig": false
+   },
+   "nt_dn": {
+    "rho": -0.297,
+    "rho_raw": -0.2891,
+    "direction": "lower_in_male",
+    "q_fdr": 6.381602804882008e-10,
+    "sig": true
+   },
+   "perfusion_index": {
+    "rho": 0.1049,
+    "rho_raw": 0.0818,
+    "direction": "higher_in_male",
+    "q_fdr": 0.04000599409657553,
+    "sig": true
+   },
+   "ppg_characteristic": {
+    "rho": -0.1271,
+    "rho_raw": -0.0859,
+    "direction": "lower_in_male",
+    "q_fdr": 0.012549150434069133,
+    "sig": true
+   },
+   "pulse_amp": {
+    "rho": 0.1064,
+    "rho_raw": 0.1104,
+    "direction": "higher_in_male",
+    "q_fdr": 0.037917184621655865,
+    "sig": true
+   },
+   "pulse_width_50": {
+    "rho": 0.0319,
+    "rho_raw": 0.0458,
+    "direction": "higher_in_male",
+    "q_fdr": 0.5692407764736448,
+    "sig": false
+   },
+   "pulse_width_90": {
+    "rho": -0.1051,
+    "rho_raw": -0.104,
+    "direction": "lower_in_male",
+    "q_fdr": 0.04000404373539644,
+    "sig": true
+   },
+   "reflection_index": {
+    "rho": 0.1161,
+    "rho_raw": 0.1223,
+    "direction": "higher_in_male",
+    "q_fdr": 0.022914031023258258,
+    "sig": true
+   },
+   "rms": {
+    "rho": -0.0596,
+    "rho_raw": -0.0385,
+    "direction": "lower_in_male",
+    "q_fdr": 0.2660693982953144,
+    "sig": false
+   },
+   "skewness": {
+    "rho": 0.0783,
+    "rho_raw": 0.0535,
+    "direction": "higher_in_male",
+    "q_fdr": 0.13196828992084014,
+    "sig": false
+   },
+   "slope_md": {
+    "rho": 0.2301,
+    "rho_raw": 0.2581,
+    "direction": "higher_in_male",
+    "q_fdr": 2.3147962041434938e-06,
+    "sig": true
+   },
+   "slope_md_n": {
+    "rho": 0.4273,
+    "rho_raw": 0.4424,
+    "direction": "higher_in_male",
+    "q_fdr": 9.15683277714887e-20,
+    "sig": true
+   },
+   "slope_systolic": {
+    "rho": 0.2103,
+    "rho_raw": 0.2354,
+    "direction": "higher_in_male",
+    "q_fdr": 1.787787129107867e-05,
+    "sig": true
+   },
+   "slope_systolic_n": {
+    "rho": 0.462,
+    "rho_raw": 0.4758,
+    "direction": "higher_in_male",
+    "q_fdr": 3.729089967605829e-23,
+    "sig": true
+   },
+   "systolic_width_50": {
+    "rho": -0.2204,
+    "rho_raw": -0.239,
+    "direction": "lower_in_male",
+    "q_fdr": 6.438594129384653e-06,
+    "sig": true
+   },
+   "systolic_width_75": {
+    "rho": -0.1908,
+    "rho_raw": -0.2053,
+    "direction": "lower_in_male",
+    "q_fdr": 0.00011431525979248404,
+    "sig": true
+   },
+   "t_dia_ms": {
+    "rho": 0.1541,
+    "rho_raw": 0.1417,
+    "direction": "higher_in_male",
+    "q_fdr": 0.002193421481280062,
+    "sig": true
+   },
+   "t_dn": {
+    "rho": -0.1652,
+    "rho_raw": -0.1767,
+    "direction": "lower_in_male",
+    "q_fdr": 0.0009600931783895063,
+    "sig": true
+   },
+   "t_sys_ms": {
+    "rho": -0.2299,
+    "rho_raw": -0.251,
+    "direction": "lower_in_male",
+    "q_fdr": 2.333082889224473e-06,
+    "sig": true
+   }
+  }
+ }
+}

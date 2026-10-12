@@ -1,0 +1,617 @@
+{
+ "meta": {
+  "name": "scale_direction_warnings",
+  "source": "analysis/09_multidimensional_association/26_segment_bp.py (C block) + 03_continuous_bp.py",
+  "rule": "Between-patient dictionaries (feature_disease_knowledge/feature-level rules) describe BETWEEN-PATIENT differences. For WITHIN-patient / short-window state interpretation, the direction of these features is NOT transferable: the segment-level sign opposes the patient-level sign. Use the within-patient block of segment_bp_within.csv instead.",
+  "warning": "Do not quote the between-patient direction for the features listed here when interpreting a rolling short-window (recent-N-segments) state."
+ },
+ "pairs": {
+  "aurora_a": {
+   "DBP": [
+    {
+     "feature": "diastolic_width_50",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.2569
+    },
+    {
+     "feature": "pulse_width_50",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.2051
+    },
+    {
+     "feature": "pulse_width_90",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.1931
+    },
+    {
+     "feature": "t_dia_ms",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.1713
+    },
+    {
+     "feature": "beat_len_ms",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.1506
+    },
+    {
+     "feature": "t_dn",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.1432
+    },
+    {
+     "feature": "diastolic_width_75",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.1185
+    },
+    {
+     "feature": "systolic_width_75",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.1112
+    },
+    {
+     "feature": "rms",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0696
+    },
+    {
+     "feature": "ppg_characteristic",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0651
+    },
+    {
+     "feature": "intensity_ratio_s_d",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0629
+    },
+    {
+     "feature": "ni_dn",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0599
+    },
+    {
+     "feature": "nt_dn",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0467
+    },
+    {
+     "feature": "skewness",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.044
+    },
+    {
+     "feature": "systolic_width_50",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.042
+    },
+    {
+     "feature": "crest_factor",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0418
+    },
+    {
+     "feature": "mean_intensity",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0385
+    },
+    {
+     "feature": "ni_ip",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0371
+    },
+    {
+     "feature": "reflection_index",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0371
+    },
+    {
+     "feature": "iqr",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0333
+    },
+    {
+     "feature": "normalized_pulse_vol",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0291
+    },
+    {
+     "feature": "perfusion_index",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0146
+    },
+    {
+     "feature": "t_sys_ms",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.006
+    }
+   ],
+   "SBP": [
+    {
+     "feature": "lasi",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.1711
+    },
+    {
+     "feature": "slope_md",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.1348
+    },
+    {
+     "feature": "nt_dn",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.1212
+    },
+    {
+     "feature": "iqr",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.088
+    },
+    {
+     "feature": "slope_systolic",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0614
+    },
+    {
+     "feature": "pulse_amp",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0335
+    },
+    {
+     "feature": "t_sys_ms",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0
+    }
+   ]
+  },
+  "aurora_o": {
+   "DBP": [
+    {
+     "feature": "bwr_50",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.041
+    },
+    {
+     "feature": "rms",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0284
+    },
+    {
+     "feature": "reflection_index",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0067
+    },
+    {
+     "feature": "ni_ip",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0067
+    },
+    {
+     "feature": "normalized_pulse_vol",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0008
+    }
+   ],
+   "SBP": [
+    {
+     "feature": "crest_factor",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0598
+    },
+    {
+     "feature": "perfusion_index",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0398
+    },
+    {
+     "feature": "slope_md",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0309
+    },
+    {
+     "feature": "nt_dn",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0133
+    },
+    {
+     "feature": "slope_systolic",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0101
+    },
+    {
+     "feature": "iqr",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0052
+    }
+   ]
+  },
+  "mimic": {
+   "DBP": [
+    {
+     "feature": "t_sys_ms",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.1765
+    },
+    {
+     "feature": "systolic_width_50",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.1427
+    },
+    {
+     "feature": "systolic_width_75",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.1336
+    },
+    {
+     "feature": "slope_md_n",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.1084
+    },
+    {
+     "feature": "slope_systolic_n",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.1019
+    },
+    {
+     "feature": "iqr",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.1003
+    },
+    {
+     "feature": "pulse_width_90",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0997
+    },
+    {
+     "feature": "diastolic_width_75",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0831
+    },
+    {
+     "feature": "nt_dn",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0687
+    },
+    {
+     "feature": "pulse_width_50",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0662
+    },
+    {
+     "feature": "kurtosis",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0553
+    },
+    {
+     "feature": "diastolic_width_50",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0414
+    },
+    {
+     "feature": "normalized_pulse_vol",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.027
+    }
+   ],
+   "SBP": [
+    {
+     "feature": "perfusion_index",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.1027
+    },
+    {
+     "feature": "crest_factor",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0619
+    },
+    {
+     "feature": "skewness",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0405
+    },
+    {
+     "feature": "lasi",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0327
+    },
+    {
+     "feature": "normalized_pulse_vol",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0327
+    },
+    {
+     "feature": "nt_dn",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0267
+    },
+    {
+     "feature": "mean_intensity",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0232
+    },
+    {
+     "feature": "ni_dn",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0131
+    },
+    {
+     "feature": "kurtosis",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0061
+    },
+    {
+     "feature": "slope_systolic",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0046
+    }
+   ]
+  },
+  "vital": {
+   "DBP": [
+    {
+     "feature": "slope_md",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0942
+    },
+    {
+     "feature": "slope_systolic",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0774
+    },
+    {
+     "feature": "t_sys_ms",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0672
+    },
+    {
+     "feature": "ni_dn",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0369
+    },
+    {
+     "feature": "systolic_width_50",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0272
+    },
+    {
+     "feature": "systolic_width_75",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.021
+    },
+    {
+     "feature": "t_dn",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0149
+    },
+    {
+     "feature": "slope_md_n",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0089
+    },
+    {
+     "feature": "iqr",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0083
+    },
+    {
+     "feature": "pulse_width_90",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0064
+    },
+    {
+     "feature": "lasi",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0046
+    },
+    {
+     "feature": "pulse_width_50",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0022
+    },
+    {
+     "feature": "diastolic_width_75",
+     "segment_beta_sign": "pos",
+     "patient_rho_sign": "neg",
+     "within_patient_rho": -0.0019
+    }
+   ],
+   "SBP": [
+    {
+     "feature": "slope_md_n",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0331
+    },
+    {
+     "feature": "slope_systolic_n",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0212
+    },
+    {
+     "feature": "t_dia_ms",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0194
+    },
+    {
+     "feature": "beat_len_ms",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0181
+    },
+    {
+     "feature": "ni_dn",
+     "segment_beta_sign": "neg",
+     "patient_rho_sign": "pos",
+     "within_patient_rho": 0.0046
+    }
+   ]
+  }
+ },
+ "summary": {
+  "n_pairs_total": 248,
+  "n_disagree": 82,
+  "fraction": 0.331,
+  "top_flips_by_within_patient_strength": [
+   {
+    "source": "aurora_a",
+    "bp": "DBP",
+    "feature": "diastolic_width_50",
+    "within_patient_rho": -0.2569,
+    "patient_rho": -0.2089
+   },
+   {
+    "source": "aurora_a",
+    "bp": "DBP",
+    "feature": "pulse_width_50",
+    "within_patient_rho": -0.2051,
+    "patient_rho": -0.1487
+   },
+   {
+    "source": "aurora_a",
+    "bp": "DBP",
+    "feature": "pulse_width_90",
+    "within_patient_rho": -0.1931,
+    "patient_rho": -0.1456
+   },
+   {
+    "source": "mimic",
+    "bp": "DBP",
+    "feature": "t_sys_ms",
+    "within_patient_rho": -0.1765,
+    "patient_rho": -0.0323
+   },
+   {
+    "source": "aurora_a",
+    "bp": "DBP",
+    "feature": "t_dia_ms",
+    "within_patient_rho": -0.1713,
+    "patient_rho": -0.2029
+   },
+   {
+    "source": "aurora_a",
+    "bp": "SBP",
+    "feature": "lasi",
+    "within_patient_rho": 0.1711,
+    "patient_rho": 0.0965
+   },
+   {
+    "source": "aurora_a",
+    "bp": "DBP",
+    "feature": "beat_len_ms",
+    "within_patient_rho": -0.1506,
+    "patient_rho": -0.1757
+   },
+   {
+    "source": "aurora_a",
+    "bp": "DBP",
+    "feature": "t_dn",
+    "within_patient_rho": -0.1432,
+    "patient_rho": -0.1166
+   },
+   {
+    "source": "mimic",
+    "bp": "DBP",
+    "feature": "systolic_width_50",
+    "within_patient_rho": -0.1427,
+    "patient_rho": 0.0058
+   },
+   {
+    "source": "aurora_a",
+    "bp": "SBP",
+    "feature": "slope_md",
+    "within_patient_rho": -0.1348,
+    "patient_rho": -0.0774
+   },
+   {
+    "source": "mimic",
+    "bp": "DBP",
+    "feature": "systolic_width_75",
+    "within_patient_rho": -0.1336,
+    "patient_rho": 0.0134
+   },
+   {
+    "source": "aurora_a",
+    "bp": "SBP",
+    "feature": "nt_dn",
+    "within_patient_rho": -0.1212,
+    "patient_rho": -0.0355
+   }
+  ]
+ }
+}
